@@ -46,7 +46,23 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         // Pause the view's session
         sceneView.session.pause()
     }
-
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        guard let touch = touches.first else {return}
+        let result = sceneView.hitTest(touch.location(in: sceneView), types: [ARHitTestResult.ResultType.featurePoint])
+        guard let hitResult = result.last else {return}
+        //let hitTransform = hitResult.worldTransform
+        let hitTransform = SCNMatrix4.init(hitResult.worldTransform)
+//        let hitTransform = SCNMatrix4FromGLKMatrix4(hitResult?.worldTransform)
+        let hitVector = SCNVector3Make(hitTransform.m41, hitTransform.m42, hitTransform.m43)
+        createCache(position: hitVector)
+    }
+    func createCache(position: SCNVector3) {
+        let cacheShape = SCNBox(width: 0.1, height: 0.1, length: 0.2, chamferRadius: 0.1)
+        let cacheNode = SCNNode(geometry: cacheShape)
+        cacheNode.position = position
+        sceneView.scene.rootNode.addChildNode(cacheNode)
+    }
     // MARK: - ARSCNViewDelegate
     
 /*
