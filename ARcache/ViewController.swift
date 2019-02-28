@@ -78,8 +78,27 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         guard let cacheScene = SCNScene(named: "art.scnassets/ship.scn") else { return }
         guard let cacheSceneNode = cacheScene.rootNode.childNode(withName: "cache", recursively: false) else { return }
         cacheSceneNode.position = SCNVector3(0, 0.5, -3)
+        let physicsShape = SCNPhysicsShape(node: cacheSceneNode, options: [SCNPhysicsShape.Option.type: SCNPhysicsShape.ShapeType.concavePolyhedron])
+        let physicsBody = SCNPhysicsBody(type: .static, shape: physicsShape)
+        cacheSceneNode.physicsBody = physicsBody
         sceneView.scene.rootNode.addChildNode(cacheSceneNode)
         print("cacheSceneNode added")
+//        horizontalAction(node:cacheSceneNode)
+        roundAction(node: cacheSceneNode)
+    }
+    func horizontalAction(node:SCNNode){
+        let leftAction = SCNAction.move(by: SCNVector3(-1,0,0), duration: 3)
+        let rightAction = SCNAction.move(by: SCNVector3(1,0,0), duration: 3)
+        let actionSeqeunce = SCNAction.sequence([leftAction,rightAction])
+        node.runAction(SCNAction.repeat(actionSeqeunce, count: 4))
+    }
+    func roundAction(node: SCNNode){
+        let upLeft = SCNAction.move(by: SCNVector3(1,1,0),duration: 2)
+        let downRight = SCNAction.move(by: SCNVector3(1,-1,0),duration: 2)
+        let downLeft = SCNAction.move(by: SCNVector3(-1,-1,0),duration: 2)
+        let upRight = SCNAction.move(by: SCNVector3(-1,1,0),duration: 2)
+        let actionSeqeunce = SCNAction.sequence([upLeft,downRight,downLeft,upRight])
+        node.runAction(SCNAction.repeat(actionSeqeunce, count: 4))
     }
     @objc func handleTap(gestureRecognizer: UITapGestureRecognizer){
         //scene view
@@ -92,7 +111,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         let cameraOrientation = SCNVector3(-cameraTransformer.m31,-cameraTransformer.m32,-cameraTransformer.m33)
         let cameraPosition = SCNVector3Make(cameraLocation.x + cameraOrientation.x, cameraLocation.y + cameraOrientation.y, cameraLocation.z + cameraOrientation.z)
         // x1 + x2, y1 + y2, z1 + z2 ^
-        let box = SCNSphere(radius: 8.15)
+        let box = SCNSphere(radius: 25)
         let natural = SCNMaterial()
         natural.diffuse.contents = UIImage(named: "texture.png")
         //diffuse (how light renders), contents (appearance of material)
@@ -103,7 +122,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         let physicsShape = SCNPhysicsShape(node: boxNode, options: nil)
         let physicsBody = SCNPhysicsBody(type: .dynamic, shape: physicsShape)
         boxNode.physicsBody = physicsBody
-        boxNode.physicsBody?.applyForce(SCNVector3(cameraPosition.x,cameraPosition.y,cameraPosition.z), asImpulse: true)
+        //let forceVector: Float = 6
+        boxNode.physicsBody?.applyForce(SCNVector3(cameraPosition.x*250,cameraPosition.y*250,cameraPosition.z*250), asImpulse: true)
         sceneView.scene.rootNode.addChildNode(boxNode)
     }
     // MARK: - ARSCNViewDelegate
