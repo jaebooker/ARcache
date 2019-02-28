@@ -22,12 +22,14 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         // Show statistics such as fps and timing information
         sceneView.showsStatistics = true
-        
-        // Create a new scene
-        let scene = SCNScene(named: "art.scnassets/ship.scn")!
-        
-        // Set the scene to the view
+        let scene = SCNScene()
         sceneView.scene = scene
+        addCache()
+//        // Create a new scene
+//        let scene = SCNScene(named: "art.scnassets/ship.scn")!
+//
+//        // Set the scene to the view
+//        sceneView.scene = scene
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -62,6 +64,16 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         let cacheNode = SCNNode(geometry: cacheShape)
         cacheNode.position = position
         sceneView.scene.rootNode.addChildNode(cacheNode)
+    }
+    func registerGestureRecognizer(){
+        let tap = UITapGestureRecognizer(target: self, action: #selector(handletap))
+         
+    }
+    func addCache() {
+        guard let cacheScene = SCNScene(named: "art.scnassets/ship.scn") else { return }
+        guard let cacheSceneNode = cacheScene.rootNode.childNode(withName: "cache", recursively: false) else { return }
+        cacheSceneNode.position = SCNVector3(0, 0.5, -3)
+        sceneView.scene.rootNode.addChildNode(cacheSceneNode)
     }
     // MARK: - ARSCNViewDelegate
     
