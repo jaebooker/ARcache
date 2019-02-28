@@ -30,7 +30,13 @@
                                             <constraint firstAttribute="width" constant="87" id="BWK-Lc-mbf"/>
                                             <constraint firstAttribute="height" constant="44" id="WFv-WV-EIZ"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="&lt;-&gt;">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="startRoundAction:" destination="BV1-FR-VrT" eventType="touchUpInside" id="Zq2-fj-0Qi"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oZn-yd-Nl1">
                                         <rect key="frame" x="127" y="0.0" width="87" height="44"/>
@@ -38,7 +44,13 @@
                                             <constraint firstAttribute="height" constant="44" id="2jU-1Q-dPY"/>
                                             <constraint firstAttribute="width" constant="87" id="PO3-wx-7Gp"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="Stop">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="stopRoundAction:" destination="BV1-FR-VrT" eventType="touchUpInside" id="Kms-ag-tTz"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N2d-Eu-vPe">
                                         <rect key="frame" x="254" y="0.0" width="87" height="44"/>
@@ -46,7 +58,13 @@
                                             <constraint firstAttribute="width" constant="87" id="nj4-iM-dK0"/>
                                             <constraint firstAttribute="height" constant="44" id="pq5-dD-1aM"/>
                                         </constraints>
-                                        <state key="normal" title="Button"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="&lt;-&gt;">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="startHorizontalAction:" destination="BV1-FR-VrT" eventType="touchUpInside" id="gSG-o5-SIl"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>

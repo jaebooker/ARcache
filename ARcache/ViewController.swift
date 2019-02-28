@@ -14,6 +14,14 @@ class ViewController: UIViewController, ARSCNViewDelegate {
 
     @IBOutlet var sceneView: ARSCNView!
     
+    @IBAction func startRoundAction(_ sender: Any) {
+        //roundAction(node: <#T##SCNNode#>)
+    }
+    @IBAction func startHorizontalAction(_ sender: Any) {
+        print("feelin' horizontal, bro!")
+    }
+    @IBAction func stopRoundAction(_ sender: Any) {
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         addCache()
