@@ -35,7 +35,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="startRoundAction:" destination="BV1-FR-VrT" eventType="touchUpInside" id="Zq2-fj-0Qi"/>
+                                            <action selector="startCache:" destination="BV1-FR-VrT" eventType="touchUpInside" id="rU3-5A-Hxc"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oZn-yd-Nl1">
@@ -81,6 +81,7 @@
                         <viewLayoutGuide key="safeArea" id="fQZ-KI-GVf"/>
                     </view>
                     <connections>
+                        <outlet property="cacheButton" destination="bNi-9d-0hY" id="Qc0-3O-AJm"/>
                         <outlet property="sceneView" destination="BrB-h1-WRS" id="5nT-qQ-ynl"/>
                     </connections>
                 </viewController>

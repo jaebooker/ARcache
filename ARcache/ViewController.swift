@@ -11,20 +11,20 @@ import SceneKit
 import ARKit
 
 class ViewController: UIViewController, ARSCNViewDelegate {
-
+    var currentNode: SCNNode!
     @IBOutlet var sceneView: ARSCNView!
-    
-    @IBAction func startRoundAction(_ sender: Any) {
-        //roundAction(node: <#T##SCNNode#>)
-    }
     @IBAction func startHorizontalAction(_ sender: Any) {
         print("feelin' horizontal, bro!")
     }
+    @IBAction func startCache(_ sender: Any) {
+        addCache()
+        cacheButton.isHidden = true
+    }
     @IBAction func stopRoundAction(_ sender: Any) {
     }
+    @IBOutlet weak var cacheButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        addCache()
         //        // Create a new scene
         //        let scene = SCNScene(named: "art.scnassets/ship.scn")!
         //
@@ -93,6 +93,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         print("cacheSceneNode added")
 //        horizontalAction(node:cacheSceneNode)
         roundAction(node: cacheSceneNode)
+        currentNode = cacheSceneNode
     }
     func horizontalAction(node:SCNNode){
         let leftAction = SCNAction.move(by: SCNVector3(-1,0,0), duration: 3)
