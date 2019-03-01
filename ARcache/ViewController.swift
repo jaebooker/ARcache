@@ -12,17 +12,20 @@ import ARKit
 
 class ViewController: UIViewController, ARSCNViewDelegate {
     var currentNode: SCNNode!
+    var touchesBeginning: Bool = false
     @IBOutlet var sceneView: ARSCNView!
     @IBAction func startHorizontalAction(_ sender: Any) {
         print("feelin' horizontal, bro!")
     }
     @IBAction func startCache(_ sender: Any) {
-        addCache()
         cacheButton.isHidden = true
+        insertCacheButton.isHidden = false
+        touchesBeginning = true
     }
-    @IBAction func stopRoundAction(_ sender: Any) {
+    @IBAction func insertCacheButton(_ sender: Any) {
     }
     @IBOutlet weak var cacheButton: UIButton!
+    @IBOutlet weak var insertCacheButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         //        // Create a new scene
@@ -30,7 +33,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         //
         //        // Set the scene to the view
         //        sceneView.scene = scene
-        registerGestureRecognizer()
+        //registerGestureRecognizer()
         // Set the view's delegate
         sceneView.delegate = self
         
@@ -57,84 +60,88 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         sceneView.session.pause()
     }
     
-//    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-//        guard let touch = touches.first else {return}
-//        let result = sceneView.hitTest(touch.location(in: sceneView), types: [ARHitTestResult.ResultType.featurePoint])
-//        guard let hitResult = result.last else {return}
-//        //let hitTransform = hitResult.worldTransform
-//        let hitTransform = SCNMatrix4.init(hitResult.worldTransform)
-////        let hitTransform = SCNMatrix4FromGLKMatrix4(hitResult?.worldTransform)
-//        let hitVector = SCNVector3Make(hitTransform.m41, hitTransform.m42, hitTransform.m43)
-//        createCache(position: hitVector)
-//    }
-//    func createCache(position: SCNVector3) {
-//        let cacheShape = SCNBox(width: 0.1, height: 0.1, length: 0.2, chamferRadius: 0.1)
-//        let material = SCNMaterial()
-//        material.diffuse.contents = UIImage(named: "texture")
-//        //diffuse (how light renders), contents (appearance of material)
-//        cacheShape.materials = [material]
-//        let cacheNode = SCNNode(geometry: cacheShape)
-//        cacheNode.position = position
-//        sceneView.scene.rootNode.addChildNode(cacheNode)
-//    }
-    func registerGestureRecognizer(){
-        let tap = UITapGestureRecognizer(target: self, action: #selector(handleTap))
-        sceneView.addGestureRecognizer(tap)
-        
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if (touchesBeginning == true) {
+            guard let touch = touches.first else {return}
+            let result = sceneView.hitTest(touch.location(in: sceneView), types: [ARHitTestResult.ResultType.featurePoint])
+            guard let hitResult = result.last else {return}
+            //let hitTransform = hitResult.worldTransform
+            let hitTransform = SCNMatrix4.init(hitResult.worldTransform)
+            //        let hitTransform = SCNMatrix4FromGLKMatrix4(hitResult?.worldTransform)
+            let hitVector = SCNVector3Make(hitTransform.m41, hitTransform.m42, hitTransform.m43)
+            createCache(position: hitVector)
+            touchesBeginning = false
+            insertCacheButton.isHidden = true
+        }
     }
-    func addCache() {
-        guard let cacheScene = SCNScene(named: "art.scnassets/ship.scn") else { return }
-        guard let cacheSceneNode = cacheScene.rootNode.childNode(withName: "cache", recursively: false) else { return }
-        cacheSceneNode.position = SCNVector3(0, 0.5, -3)
-        let physicsShape = SCNPhysicsShape(node: cacheSceneNode, options: [SCNPhysicsShape.Option.type: SCNPhysicsShape.ShapeType.concavePolyhedron])
-        let physicsBody = SCNPhysicsBody(type: .static, shape: physicsShape)
-        cacheSceneNode.physicsBody = physicsBody
-        sceneView.scene.rootNode.addChildNode(cacheSceneNode)
-        print("cacheSceneNode added")
-//        horizontalAction(node:cacheSceneNode)
-        roundAction(node: cacheSceneNode)
-        currentNode = cacheSceneNode
-    }
-    func horizontalAction(node:SCNNode){
-        let leftAction = SCNAction.move(by: SCNVector3(-1,0,0), duration: 3)
-        let rightAction = SCNAction.move(by: SCNVector3(1,0,0), duration: 3)
-        let actionSeqeunce = SCNAction.sequence([leftAction,rightAction])
-        node.runAction(SCNAction.repeat(actionSeqeunce, count: 4))
-    }
-    func roundAction(node: SCNNode){
-        let upLeft = SCNAction.move(by: SCNVector3(1,1,0),duration: 2)
-        let downRight = SCNAction.move(by: SCNVector3(1,-1,0),duration: 2)
-        let downLeft = SCNAction.move(by: SCNVector3(-1,-1,0),duration: 2)
-        let upRight = SCNAction.move(by: SCNVector3(-1,1,0),duration: 2)
-        let actionSeqeunce = SCNAction.sequence([upLeft,downRight,downLeft,upRight])
-        node.runAction(SCNAction.repeat(actionSeqeunce, count: 4))
-    }
-    @objc func handleTap(gestureRecognizer: UITapGestureRecognizer){
-        //scene view
-        //access point of view (center point)
-        guard let sceneView = gestureRecognizer.view as? ARSCNView else { return }
-        guard let centerPoint = sceneView.pointOfView else { return }
-        //now have transform matrix, with orientation & camera location
-        let cameraTransformer = centerPoint.transform
-        let cameraLocation = SCNVector3(cameraTransformer.m41,cameraTransformer.m42,cameraTransformer.m43)
-        let cameraOrientation = SCNVector3(-cameraTransformer.m31,-cameraTransformer.m32,-cameraTransformer.m33)
-        let cameraPosition = SCNVector3Make(cameraLocation.x + cameraOrientation.x, cameraLocation.y + cameraOrientation.y, cameraLocation.z + cameraOrientation.z)
-        // x1 + x2, y1 + y2, z1 + z2 ^
-        let box = SCNSphere(radius: 25)
-        let natural = SCNMaterial()
-        natural.diffuse.contents = UIImage(named: "texture.png")
+    func createCache(position: SCNVector3) {
+        let cacheShape = SCNBox(width: 0.1, height: 0.1, length: 0.2, chamferRadius: 0.1)
+        let material = SCNMaterial()
+        material.diffuse.contents = UIImage(named: "texture")
         //diffuse (how light renders), contents (appearance of material)
-        box.materials = [natural]
-        let boxNode = SCNNode(geometry: box)
-        //must be node^
-        boxNode.position = cameraPosition
-        let physicsShape = SCNPhysicsShape(node: boxNode, options: nil)
-        let physicsBody = SCNPhysicsBody(type: .dynamic, shape: physicsShape)
-        boxNode.physicsBody = physicsBody
-        //let forceVector: Float = 6
-        boxNode.physicsBody?.applyForce(SCNVector3(cameraPosition.x*250,cameraPosition.y*250,cameraPosition.z*250), asImpulse: true)
-        sceneView.scene.rootNode.addChildNode(boxNode)
+        cacheShape.materials = [material]
+        let cacheNode = SCNNode(geometry: cacheShape)
+        cacheNode.position = position
+        sceneView.scene.rootNode.addChildNode(cacheNode)
     }
+//    func registerGestureRecognizer(){
+//        let tap = UITapGestureRecognizer(target: self, action: #selector(handleTap))
+//        sceneView.addGestureRecognizer(tap)
+//
+//    }
+//    func addCache() {
+//        guard let cacheScene = SCNScene(named: "art.scnassets/ship.scn") else { return }
+//        guard let cacheSceneNode = cacheScene.rootNode.childNode(withName: "cache", recursively: false) else { return }
+//        cacheSceneNode.position = SCNVector3(0, 0.5, -3)
+//        let physicsShape = SCNPhysicsShape(node: cacheSceneNode, options: [SCNPhysicsShape.Option.type: SCNPhysicsShape.ShapeType.concavePolyhedron])
+//        let physicsBody = SCNPhysicsBody(type: .static, shape: physicsShape)
+//        cacheSceneNode.physicsBody = physicsBody
+//        sceneView.scene.rootNode.addChildNode(cacheSceneNode)
+//        print("cacheSceneNode added")
+////        horizontalAction(node:cacheSceneNode)
+//        roundAction(node: cacheSceneNode)
+//        currentNode = cacheSceneNode
+//    }
+//    func horizontalAction(node:SCNNode){
+//        let leftAction = SCNAction.move(by: SCNVector3(-1,0,0), duration: 3)
+//        let rightAction = SCNAction.move(by: SCNVector3(1,0,0), duration: 3)
+//        let actionSeqeunce = SCNAction.sequence([leftAction,rightAction])
+//        node.runAction(SCNAction.repeat(actionSeqeunce, count: 4))
+//    }
+//    func roundAction(node: SCNNode){
+//        let upLeft = SCNAction.move(by: SCNVector3(1,1,0),duration: 2)
+//        let downRight = SCNAction.move(by: SCNVector3(1,-1,0),duration: 2)
+//        let downLeft = SCNAction.move(by: SCNVector3(-1,-1,0),duration: 2)
+//        let upRight = SCNAction.move(by: SCNVector3(-1,1,0),duration: 2)
+//        let actionSeqeunce = SCNAction.sequence([upLeft,downRight,downLeft,upRight])
+//        node.runAction(SCNAction.repeat(actionSeqeunce, count: 4))
+//    }
+//    @objc func handleTap(gestureRecognizer: UITapGestureRecognizer){
+//        //scene view
+//        //access point of view (center point)
+//        guard let sceneView = gestureRecognizer.view as? ARSCNView else { return }
+//        guard let centerPoint = sceneView.pointOfView else { return }
+//        //now have transform matrix, with orientation & camera location
+//        let cameraTransformer = centerPoint.transform
+//        let cameraLocation = SCNVector3(cameraTransformer.m41,cameraTransformer.m42,cameraTransformer.m43)
+//        let cameraOrientation = SCNVector3(-cameraTransformer.m31,-cameraTransformer.m32,-cameraTransformer.m33)
+//        let cameraPosition = SCNVector3Make(cameraLocation.x + cameraOrientation.x, cameraLocation.y + cameraOrientation.y, cameraLocation.z + cameraOrientation.z)
+//        // x1 + x2, y1 + y2, z1 + z2 ^
+//        let box = SCNSphere(radius: 25)
+//        let natural = SCNMaterial()
+//        natural.diffuse.contents = UIImage(named: "texture.png")
+//        //diffuse (how light renders), contents (appearance of material)
+//        box.materials = [natural]
+//        let boxNode = SCNNode(geometry: box)
+//        //must be node^
+//        boxNode.position = cameraPosition
+//        let physicsShape = SCNPhysicsShape(node: boxNode, options: nil)
+//        let physicsBody = SCNPhysicsBody(type: .dynamic, shape: physicsShape)
+//        boxNode.physicsBody = physicsBody
+//        //let forceVector: Float = 6
+//        boxNode.physicsBody?.applyForce(SCNVector3(cameraPosition.x*250,cameraPosition.y*250,cameraPosition.z*250), asImpulse: true)
+//        sceneView.scene.rootNode.addChildNode(boxNode)
+//    }
     // MARK: - ARSCNViewDelegate
     
 /*
