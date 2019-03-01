@@ -11,11 +11,22 @@ import SceneKit
 import ARKit
 
 class ViewController: UIViewController, ARSCNViewDelegate {
-    var currentNode: SCNNode!
+    //var currentNode: SCNNode!
+    var hitVectorStorage: SCNVector3?
     var touchesBeginning: Bool = false
     @IBOutlet var sceneView: ARSCNView!
     @IBAction func startHorizontalAction(_ sender: Any) {
-        print("feelin' horizontal, bro!")
+        let openCacheShape = SCNBox(width: 0.1, height: 0.1, length: 0.2, chamferRadius: 0.1)
+        let material = SCNMaterial()
+        material.diffuse.contents = UIImage(named: "starman")
+        //diffuse (how light renders), contents (appearance of material)
+        openCacheShape.materials = [material]
+        //cacheNode.geometry = cacheShape
+        let openCacheNode = SCNNode(geometry: openCacheShape)
+        if hitVectorStorage != nil {
+            openCacheNode.position = hitVectorStorage!
+        }
+        sceneView.scene.rootNode.addChildNode(openCacheNode)
     }
     @IBAction func startCache(_ sender: Any) {
         cacheButton.isHidden = true
@@ -25,6 +36,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     @IBAction func insertCacheButton(_ sender: Any) {
     }
     @IBOutlet weak var cacheButton: UIButton!
+    @IBOutlet weak var openCacheButton: UIButton!
     @IBOutlet weak var insertCacheButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -69,17 +81,21 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             let hitTransform = SCNMatrix4.init(hitResult.worldTransform)
             //        let hitTransform = SCNMatrix4FromGLKMatrix4(hitResult?.worldTransform)
             let hitVector = SCNVector3Make(hitTransform.m41, hitTransform.m42, hitTransform.m43)
+            hitVectorStorage = hitVector
             createCache(position: hitVector)
             touchesBeginning = false
             insertCacheButton.isHidden = true
+            openCacheButton.isHidden = false
         }
     }
+    //let cacheNode: SCNNode?
     func createCache(position: SCNVector3) {
         let cacheShape = SCNBox(width: 0.1, height: 0.1, length: 0.2, chamferRadius: 0.1)
         let material = SCNMaterial()
         material.diffuse.contents = UIImage(named: "texture")
         //diffuse (how light renders), contents (appearance of material)
         cacheShape.materials = [material]
+        //cacheNode.geometry = cacheShape
         let cacheNode = SCNNode(geometry: cacheShape)
         cacheNode.position = position
         sceneView.scene.rootNode.addChildNode(cacheNode)

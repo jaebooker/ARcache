@@ -83,6 +83,7 @@
                     <connections>
                         <outlet property="cacheButton" destination="bNi-9d-0hY" id="Qc0-3O-AJm"/>
                         <outlet property="insertCacheButton" destination="oZn-yd-Nl1" id="vvc-uC-vUO"/>
+                        <outlet property="openCacheButton" destination="N2d-Eu-vPe" id="Yo5-Vx-mZO"/>
                         <outlet property="sceneView" destination="BrB-h1-WRS" id="5nT-qQ-ynl"/>
                     </connections>
                 </viewController>
