@@ -28,7 +28,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         }
         sceneView.scene.rootNode.addChildNode(openCacheNode)
         //create logic for objects inside cache
-        let objectShape = SCNSphere(radius: 0.3)
+        let objectShape = SCNSphere(radius: 0.1)
         let objectMaterial = SCNMaterial()
         objectMaterial.diffuse.contents = UIImage(named: "sunny")
         //diffuse (how light renders), contents (appearance of material)
@@ -36,10 +36,10 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         //cacheNode.geometry = cacheShape
         let treasureNode = SCNNode(geometry: objectShape)
         if hitVectorStorage != nil {
-            treasureNode.position = SCNVector3(x: hitVectorStorage!.x, y: hitVectorStorage!.y, z: hitVectorStorage!.z)
+            treasureNode.position = SCNVector3(x: hitVectorStorage!.x+0.1, y: hitVectorStorage!.y, z: hitVectorStorage!.z-0.1)
         }
         sceneView.scene.rootNode.addChildNode(treasureNode)
-        insertCacheButton.isHidden = false
+        insertCacheButton.isHidden = true
         openCacheButton.setTitle("Close", for: .normal)
     }
     @IBAction func startCache(_ sender: Any) {
@@ -74,7 +74,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         // Create a session configuration
         let configuration = ARWorldTrackingConfiguration()
-
+        configuration.detectionObjects = ARReferenceObject.referenceObjects(inGroupNamed: "CacheAnchors", bundle: Bundle.main)!
         // Run the view's session
         sceneView.session.run(configuration)
     }
@@ -101,6 +101,22 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             insertCacheButton.isHidden = true
             openCacheButton.isHidden = false
         }
+    }
+    func renderer(_ renderer: SCNSceneRenderer, nodeFor anchor: ARAnchor) -> SCNNode? {
+        print("anchor made")
+        let node = SCNNode()
+        if let objectAnchor = anchor as? ARObjectAnchor {
+            let plane = SCNPlane(width: CGFloat(objectAnchor.referenceObject.extent.x), height: CGFloat(objectAnchor.referenceObject.extent.y))
+            plane.cornerRadius = plane.width
+            let spriteKitScene = SKScene(fileNamed: "ship")
+            plane.firstMaterial?.diffuse.contents = spriteKitScene
+            plane.firstMaterial?.isDoubleSided = true
+            plane.firstMaterial?.diffuse.contentsTransform = SCNMatrix4Translate(SCNMatrix4MakeScale(1, -1, 1), 0, 1, 0)
+            let planeNode = SCNNode(geometry: plane)
+            planeNode.position = SCNVector3(CGFloat(objectAnchor.referenceObject.center.x), CGFloat(objectAnchor.referenceObject.center.y + 0.35), CGFloat(objectAnchor.referenceObject.center.z))
+            node.addChildNode(planeNode)
+        }
+        return node
     }
     //let cacheNode: SCNNode?
     func createCache(position: SCNVector3) {
