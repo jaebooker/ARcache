@@ -49,6 +49,7 @@
 		0DA4D74622152A2400D36D81 /* ARcacheUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ARcacheUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DA4D74A22152A2400D36D81 /* ARcacheUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARcacheUITests.swift; sourceTree = "<group>"; };
 		0DA4D74C22152A2400D36D81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DE77DE02229E5BE00682B87 /* Scan_12-57-24.arobject */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Scan_12-57-24.arobject"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				0DA4D72822152A2000D36D81 /* AppDelegate.swift */,
+				0DE77DE02229E5BE00682B87 /* Scan_12-57-24.arobject */,
 				0DA4D72A22152A2000D36D81 /* art.scnassets */,
 				0DA4D72C22152A2000D36D81 /* ViewController.swift */,
 				0DA4D72E22152A2000D36D81 /* Main.storyboard */,

@@ -104,19 +104,30 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     }
     func renderer(_ renderer: SCNSceneRenderer, nodeFor anchor: ARAnchor) -> SCNNode? {
         print("anchor made")
-        let node = SCNNode()
-        if let objectAnchor = anchor as? ARObjectAnchor {
-            let plane = SCNPlane(width: CGFloat(objectAnchor.referenceObject.extent.x), height: CGFloat(objectAnchor.referenceObject.extent.y))
-            plane.cornerRadius = plane.width
-            let spriteKitScene = SKScene(fileNamed: "ship")
-            plane.firstMaterial?.diffuse.contents = spriteKitScene
-            plane.firstMaterial?.isDoubleSided = true
-            plane.firstMaterial?.diffuse.contentsTransform = SCNMatrix4Translate(SCNMatrix4MakeScale(1, -1, 1), 0, 1, 0)
-            let planeNode = SCNNode(geometry: plane)
-            planeNode.position = SCNVector3(CGFloat(objectAnchor.referenceObject.center.x), CGFloat(objectAnchor.referenceObject.center.y + 0.35), CGFloat(objectAnchor.referenceObject.center.z))
-            node.addChildNode(planeNode)
+        let openCacheShape = SCNBox(width: 0.07, height: 0.2, length: 0.2, chamferRadius: 0.1)
+        let material = SCNMaterial()
+        material.diffuse.contents = UIImage(named: "starman")
+        //diffuse (how light renders), contents (appearance of material)
+        openCacheShape.materials = [material]
+        //cacheNode.geometry = cacheShape
+        let openCacheNode = SCNNode(geometry: openCacheShape)
+        if hitVectorStorage != nil {
+            openCacheNode.position = hitVectorStorage!
         }
-        return node
+        return openCacheNode
+//        let node = SCNNode()
+//        if let objectAnchor = anchor as? ARObjectAnchor {
+//            let plane = SCNPlane(width: CGFloat(objectAnchor.referenceObject.extent.x), height: CGFloat(objectAnchor.referenceObject.extent.y))
+//            plane.cornerRadius = plane.width
+//            let spriteKitScene = SKScene(fileNamed: "ship")
+//            plane.firstMaterial?.diffuse.contents = spriteKitScene
+//            plane.firstMaterial?.isDoubleSided = true
+//            plane.firstMaterial?.diffuse.contentsTransform = SCNMatrix4Translate(SCNMatrix4MakeScale(1, -1, 1), 0, 1, 0)
+//            let planeNode = SCNNode(geometry: plane)
+//            planeNode.position = SCNVector3(CGFloat(objectAnchor.referenceObject.center.x), CGFloat(objectAnchor.referenceObject.center.y + 0.35), CGFloat(objectAnchor.referenceObject.center.z))
+//            node.addChildNode(planeNode)
+//        }
+//        return node
     }
     //let cacheNode: SCNNode?
     func createCache(position: SCNVector3) {
