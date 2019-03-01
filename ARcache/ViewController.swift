@@ -16,7 +16,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     var touchesBeginning: Bool = false
     @IBOutlet var sceneView: ARSCNView!
     @IBAction func startHorizontalAction(_ sender: Any) {
-        let openCacheShape = SCNBox(width: 0.1, height: 0.1, length: 0.2, chamferRadius: 0.1)
+        let openCacheShape = SCNBox(width: 0.07, height: 0.2, length: 0.2, chamferRadius: 0.1)
         let material = SCNMaterial()
         material.diffuse.contents = UIImage(named: "starman")
         //diffuse (how light renders), contents (appearance of material)
@@ -27,6 +27,20 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             openCacheNode.position = hitVectorStorage!
         }
         sceneView.scene.rootNode.addChildNode(openCacheNode)
+        //create logic for objects inside cache
+        let objectShape = SCNSphere(radius: 0.3)
+        let objectMaterial = SCNMaterial()
+        objectMaterial.diffuse.contents = UIImage(named: "sunny")
+        //diffuse (how light renders), contents (appearance of material)
+        objectShape.materials = [objectMaterial]
+        //cacheNode.geometry = cacheShape
+        let treasureNode = SCNNode(geometry: objectShape)
+        if hitVectorStorage != nil {
+            treasureNode.position = SCNVector3(x: hitVectorStorage!.x, y: hitVectorStorage!.y, z: hitVectorStorage!.z)
+        }
+        sceneView.scene.rootNode.addChildNode(treasureNode)
+        insertCacheButton.isHidden = false
+        openCacheButton.setTitle("Close", for: .normal)
     }
     @IBAction func startCache(_ sender: Any) {
         cacheButton.isHidden = true
