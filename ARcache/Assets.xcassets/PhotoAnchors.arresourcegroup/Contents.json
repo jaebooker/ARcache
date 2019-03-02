@@ -6,6 +6,18 @@
   "resources" : [
     {
       "filename" : "IMG_0006.arreferenceimage"
+    },
+    {
+      "filename" : "log.arreferenceimage"
+    },
+    {
+      "filename" : "output-onlinepngtools-1.arreferenceimage"
+    },
+    {
+      "filename" : "output-onlinepngtools.arreferenceimage"
+    },
+    {
+      "filename" : "xmark.arreferenceimage"
     }
   ]
 }

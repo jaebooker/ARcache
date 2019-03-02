@@ -16,6 +16,10 @@
 		0DA4D74022152A2400D36D81 /* ARcacheTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA4D73F22152A2400D36D81 /* ARcacheTests.swift */; };
 		0DA4D74B22152A2400D36D81 /* ARcacheUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA4D74A22152A2400D36D81 /* ARcacheUITests.swift */; };
 		0DD20E6A222A4F16007B9B88 /* IMG_0006.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20E69222A4F16007B9B88 /* IMG_0006.png */; };
+		0DD20E6C222A55EE007B9B88 /* output-onlinepngtools (1).png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20E6B222A55EE007B9B88 /* output-onlinepngtools (1).png */; };
+		0DD20E6E222A5695007B9B88 /* xmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20E6D222A5695007B9B88 /* xmark.png */; };
+		0DD20E70222A56A0007B9B88 /* log.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20E6F222A56A0007B9B88 /* log.png */; };
+		0DD20E72222A56A7007B9B88 /* output-onlinepngtools.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20E71222A56A7007B9B88 /* output-onlinepngtools.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +56,10 @@
 		0DA4D74C22152A2400D36D81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0DD20E66222A374D007B9B88 /* cacheScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = cacheScene.sks; sourceTree = "<group>"; };
 		0DD20E69222A4F16007B9B88 /* IMG_0006.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_0006.png; sourceTree = "<group>"; };
+		0DD20E6B222A55EE007B9B88 /* output-onlinepngtools (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "output-onlinepngtools (1).png"; sourceTree = "<group>"; };
+		0DD20E6D222A5695007B9B88 /* xmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xmark.png; sourceTree = "<group>"; };
+		0DD20E6F222A56A0007B9B88 /* log.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = log.png; sourceTree = "<group>"; };
+		0DD20E71222A56A7007B9B88 /* output-onlinepngtools.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "output-onlinepngtools.png"; sourceTree = "<group>"; };
 		0DE77DE02229E5BE00682B87 /* Scan_12-57-24.arobject */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Scan_12-57-24.arobject"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,12 +111,16 @@
 		0DA4D72722152A2000D36D81 /* ARcache */ = {
 			isa = PBXGroup;
 			children = (
+				0DD20E6D222A5695007B9B88 /* xmark.png */,
+				0DD20E6F222A56A0007B9B88 /* log.png */,
+				0DD20E71222A56A7007B9B88 /* output-onlinepngtools.png */,
 				0DA4D72822152A2000D36D81 /* AppDelegate.swift */,
 				0DD20E69222A4F16007B9B88 /* IMG_0006.png */,
 				0DE77DE02229E5BE00682B87 /* Scan_12-57-24.arobject */,
 				0DA4D72A22152A2000D36D81 /* art.scnassets */,
 				0DA4D72C22152A2000D36D81 /* ViewController.swift */,
 				0DD20E66222A374D007B9B88 /* cacheScene.sks */,
+				0DD20E6B222A55EE007B9B88 /* output-onlinepngtools (1).png */,
 				0DA4D72E22152A2000D36D81 /* Main.storyboard */,
 				0DA4D73122152A2300D36D81 /* Assets.xcassets */,
 				0DD20E1F2229F408007B9B88 /* New Group */,
@@ -252,9 +264,13 @@
 			files = (
 				0DA4D72B22152A2000D36D81 /* art.scnassets in Resources */,
 				0DD20E6A222A4F16007B9B88 /* IMG_0006.png in Resources */,
+				0DD20E6E222A5695007B9B88 /* xmark.png in Resources */,
 				0DA4D73522152A2300D36D81 /* LaunchScreen.storyboard in Resources */,
+				0DD20E72222A56A7007B9B88 /* output-onlinepngtools.png in Resources */,
+				0DD20E70222A56A0007B9B88 /* log.png in Resources */,
 				0DA4D73222152A2300D36D81 /* Assets.xcassets in Resources */,
 				0DA4D73022152A2000D36D81 /* Main.storyboard in Resources */,
+				0DD20E6C222A55EE007B9B88 /* output-onlinepngtools (1).png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
