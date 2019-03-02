@@ -20,241 +20,102 @@
 		0DD20E6E222A5695007B9B88 /* xmark.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20E6D222A5695007B9B88 /* xmark.png */; };
 		0DD20E70222A56A0007B9B88 /* log.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20E6F222A56A0007B9B88 /* log.png */; };
 		0DD20E72222A56A7007B9B88 /* output-onlinepngtools.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20E71222A56A7007B9B88 /* output-onlinepngtools.png */; };
-		0DD20F0F222A88A9007B9B88 /* LockMetal2_albedo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20E96222A88A8007B9B88 /* LockMetal2_albedo.jpg */; };
-		0DD20F10222A88A9007B9B88 /* chestWoodOpen_3_roughness.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20E97222A88A8007B9B88 /* chestWoodOpen_3_roughness.jpg */; };
-		0DD20F11222A88A9007B9B88 /* LockMetal_roughness.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20E98222A88A8007B9B88 /* LockMetal_roughness.jpg */; };
-		0DD20F12222A88A9007B9B88 /* chestStoneOpen_1_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20E99222A88A8007B9B88 /* chestStoneOpen_1_normal.png */; };
-		0DD20F13222A88A9007B9B88 /* chestWoodClosed_1_metallic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20E9A222A88A8007B9B88 /* chestWoodClosed_1_metallic.jpg */; };
-		0DD20F14222A88A9007B9B88 /* chestMetalClosed_2_AO.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20E9B222A88A8007B9B88 /* chestMetalClosed_2_AO.jpg */; };
-		0DD20F15222A88A9007B9B88 /* LockWood_metallic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20E9C222A88A8007B9B88 /* LockWood_metallic.jpg */; };
-		0DD20F16222A88A9007B9B88 /* chestStoneOpen_3_roughness.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20E9D222A88A8007B9B88 /* chestStoneOpen_3_roughness.jpg */; };
-		0DD20F17222A88A9007B9B88 /* chestWoodOpen_3_albedo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20E9E222A88A8007B9B88 /* chestWoodOpen_3_albedo.jpg */; };
-		0DD20F18222A88A9007B9B88 /* chestMetalOpen_3_albedo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20E9F222A88A8007B9B88 /* chestMetalOpen_3_albedo.jpg */; };
-		0DD20F19222A88A9007B9B88 /* chestMetalOpen_1_AO.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EA0222A88A8007B9B88 /* chestMetalOpen_1_AO.jpg */; };
-		0DD20F1A222A88A9007B9B88 /* chestMetalOpen_3_metallic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EA1222A88A8007B9B88 /* chestMetalOpen_3_metallic.jpg */; };
-		0DD20F1B222A88A9007B9B88 /* chestMetalClosed_1_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EA2222A88A8007B9B88 /* chestMetalClosed_1_normal.png */; };
-		0DD20F1C222A88A9007B9B88 /* chestStoneOpen_1_AO.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EA3222A88A8007B9B88 /* chestStoneOpen_1_AO.jpg */; };
-		0DD20F1D222A88A9007B9B88 /* chestWoodClosed_1_albedo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EA4222A88A8007B9B88 /* chestWoodClosed_1_albedo.jpg */; };
-		0DD20F1E222A88A9007B9B88 /* LockMetal_albedo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EA5222A88A8007B9B88 /* LockMetal_albedo.jpg */; };
-		0DD20F1F222A88A9007B9B88 /* Ryb_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EA6222A88A8007B9B88 /* Ryb_normal.png */; };
-		0DD20F20222A88A9007B9B88 /* Ryb2_albedo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EA7222A88A8007B9B88 /* Ryb2_albedo.jpg */; };
-		0DD20F21222A88A9007B9B88 /* chestStoneClosed_2_AO.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EA8222A88A8007B9B88 /* chestStoneClosed_2_AO.jpg */; };
-		0DD20F22222A88A9007B9B88 /* chestStoneOpen_3_AO.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EA9222A88A8007B9B88 /* chestStoneOpen_3_AO.jpg */; };
-		0DD20F23222A88A9007B9B88 /* chestMetalOpen_3_AO.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EAA222A88A8007B9B88 /* chestMetalOpen_3_AO.jpg */; };
-		0DD20F24222A88A9007B9B88 /* chestStoneClosed_1_metallic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EAB222A88A8007B9B88 /* chestStoneClosed_1_metallic.jpg */; };
-		0DD20F25222A88A9007B9B88 /* chestWoodOpen_2_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EAC222A88A8007B9B88 /* chestWoodOpen_2_normal.png */; };
-		0DD20F26222A88A9007B9B88 /* LockMetal2_AO.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EAD222A88A8007B9B88 /* LockMetal2_AO.jpg */; };
-		0DD20F27222A88A9007B9B88 /* chestMetalOpen_2_metallic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EAE222A88A8007B9B88 /* chestMetalOpen_2_metallic.jpg */; };
-		0DD20F28222A88A9007B9B88 /* chestMetalClosed_1_metallic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EAF222A88A8007B9B88 /* chestMetalClosed_1_metallic.jpg */; };
-		0DD20F29222A88A9007B9B88 /* chestWoodClosed_2_AO.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EB0222A88A8007B9B88 /* chestWoodClosed_2_AO.jpg */; };
-		0DD20F2A222A88A9007B9B88 /* chestStoneClosed_2_albedo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EB1222A88A8007B9B88 /* chestStoneClosed_2_albedo.jpg */; };
-		0DD20F2B222A88A9007B9B88 /* LockMetal_metallic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EB2222A88A8007B9B88 /* LockMetal_metallic.jpg */; };
-		0DD20F2C222A88A9007B9B88 /* LockStone_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EB3222A88A8007B9B88 /* LockStone_normal.png */; };
-		0DD20F2D222A88A9007B9B88 /* chestMetalOpen_2_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EB4222A88A8007B9B88 /* chestMetalOpen_2_normal.png */; };
-		0DD20F2E222A88A9007B9B88 /* LockStone_metallic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EB5222A88A8007B9B88 /* LockStone_metallic.jpg */; };
-		0DD20F2F222A88A9007B9B88 /* chestWoodOpen_1_metallic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EB6222A88A8007B9B88 /* chestWoodOpen_1_metallic.jpg */; };
-		0DD20F30222A88A9007B9B88 /* chestStoneOpen_3_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EB7222A88A8007B9B88 /* chestStoneOpen_3_normal.png */; };
-		0DD20F31222A88A9007B9B88 /* chestWoodClosed_2_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EB8222A88A8007B9B88 /* chestWoodClosed_2_normal.png */; };
-		0DD20F32222A88A9007B9B88 /* chestMetalOpen_1_albedo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EB9222A88A8007B9B88 /* chestMetalOpen_1_albedo.jpg */; };
-		0DD20F33222A88A9007B9B88 /* chestMetalOpen_1_roughness.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EBA222A88A8007B9B88 /* chestMetalOpen_1_roughness.jpg */; };
-		0DD20F34222A88A9007B9B88 /* chestStoneClosed_1_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EBB222A88A8007B9B88 /* chestStoneClosed_1_normal.png */; };
-		0DD20F35222A88A9007B9B88 /* chestStoneOpen_3_metallic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EBC222A88A8007B9B88 /* chestStoneOpen_3_metallic.jpg */; };
-		0DD20F36222A88A9007B9B88 /* chestWoodOpen_2_AO.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EBD222A88A8007B9B88 /* chestWoodOpen_2_AO.jpg */; };
-		0DD20F37222A88A9007B9B88 /* LockStone_roughness.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EBE222A88A8007B9B88 /* LockStone_roughness.jpg */; };
-		0DD20F38222A88A9007B9B88 /* LockWood2_AO.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EBF222A88A8007B9B88 /* LockWood2_AO.jpg */; };
-		0DD20F39222A88A9007B9B88 /* chestWoodOpen_1_albedo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EC0222A88A8007B9B88 /* chestWoodOpen_1_albedo.jpg */; };
-		0DD20F3A222A88A9007B9B88 /* chestMetalOpen_2_roughness.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EC1222A88A8007B9B88 /* chestMetalOpen_2_roughness.jpg */; };
-		0DD20F3B222A88A9007B9B88 /* LockWood_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EC2222A88A8007B9B88 /* LockWood_normal.png */; };
-		0DD20F3C222A88A9007B9B88 /* LockWood2_albedo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EC3222A88A8007B9B88 /* LockWood2_albedo.jpg */; };
-		0DD20F3D222A88A9007B9B88 /* Ryb_roughness.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EC4222A88A8007B9B88 /* Ryb_roughness.jpg */; };
-		0DD20F3E222A88A9007B9B88 /* chestStoneOpen_2_albedo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EC5222A88A8007B9B88 /* chestStoneOpen_2_albedo.jpg */; };
-		0DD20F3F222A88A9007B9B88 /* plane_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EC6222A88A8007B9B88 /* plane_normal.png */; };
-		0DD20F40222A88A9007B9B88 /* chestMetalClosed_2_albedo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EC7222A88A8007B9B88 /* chestMetalClosed_2_albedo.jpg */; };
-		0DD20F41222A88A9007B9B88 /* LockWood2_metallic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EC8222A88A8007B9B88 /* LockWood2_metallic.jpg */; };
-		0DD20F42222A88A9007B9B88 /* LockStone2_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EC9222A88A8007B9B88 /* LockStone2_normal.png */; };
-		0DD20F43222A88A9007B9B88 /* chestStoneOpen_2_metallic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20ECA222A88A8007B9B88 /* chestStoneOpen_2_metallic.jpg */; };
-		0DD20F44222A88A9007B9B88 /* LockMetal2_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20ECB222A88A8007B9B88 /* LockMetal2_normal.png */; };
-		0DD20F45222A88A9007B9B88 /* chestStoneOpen_1_albedo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20ECC222A88A8007B9B88 /* chestStoneOpen_1_albedo.jpg */; };
-		0DD20F46222A88A9007B9B88 /* chestWoodOpen_2_metallic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20ECD222A88A8007B9B88 /* chestWoodOpen_2_metallic.jpg */; };
-		0DD20F47222A88A9007B9B88 /* LockMetal2_metallic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20ECE222A88A8007B9B88 /* LockMetal2_metallic.jpg */; };
-		0DD20F48222A88A9007B9B88 /* chestStoneClosed_1_AO.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20ECF222A88A8007B9B88 /* chestStoneClosed_1_AO.jpg */; };
-		0DD20F49222A88A9007B9B88 /* chestMetalOpen_3_roughness.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20ED0222A88A8007B9B88 /* chestMetalOpen_3_roughness.jpg */; };
-		0DD20F4A222A88A9007B9B88 /* LockMetal2_roughness.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20ED1222A88A8007B9B88 /* LockMetal2_roughness.jpg */; };
-		0DD20F4B222A88A9007B9B88 /* chestWoodClosed_2_roughness.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20ED2222A88A8007B9B88 /* chestWoodClosed_2_roughness.jpg */; };
-		0DD20F4C222A88A9007B9B88 /* Ryb_AO.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20ED3222A88A8007B9B88 /* Ryb_AO.jpg */; };
-		0DD20F4D222A88A9007B9B88 /* chestWoodClosed_1_AO.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20ED4222A88A8007B9B88 /* chestWoodClosed_1_AO.jpg */; };
-		0DD20F4E222A88A9007B9B88 /* chestWoodOpen_3_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20ED5222A88A8007B9B88 /* chestWoodOpen_3_normal.png */; };
-		0DD20F4F222A88A9007B9B88 /* chestMetalClosed_1_albedo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20ED6222A88A8007B9B88 /* chestMetalClosed_1_albedo.jpg */; };
-		0DD20F50222A88A9007B9B88 /* chestMetalOpen_3_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20ED7222A88A8007B9B88 /* chestMetalOpen_3_normal.png */; };
-		0DD20F51222A88A9007B9B88 /* chestMetalClosed_2_roughness.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20ED8222A88A8007B9B88 /* chestMetalClosed_2_roughness.jpg */; };
-		0DD20F52222A88A9007B9B88 /* chestWoodOpen_3_metallic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20ED9222A88A8007B9B88 /* chestWoodOpen_3_metallic.jpg */; };
-		0DD20F53222A88A9007B9B88 /* LockStone2_roughness.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EDA222A88A8007B9B88 /* LockStone2_roughness.jpg */; };
-		0DD20F54222A88A9007B9B88 /* chestWoodClosed_1_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EDB222A88A8007B9B88 /* chestWoodClosed_1_normal.png */; };
-		0DD20F55222A88A9007B9B88 /* LockMetal_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EDC222A88A8007B9B88 /* LockMetal_normal.png */; };
-		0DD20F56222A88A9007B9B88 /* chestWoodClosed_1_roughness.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EDD222A88A8007B9B88 /* chestWoodClosed_1_roughness.jpg */; };
-		0DD20F57222A88A9007B9B88 /* Ryb2_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EDE222A88A8007B9B88 /* Ryb2_normal.png */; };
-		0DD20F58222A88A9007B9B88 /* chestMetalClosed_1_AO.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EDF222A88A8007B9B88 /* chestMetalClosed_1_AO.jpg */; };
-		0DD20F59222A88A9007B9B88 /* Ryb_albedo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EE0222A88A8007B9B88 /* Ryb_albedo.jpg */; };
-		0DD20F5A222A88A9007B9B88 /* plane_AO.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EE1222A88A8007B9B88 /* plane_AO.jpg */; };
-		0DD20F5B222A88A9007B9B88 /* chestMetalClosed_1_roughness.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EE2222A88A8007B9B88 /* chestMetalClosed_1_roughness.jpg */; };
-		0DD20F5C222A88A9007B9B88 /* chestStoneOpen_1_metallic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EE3222A88A8007B9B88 /* chestStoneOpen_1_metallic.jpg */; };
-		0DD20F5D222A88A9007B9B88 /* LockMetal_AO.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EE4222A88A8007B9B88 /* LockMetal_AO.jpg */; };
-		0DD20F5E222A88A9007B9B88 /* chestStoneOpen_2_AO.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EE5222A88A8007B9B88 /* chestStoneOpen_2_AO.jpg */; };
-		0DD20F5F222A88A9007B9B88 /* chestWoodOpen_2_albedo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EE6222A88A8007B9B88 /* chestWoodOpen_2_albedo.jpg */; };
-		0DD20F60222A88A9007B9B88 /* chestMetalOpen_2_AO.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EE7222A88A8007B9B88 /* chestMetalOpen_2_AO.jpg */; };
-		0DD20F61222A88A9007B9B88 /* LockStone_AO.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EE8222A88A8007B9B88 /* LockStone_AO.jpg */; };
-		0DD20F62222A88A9007B9B88 /* LockWood2_roughness.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EE9222A88A8007B9B88 /* LockWood2_roughness.jpg */; };
-		0DD20F63222A88A9007B9B88 /* LockStone_albedo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EEA222A88A8007B9B88 /* LockStone_albedo.jpg */; };
-		0DD20F64222A88A9007B9B88 /* chestStoneClosed_2_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EEB222A88A8007B9B88 /* chestStoneClosed_2_normal.png */; };
-		0DD20F65222A88A9007B9B88 /* chestMetalOpen_2_albedo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EEC222A88A8007B9B88 /* chestMetalOpen_2_albedo.jpg */; };
-		0DD20F66222A88A9007B9B88 /* plane_metallic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EED222A88A8007B9B88 /* plane_metallic.jpg */; };
-		0DD20F67222A88A9007B9B88 /* chestWoodClosed_2_metallic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EEE222A88A8007B9B88 /* chestWoodClosed_2_metallic.jpg */; };
-		0DD20F68222A88A9007B9B88 /* LockWood_AO.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EEF222A88A8007B9B88 /* LockWood_AO.jpg */; };
-		0DD20F69222A88A9007B9B88 /* plane_roughness.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EF0222A88A8007B9B88 /* plane_roughness.jpg */; };
-		0DD20F6A222A88A9007B9B88 /* chestWoodOpen_3_AO.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EF1222A88A8007B9B88 /* chestWoodOpen_3_AO.jpg */; };
-		0DD20F6B222A88A9007B9B88 /* chestWoodClosed_2_albedo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EF2222A88A8007B9B88 /* chestWoodClosed_2_albedo.jpg */; };
-		0DD20F6C222A88A9007B9B88 /* chestStoneOpen_3_albedo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EF3222A88A8007B9B88 /* chestStoneOpen_3_albedo.jpg */; };
-		0DD20F6D222A88A9007B9B88 /* LockStone2_metallic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EF4222A88A8007B9B88 /* LockStone2_metallic.jpg */; };
-		0DD20F6E222A88A9007B9B88 /* chestMetalOpen_1_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EF5222A88A8007B9B88 /* chestMetalOpen_1_normal.png */; };
-		0DD20F6F222A88A9007B9B88 /* chestStoneOpen_1_roughness.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EF6222A88A8007B9B88 /* chestStoneOpen_1_roughness.jpg */; };
-		0DD20F70222A88A9007B9B88 /* LockStone2_AO.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EF7222A88A8007B9B88 /* LockStone2_AO.jpg */; };
-		0DD20F71222A88A9007B9B88 /* chestStoneClosed_1_albedo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EF8222A88A8007B9B88 /* chestStoneClosed_1_albedo.jpg */; };
-		0DD20F72222A88A9007B9B88 /* chestStoneClosed_1_roughness.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EF9222A88A8007B9B88 /* chestStoneClosed_1_roughness.jpg */; };
-		0DD20F73222A88A9007B9B88 /* chestWoodOpen_1_roughness.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EFA222A88A8007B9B88 /* chestWoodOpen_1_roughness.jpg */; };
-		0DD20F74222A88A9007B9B88 /* chestWoodOpen_1_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EFB222A88A8007B9B88 /* chestWoodOpen_1_normal.png */; };
-		0DD20F75222A88A9007B9B88 /* chestStoneOpen_2_roughness.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EFC222A88A8007B9B88 /* chestStoneOpen_2_roughness.jpg */; };
-		0DD20F76222A88A9007B9B88 /* LockWood_albedo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EFD222A88A8007B9B88 /* LockWood_albedo.jpg */; };
-		0DD20F77222A88A9007B9B88 /* LockWood2_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EFE222A88A8007B9B88 /* LockWood2_normal.png */; };
-		0DD20F78222A88A9007B9B88 /* Ryb_metallic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20EFF222A88A8007B9B88 /* Ryb_metallic.jpg */; };
-		0DD20F79222A88A9007B9B88 /* Ryb2_metallic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20F00222A88A8007B9B88 /* Ryb2_metallic.jpg */; };
-		0DD20F7A222A88A9007B9B88 /* chestStoneClosed_2_roughness.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20F01222A88A8007B9B88 /* chestStoneClosed_2_roughness.jpg */; };
-		0DD20F7B222A88A9007B9B88 /* chestStoneOpen_2_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20F02222A88A8007B9B88 /* chestStoneOpen_2_normal.png */; };
-		0DD20F7C222A88A9007B9B88 /* plane_albedo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20F03222A88A8007B9B88 /* plane_albedo.jpg */; };
-		0DD20F7D222A88A9007B9B88 /* chestWoodOpen_2_roughness.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20F04222A88A8007B9B88 /* chestWoodOpen_2_roughness.jpg */; };
-		0DD20F7E222A88A9007B9B88 /* chestMetalClosed_2_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20F05222A88A9007B9B88 /* chestMetalClosed_2_normal.png */; };
-		0DD20F7F222A88A9007B9B88 /* LockStone2_albedo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20F06222A88A9007B9B88 /* LockStone2_albedo.jpg */; };
-		0DD20F80222A88A9007B9B88 /* Ryb2_AO.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20F07222A88A9007B9B88 /* Ryb2_AO.jpg */; };
-		0DD20F81222A88A9007B9B88 /* Ryb2_roughness.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20F08222A88A9007B9B88 /* Ryb2_roughness.jpg */; };
-		0DD20F82222A88A9007B9B88 /* chestMetalClosed_2_metallic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20F09222A88A9007B9B88 /* chestMetalClosed_2_metallic.jpg */; };
-		0DD20F83222A88A9007B9B88 /* LockWood_roughness.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20F0A222A88A9007B9B88 /* LockWood_roughness.jpg */; };
-		0DD20F84222A88A9007B9B88 /* chestWoodOpen_1_AO.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20F0B222A88A9007B9B88 /* chestWoodOpen_1_AO.jpg */; };
-		0DD20F85222A88A9007B9B88 /* chestStoneClosed_2_metallic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20F0C222A88A9007B9B88 /* chestStoneClosed_2_metallic.jpg */; };
-		0DD20F86222A88A9007B9B88 /* chestMetalOpen_1_metallic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20F0D222A88A9007B9B88 /* chestMetalOpen_1_metallic.jpg */; };
-		0DD20F87222A88A9007B9B88 /* model.dae in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20F0E222A88A9007B9B88 /* model.dae */; };
-		0DD20FFB222A88F1007B9B88 /* LockWood2_roughness.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20F89222A88F1007B9B88 /* LockWood2_roughness.jpeg */; };
-		0DD20FFC222A88F1007B9B88 /* LockWood2_metallic.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20F8A222A88F1007B9B88 /* LockWood2_metallic.jpeg */; };
-		0DD20FFD222A88F1007B9B88 /* chestStoneOpen_1_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20F8B222A88F1007B9B88 /* chestStoneOpen_1_normal.png */; };
-		0DD20FFE222A88F1007B9B88 /* chestMetalOpen_2_roughness.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20F8C222A88F1007B9B88 /* chestMetalOpen_2_roughness.jpeg */; };
-		0DD20FFF222A88F1007B9B88 /* chestStoneOpen_2_roughness.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20F8D222A88F1007B9B88 /* chestStoneOpen_2_roughness.jpeg */; };
-		0DD21000222A88F1007B9B88 /* chestWoodOpen_3_roughness.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20F8E222A88F1007B9B88 /* chestWoodOpen_3_roughness.jpeg */; };
-		0DD21001222A88F1007B9B88 /* LockStone2_AO.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20F8F222A88F1007B9B88 /* LockStone2_AO.jpeg */; };
-		0DD21002222A88F1007B9B88 /* chestMetalClosed_1_albedo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20F90222A88F1007B9B88 /* chestMetalClosed_1_albedo.jpeg */; };
-		0DD21003222A88F1007B9B88 /* chestMetalClosed_1_metallic.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20F91222A88F1007B9B88 /* chestMetalClosed_1_metallic.jpeg */; };
-		0DD21004222A88F1007B9B88 /* LockStone2_metallic.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20F92222A88F1007B9B88 /* LockStone2_metallic.jpeg */; };
-		0DD21005222A88F1007B9B88 /* chestMetalClosed_1_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20F93222A88F1007B9B88 /* chestMetalClosed_1_normal.png */; };
-		0DD21006222A88F1007B9B88 /* chestWoodClosed_1_metallic.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20F94222A88F1007B9B88 /* chestWoodClosed_1_metallic.jpeg */; };
-		0DD21007222A88F1007B9B88 /* chestMetalClosed_2_metallic.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20F95222A88F1007B9B88 /* chestMetalClosed_2_metallic.jpeg */; };
-		0DD21008222A88F1007B9B88 /* Ryb_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20F96222A88F1007B9B88 /* Ryb_normal.png */; };
-		0DD21009222A88F1007B9B88 /* chestMetalOpen_1_albedo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20F97222A88F1007B9B88 /* chestMetalOpen_1_albedo.jpeg */; };
-		0DD2100A222A88F1007B9B88 /* LockStone2_roughness.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20F98222A88F1007B9B88 /* LockStone2_roughness.jpeg */; };
-		0DD2100B222A88F1007B9B88 /* chestWoodClosed_2_metallic.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20F99222A88F1007B9B88 /* chestWoodClosed_2_metallic.jpeg */; };
-		0DD2100C222A88F1007B9B88 /* LockMetal_albedo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20F9A222A88F1007B9B88 /* LockMetal_albedo.jpeg */; };
-		0DD2100D222A88F1007B9B88 /* chestWoodOpen_2_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20F9B222A88F1007B9B88 /* chestWoodOpen_2_normal.png */; };
-		0DD2100E222A88F1007B9B88 /* chestMetalOpen_3_roughness.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20F9C222A88F1007B9B88 /* chestMetalOpen_3_roughness.jpeg */; };
-		0DD2100F222A88F1007B9B88 /* LockMetal2_metallic.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20F9D222A88F1007B9B88 /* LockMetal2_metallic.jpeg */; };
-		0DD21010222A88F1007B9B88 /* plane_albedo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20F9E222A88F1007B9B88 /* plane_albedo.jpeg */; };
-		0DD21011222A88F1007B9B88 /* chestWoodOpen_2_roughness.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20F9F222A88F1007B9B88 /* chestWoodOpen_2_roughness.jpeg */; };
-		0DD21012222A88F1007B9B88 /* chestMetalOpen_3_metallic.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FA0222A88F1007B9B88 /* chestMetalOpen_3_metallic.jpeg */; };
-		0DD21013222A88F1007B9B88 /* chestStoneOpen_3_roughness.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FA1222A88F1007B9B88 /* chestStoneOpen_3_roughness.jpeg */; };
-		0DD21014222A88F1007B9B88 /* chestMetalOpen_2_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FA2222A88F1007B9B88 /* chestMetalOpen_2_normal.png */; };
-		0DD21015222A88F1007B9B88 /* chestWoodClosed_2_roughness.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FA3222A88F1007B9B88 /* chestWoodClosed_2_roughness.jpeg */; };
-		0DD21016222A88F1007B9B88 /* LockWood_metallic.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FA4222A88F1007B9B88 /* LockWood_metallic.jpeg */; };
-		0DD21017222A88F1007B9B88 /* Ryb2_metallic.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FA5222A88F1007B9B88 /* Ryb2_metallic.jpeg */; };
-		0DD21018222A88F1007B9B88 /* chestStoneOpen_1_roughness.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FA6222A88F1007B9B88 /* chestStoneOpen_1_roughness.jpeg */; };
-		0DD21019222A88F1007B9B88 /* chestWoodOpen_3_albedo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FA7222A88F1007B9B88 /* chestWoodOpen_3_albedo.jpeg */; };
-		0DD2101A222A88F1007B9B88 /* chestMetalOpen_1_roughness.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FA8222A88F1007B9B88 /* chestMetalOpen_1_roughness.jpeg */; };
-		0DD2101B222A88F1007B9B88 /* LockMetal2_roughness.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FA9222A88F1007B9B88 /* LockMetal2_roughness.jpeg */; };
-		0DD2101C222A88F1007B9B88 /* chestStoneOpen_3_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FAA222A88F1007B9B88 /* chestStoneOpen_3_normal.png */; };
-		0DD2101D222A88F1007B9B88 /* chestWoodClosed_2_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FAB222A88F1007B9B88 /* chestWoodClosed_2_normal.png */; };
-		0DD2101E222A88F1007B9B88 /* chestStoneClosed_2_metallic.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FAC222A88F1007B9B88 /* chestStoneClosed_2_metallic.jpeg */; };
-		0DD2101F222A88F1007B9B88 /* LockWood_albedo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FAD222A88F1007B9B88 /* LockWood_albedo.jpeg */; };
-		0DD21020222A88F1007B9B88 /* chestWoodOpen_2_metallic.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FAE222A88F1007B9B88 /* chestWoodOpen_2_metallic.jpeg */; };
-		0DD21021222A88F1007B9B88 /* chestStoneClosed_1_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FAF222A88F1007B9B88 /* chestStoneClosed_1_normal.png */; };
-		0DD21022222A88F1007B9B88 /* chestMetalOpen_2_albedo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FB0222A88F1007B9B88 /* chestMetalOpen_2_albedo.jpeg */; };
-		0DD21023222A88F1007B9B88 /* Ryb2_roughness.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FB1222A88F1007B9B88 /* Ryb2_roughness.jpeg */; };
-		0DD21024222A88F1007B9B88 /* chestStoneOpen_2_metallic.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FB2222A88F1007B9B88 /* chestStoneOpen_2_metallic.jpeg */; };
-		0DD21025222A88F1007B9B88 /* LockStone_AO.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FB3222A88F1007B9B88 /* LockStone_AO.jpeg */; };
-		0DD21026222A88F1007B9B88 /* chestStoneOpen_3_albedo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FB4222A88F1007B9B88 /* chestStoneOpen_3_albedo.jpeg */; };
-		0DD21027222A88F1007B9B88 /* chestStoneClosed_1_metallic.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FB5222A88F1007B9B88 /* chestStoneClosed_1_metallic.jpeg */; };
-		0DD21028222A88F1007B9B88 /* chestWoodOpen_1_metallic.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FB6222A88F1007B9B88 /* chestWoodOpen_1_metallic.jpeg */; };
-		0DD21029222A88F1007B9B88 /* chestStoneOpen_1_metallic.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FB7222A88F1007B9B88 /* chestStoneOpen_1_metallic.jpeg */; };
-		0DD2102A222A88F1007B9B88 /* chestMetalClosed_2_albedo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FB8222A88F1007B9B88 /* chestMetalClosed_2_albedo.jpeg */; };
-		0DD2102B222A88F1007B9B88 /* LockWood2_AO.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FB9222A88F1007B9B88 /* LockWood2_AO.jpeg */; };
-		0DD2102C222A88F1007B9B88 /* plane_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FBA222A88F1007B9B88 /* plane_normal.png */; };
-		0DD2102D222A88F1007B9B88 /* Ryb_AO.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FBB222A88F1007B9B88 /* Ryb_AO.jpeg */; };
-		0DD2102E222A88F1007B9B88 /* chestWoodClosed_1_roughness.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FBC222A88F1007B9B88 /* chestWoodClosed_1_roughness.jpeg */; };
-		0DD2102F222A88F1007B9B88 /* plane_metallic.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FBD222A88F1007B9B88 /* plane_metallic.jpeg */; };
-		0DD21030222A88F1007B9B88 /* LockStone2_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FBE222A88F1007B9B88 /* LockStone2_normal.png */; };
-		0DD21031222A88F1007B9B88 /* chestWoodOpen_1_roughness.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FBF222A88F1007B9B88 /* chestWoodOpen_1_roughness.jpeg */; };
-		0DD21032222A88F1007B9B88 /* Ryb2_albedo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FC0222A88F1007B9B88 /* Ryb2_albedo.jpeg */; };
-		0DD21033222A88F1007B9B88 /* LockMetal2_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FC1222A88F1007B9B88 /* LockMetal2_normal.png */; };
-		0DD21034222A88F1007B9B88 /* plane_AO.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FC2222A88F1007B9B88 /* plane_AO.jpeg */; };
-		0DD21035222A88F1007B9B88 /* chestWoodOpen_1_albedo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FC3222A88F1007B9B88 /* chestWoodOpen_1_albedo.jpeg */; };
-		0DD21036222A88F1007B9B88 /* chestMetalClosed_2_AO.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FC4222A88F1007B9B88 /* chestMetalClosed_2_AO.jpeg */; };
-		0DD21037222A88F1007B9B88 /* chestStoneOpen_3_AO.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FC5222A88F1007B9B88 /* chestStoneOpen_3_AO.jpeg */; };
-		0DD21038222A88F1007B9B88 /* LockWood2_albedo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FC6222A88F1007B9B88 /* LockWood2_albedo.jpeg */; };
-		0DD21039222A88F1007B9B88 /* chestStoneClosed_1_albedo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FC7222A88F1007B9B88 /* chestStoneClosed_1_albedo.jpeg */; };
-		0DD2103A222A88F1007B9B88 /* chestWoodOpen_3_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FC8222A88F1007B9B88 /* chestWoodOpen_3_normal.png */; };
-		0DD2103B222A88F1007B9B88 /* chestMetalOpen_3_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FC9222A88F1007B9B88 /* chestMetalOpen_3_normal.png */; };
-		0DD2103C222A88F1007B9B88 /* chestWoodClosed_1_albedo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FCA222A88F1007B9B88 /* chestWoodClosed_1_albedo.jpeg */; };
-		0DD2103D222A88F1007B9B88 /* chestStoneOpen_1_albedo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FCB222A88F1007B9B88 /* chestStoneOpen_1_albedo.jpeg */; };
-		0DD2103E222A88F1007B9B88 /* LockMetal2_albedo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FCC222A88F1007B9B88 /* LockMetal2_albedo.jpeg */; };
-		0DD2103F222A88F1007B9B88 /* chestStoneClosed_1_AO.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FCD222A88F1007B9B88 /* chestStoneClosed_1_AO.jpeg */; };
-		0DD21040222A88F1007B9B88 /* chestStoneOpen_2_AO.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FCE222A88F1007B9B88 /* chestStoneOpen_2_AO.jpeg */; };
-		0DD21041222A88F1007B9B88 /* chestWoodClosed_1_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FCF222A88F1007B9B88 /* chestWoodClosed_1_normal.png */; };
-		0DD21042222A88F1007B9B88 /* LockMetal_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FD0222A88F1007B9B88 /* LockMetal_normal.png */; };
-		0DD21043222A88F1007B9B88 /* LockStone2_albedo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FD1222A88F1007B9B88 /* LockStone2_albedo.jpeg */; };
-		0DD21044222A88F1007B9B88 /* Ryb2_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FD2222A88F1007B9B88 /* Ryb2_normal.png */; };
-		0DD21045222A88F1007B9B88 /* chestMetalOpen_1_AO.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FD3222A88F1007B9B88 /* chestMetalOpen_1_AO.jpeg */; };
-		0DD21046222A88F1007B9B88 /* plane_roughness.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FD4222A88F1007B9B88 /* plane_roughness.jpeg */; };
-		0DD21047222A88F1007B9B88 /* chestWoodOpen_1_AO.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FD5222A88F1007B9B88 /* chestWoodOpen_1_AO.jpeg */; };
-		0DD21048222A88F1007B9B88 /* chestStoneOpen_3_metallic.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FD6222A88F1007B9B88 /* chestStoneOpen_3_metallic.jpeg */; };
-		0DD21049222A88F1007B9B88 /* chestMetalClosed_1_roughness.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FD7222A88F1007B9B88 /* chestMetalClosed_1_roughness.jpeg */; };
-		0DD2104A222A88F1007B9B88 /* chestStoneClosed_2_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FD8222A88F1007B9B88 /* chestStoneClosed_2_normal.png */; };
-		0DD2104B222A88F1007B9B88 /* Ryb_roughness.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FD9222A88F1007B9B88 /* Ryb_roughness.jpeg */; };
-		0DD2104C222A88F1007B9B88 /* chestWoodOpen_3_metallic.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FDA222A88F1007B9B88 /* chestWoodOpen_3_metallic.jpeg */; };
-		0DD2104D222A88F1007B9B88 /* chestWoodClosed_1_AO.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FDB222A88F1007B9B88 /* chestWoodClosed_1_AO.jpeg */; };
-		0DD2104E222A88F1007B9B88 /* LockMetal_metallic.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FDC222A88F1007B9B88 /* LockMetal_metallic.jpeg */; };
-		0DD2104F222A88F1007B9B88 /* chestStoneClosed_1_roughness.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FDD222A88F1007B9B88 /* chestStoneClosed_1_roughness.jpeg */; };
-		0DD21050222A88F1007B9B88 /* chestMetalClosed_1_AO.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FDE222A88F1007B9B88 /* chestMetalClosed_1_AO.jpeg */; };
-		0DD21051222A88F1007B9B88 /* LockStone_albedo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FDF222A88F1007B9B88 /* LockStone_albedo.jpeg */; };
-		0DD21052222A88F1007B9B88 /* chestMetalOpen_3_AO.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FE0222A88F1007B9B88 /* chestMetalOpen_3_AO.jpeg */; };
-		0DD21053222A88F1007B9B88 /* chestWoodOpen_3_AO.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FE1222A88F1007B9B88 /* chestWoodOpen_3_AO.jpeg */; };
-		0DD21054222A88F2007B9B88 /* chestMetalOpen_1_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FE2222A88F1007B9B88 /* chestMetalOpen_1_normal.png */; };
-		0DD21055222A88F2007B9B88 /* LockWood_AO.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FE3222A88F1007B9B88 /* LockWood_AO.jpeg */; };
-		0DD21056222A88F2007B9B88 /* Ryb2_AO.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FE4222A88F1007B9B88 /* Ryb2_AO.jpeg */; };
-		0DD21057222A88F2007B9B88 /* chestMetalOpen_2_metallic.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FE5222A88F1007B9B88 /* chestMetalOpen_2_metallic.jpeg */; };
-		0DD21058222A88F2007B9B88 /* LockMetal2_AO.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FE6222A88F1007B9B88 /* LockMetal2_AO.jpeg */; };
-		0DD21059222A88F2007B9B88 /* chestWoodOpen_1_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FE7222A88F1007B9B88 /* chestWoodOpen_1_normal.png */; };
-		0DD2105A222A88F2007B9B88 /* LockStone_roughness.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FE8222A88F1007B9B88 /* LockStone_roughness.jpeg */; };
-		0DD2105B222A88F2007B9B88 /* chestWoodOpen_2_AO.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FE9222A88F1007B9B88 /* chestWoodOpen_2_AO.jpeg */; };
-		0DD2105C222A88F2007B9B88 /* LockWood2_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FEA222A88F1007B9B88 /* LockWood2_normal.png */; };
-		0DD2105D222A88F2007B9B88 /* chestStoneOpen_2_albedo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FEB222A88F1007B9B88 /* chestStoneOpen_2_albedo.jpeg */; };
-		0DD2105E222A88F2007B9B88 /* LockStone_metallic.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FEC222A88F1007B9B88 /* LockStone_metallic.jpeg */; };
-		0DD2105F222A88F2007B9B88 /* chestWoodClosed_2_albedo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FED222A88F1007B9B88 /* chestWoodClosed_2_albedo.jpeg */; };
-		0DD21060222A88F2007B9B88 /* chestStoneClosed_2_albedo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FEE222A88F1007B9B88 /* chestStoneClosed_2_albedo.jpeg */; };
-		0DD21061222A88F2007B9B88 /* chestMetalOpen_1_metallic.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FEF222A88F1007B9B88 /* chestMetalOpen_1_metallic.jpeg */; };
-		0DD21062222A88F2007B9B88 /* chestStoneOpen_2_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FF0222A88F1007B9B88 /* chestStoneOpen_2_normal.png */; };
-		0DD21063222A88F2007B9B88 /* chestWoodClosed_2_AO.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FF1222A88F1007B9B88 /* chestWoodClosed_2_AO.jpeg */; };
-		0DD21064222A88F2007B9B88 /* chestMetalOpen_3_albedo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FF2222A88F1007B9B88 /* chestMetalOpen_3_albedo.jpeg */; };
-		0DD21065222A88F2007B9B88 /* chestStoneClosed_2_roughness.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FF3222A88F1007B9B88 /* chestStoneClosed_2_roughness.jpeg */; };
-		0DD21066222A88F2007B9B88 /* chestStoneOpen_1_AO.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FF4222A88F1007B9B88 /* chestStoneOpen_1_AO.jpeg */; };
-		0DD21067222A88F2007B9B88 /* chestStoneClosed_2_AO.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FF5222A88F1007B9B88 /* chestStoneClosed_2_AO.jpeg */; };
-		0DD21068222A88F2007B9B88 /* chestMetalClosed_2_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FF6222A88F1007B9B88 /* chestMetalClosed_2_normal.png */; };
-		0DD21069222A88F2007B9B88 /* chestWoodOpen_2_albedo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FF7222A88F1007B9B88 /* chestWoodOpen_2_albedo.jpeg */; };
-		0DD2106A222A88F2007B9B88 /* chestMetalClosed_2_roughness.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FF8222A88F1007B9B88 /* chestMetalClosed_2_roughness.jpeg */; };
-		0DD2106B222A88F2007B9B88 /* LockWood_roughness.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FF9222A88F1007B9B88 /* LockWood_roughness.jpeg */; };
-		0DD2106C222A88F2007B9B88 /* chestMetalOpen_2_AO.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD20FFA222A88F1007B9B88 /* chestMetalOpen_2_AO.jpeg */; };
+		0DD210B9222A8E27007B9B88 /* chestStoneOpen_1_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD2106F222A8E27007B9B88 /* chestStoneOpen_1_normal.png */; };
+		0DD210BA222A8E27007B9B88 /* LockMetal_metallicRoughness.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD21070222A8E27007B9B88 /* LockMetal_metallicRoughness.png */; };
+		0DD210BB222A8E27007B9B88 /* plane_baseColor.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD21071222A8E27007B9B88 /* plane_baseColor.jpeg */; };
+		0DD210BC222A8E27007B9B88 /* chestMetalClosed_1_baseColor.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD21072222A8E27007B9B88 /* chestMetalClosed_1_baseColor.jpeg */; };
+		0DD210BD222A8E27007B9B88 /* chestMetalClosed_1_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD21073222A8E27007B9B88 /* chestMetalClosed_1_normal.png */; };
+		0DD210BE222A8E27007B9B88 /* chestStoneOpen_3_metallicRoughness.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD21074222A8E27007B9B88 /* chestStoneOpen_3_metallicRoughness.png */; };
+		0DD210BF222A8E27007B9B88 /* chestStoneClosed_1_baseColor.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD21075222A8E27007B9B88 /* chestStoneClosed_1_baseColor.jpeg */; };
+		0DD210C0222A8E27007B9B88 /* chestWoodOpen_3_metallicRoughness.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD21076222A8E27007B9B88 /* chestWoodOpen_3_metallicRoughness.png */; };
+		0DD210C1222A8E27007B9B88 /* chestWoodOpen_2_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD21077222A8E27007B9B88 /* chestWoodOpen_2_normal.png */; };
+		0DD210C2222A8E27007B9B88 /* chestStoneOpen_1_metallicRoughness.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD21078222A8E27007B9B88 /* chestStoneOpen_1_metallicRoughness.png */; };
+		0DD210C3222A8E27007B9B88 /* chestWoodOpen_1_metallicRoughness.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD21079222A8E27007B9B88 /* chestWoodOpen_1_metallicRoughness.png */; };
+		0DD210C4222A8E27007B9B88 /* LockStone_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD2107A222A8E27007B9B88 /* LockStone_normal.png */; };
+		0DD210C5222A8E27007B9B88 /* chestMetalOpen_2_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD2107B222A8E27007B9B88 /* chestMetalOpen_2_normal.png */; };
+		0DD210C6222A8E27007B9B88 /* LockStone_baseColor.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD2107C222A8E27007B9B88 /* LockStone_baseColor.jpeg */; };
+		0DD210C7222A8E27007B9B88 /* chestMetalOpen_1_metallicRoughness.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD2107D222A8E27007B9B88 /* chestMetalOpen_1_metallicRoughness.png */; };
+		0DD210C8222A8E27007B9B88 /* chestMetalClosed_1_metallicRoughness.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD2107E222A8E27007B9B88 /* chestMetalClosed_1_metallicRoughness.png */; };
+		0DD210C9222A8E27007B9B88 /* LockStone2_metallicRoughness.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD2107F222A8E27007B9B88 /* LockStone2_metallicRoughness.png */; };
+		0DD210CA222A8E27007B9B88 /* LockMetal2_metallicRoughness.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD21080222A8E27007B9B88 /* LockMetal2_metallicRoughness.png */; };
+		0DD210CB222A8E27007B9B88 /* material_baseColor.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD21081222A8E27007B9B88 /* material_baseColor.jpeg */; };
+		0DD210CC222A8E27007B9B88 /* chestStoneOpen_3_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD21082222A8E27007B9B88 /* chestStoneOpen_3_normal.png */; };
+		0DD210CD222A8E27007B9B88 /* chestWoodClosed_2_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD21083222A8E27007B9B88 /* chestWoodClosed_2_normal.png */; };
+		0DD210CE222A8E27007B9B88 /* Ryb2_metallicRoughness.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD21084222A8E27007B9B88 /* Ryb2_metallicRoughness.png */; };
+		0DD210CF222A8E27007B9B88 /* LockWood_metallicRoughness.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD21085222A8E27007B9B88 /* LockWood_metallicRoughness.png */; };
+		0DD210D0222A8E27007B9B88 /* chestStoneClosed_2_baseColor.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD21086222A8E27007B9B88 /* chestStoneClosed_2_baseColor.jpeg */; };
+		0DD210D1222A8E27007B9B88 /* chestStoneClosed_1_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD21087222A8E27007B9B88 /* chestStoneClosed_1_normal.png */; };
+		0DD210D2222A8E27007B9B88 /* LockWood_baseColor.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD21088222A8E27007B9B88 /* LockWood_baseColor.jpeg */; };
+		0DD210D3222A8E27007B9B88 /* plane_metallicRoughness.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD21089222A8E27007B9B88 /* plane_metallicRoughness.png */; };
+		0DD210D4222A8E27007B9B88 /* chestMetalClosed_2_baseColor.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD2108A222A8E27007B9B88 /* chestMetalClosed_2_baseColor.jpeg */; };
+		0DD210D5222A8E27007B9B88 /* LockWood_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD2108B222A8E27007B9B88 /* LockWood_normal.png */; };
+		0DD210D6222A8E27007B9B88 /* chestStoneClosed_1_metallicRoughness.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD2108C222A8E27007B9B88 /* chestStoneClosed_1_metallicRoughness.png */; };
+		0DD210D7222A8E27007B9B88 /* chestWoodClosed_2_metallicRoughness.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD2108D222A8E27007B9B88 /* chestWoodClosed_2_metallicRoughness.png */; };
+		0DD210D8222A8E27007B9B88 /* chestMetalOpen_3_metallicRoughness.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD2108E222A8E27007B9B88 /* chestMetalOpen_3_metallicRoughness.png */; };
+		0DD210D9222A8E27007B9B88 /* plane_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD2108F222A8E27007B9B88 /* plane_normal.png */; };
+		0DD210DA222A8E27007B9B88 /* LockMetal_baseColor.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD21090222A8E27007B9B88 /* LockMetal_baseColor.jpeg */; };
+		0DD210DB222A8E27007B9B88 /* LockStone_metallicRoughness.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD21091222A8E27007B9B88 /* LockStone_metallicRoughness.png */; };
+		0DD210DC222A8E27007B9B88 /* LockStone2_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD21092222A8E27007B9B88 /* LockStone2_normal.png */; };
+		0DD210DD222A8E27007B9B88 /* LockWood2_metallicRoughness.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD21093222A8E27007B9B88 /* LockWood2_metallicRoughness.png */; };
+		0DD210DE222A8E27007B9B88 /* LockMetal2_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD21094222A8E27007B9B88 /* LockMetal2_normal.png */; };
+		0DD210DF222A8E27007B9B88 /* chestWoodOpen_2_metallicRoughness.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD21095222A8E27007B9B88 /* chestWoodOpen_2_metallicRoughness.png */; };
+		0DD210E0222A8E27007B9B88 /* LockStone2_baseColor.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD21096222A8E27007B9B88 /* LockStone2_baseColor.jpeg */; };
+		0DD210E1222A8E27007B9B88 /* chestStoneOpen_2_metallicRoughness.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD21097222A8E27007B9B88 /* chestStoneOpen_2_metallicRoughness.png */; };
+		0DD210E2222A8E27007B9B88 /* chestMetalOpen_3_baseColor.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD21098222A8E27007B9B88 /* chestMetalOpen_3_baseColor.jpeg */; };
+		0DD210E3222A8E27007B9B88 /* chestWoodOpen_3_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD21099222A8E27007B9B88 /* chestWoodOpen_3_normal.png */; };
+		0DD210E4222A8E27007B9B88 /* chestStoneOpen_3_baseColor.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD2109A222A8E27007B9B88 /* chestStoneOpen_3_baseColor.jpeg */; };
+		0DD210E5222A8E27007B9B88 /* chestWoodOpen_2_baseColor.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD2109B222A8E27007B9B88 /* chestWoodOpen_2_baseColor.jpeg */; };
+		0DD210E6222A8E27007B9B88 /* chestMetalOpen_3_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD2109C222A8E27007B9B88 /* chestMetalOpen_3_normal.png */; };
+		0DD210E7222A8E27007B9B88 /* chestWoodClosed_2_baseColor.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD2109D222A8E27007B9B88 /* chestWoodClosed_2_baseColor.jpeg */; };
+		0DD210E8222A8E27007B9B88 /* LockWood2_baseColor.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD2109E222A8E27007B9B88 /* LockWood2_baseColor.jpeg */; };
+		0DD210E9222A8E27007B9B88 /* chestWoodClosed_1_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD2109F222A8E27007B9B88 /* chestWoodClosed_1_normal.png */; };
+		0DD210EA222A8E27007B9B88 /* LockMetal_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD210A0222A8E27007B9B88 /* LockMetal_normal.png */; };
+		0DD210EB222A8E27007B9B88 /* Ryb2_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD210A1222A8E27007B9B88 /* Ryb2_normal.png */; };
+		0DD210EC222A8E27007B9B88 /* chestMetalOpen_2_baseColor.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD210A2222A8E27007B9B88 /* chestMetalOpen_2_baseColor.jpeg */; };
+		0DD210ED222A8E27007B9B88 /* material_metallicRoughness.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD210A3222A8E27007B9B88 /* material_metallicRoughness.png */; };
+		0DD210EE222A8E27007B9B88 /* chestWoodOpen_3_baseColor.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD210A4222A8E27007B9B88 /* chestWoodOpen_3_baseColor.jpeg */; };
+		0DD210EF222A8E27007B9B88 /* chestStoneOpen_2_baseColor.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD210A5222A8E27007B9B88 /* chestStoneOpen_2_baseColor.jpeg */; };
+		0DD210F0222A8E27007B9B88 /* chestStoneClosed_2_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD210A6222A8E27007B9B88 /* chestStoneClosed_2_normal.png */; };
+		0DD210F1222A8E27007B9B88 /* material_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD210A7222A8E27007B9B88 /* material_normal.png */; };
+		0DD210F2222A8E27007B9B88 /* chestWoodClosed_1_baseColor.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD210A8222A8E27007B9B88 /* chestWoodClosed_1_baseColor.jpeg */; };
+		0DD210F3222A8E27007B9B88 /* chestMetalOpen_1_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD210A9222A8E27007B9B88 /* chestMetalOpen_1_normal.png */; };
+		0DD210F4222A8E27007B9B88 /* chestWoodOpen_1_baseColor.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD210AA222A8E27007B9B88 /* chestWoodOpen_1_baseColor.jpeg */; };
+		0DD210F5222A8E27007B9B88 /* chestWoodOpen_1_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD210AB222A8E27007B9B88 /* chestWoodOpen_1_normal.png */; };
+		0DD210F6222A8E27007B9B88 /* chestWoodClosed_1_metallicRoughness.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD210AC222A8E27007B9B88 /* chestWoodClosed_1_metallicRoughness.png */; };
+		0DD210F7222A8E27007B9B88 /* chestStoneClosed_2_metallicRoughness.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD210AD222A8E27007B9B88 /* chestStoneClosed_2_metallicRoughness.png */; };
+		0DD210F8222A8E27007B9B88 /* chestStoneOpen_1_baseColor.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD210AE222A8E27007B9B88 /* chestStoneOpen_1_baseColor.jpeg */; };
+		0DD210F9222A8E27007B9B88 /* LockWood2_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD210AF222A8E27007B9B88 /* LockWood2_normal.png */; };
+		0DD210FA222A8E27007B9B88 /* chestMetalOpen_1_baseColor.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD210B0222A8E27007B9B88 /* chestMetalOpen_1_baseColor.jpeg */; };
+		0DD210FB222A8E27007B9B88 /* chestStoneOpen_2_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD210B1222A8E27007B9B88 /* chestStoneOpen_2_normal.png */; };
+		0DD210FC222A8E27007B9B88 /* LockMetal2_baseColor.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD210B2222A8E27007B9B88 /* LockMetal2_baseColor.jpeg */; };
+		0DD210FD222A8E27007B9B88 /* chestMetalClosed_2_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD210B3222A8E27007B9B88 /* chestMetalClosed_2_normal.png */; };
+		0DD210FE222A8E27007B9B88 /* Ryb2_baseColor.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD210B4222A8E27007B9B88 /* Ryb2_baseColor.jpeg */; };
+		0DD210FF222A8E27007B9B88 /* chestMetalClosed_2_metallicRoughness.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD210B5222A8E27007B9B88 /* chestMetalClosed_2_metallicRoughness.png */; };
+		0DD21100222A8E27007B9B88 /* chestMetalOpen_2_metallicRoughness.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD210B6222A8E27007B9B88 /* chestMetalOpen_2_metallicRoughness.png */; };
+		0DD21101222A8E27007B9B88 /* scene.gltf in Resources */ = {isa = PBXBuildFile; fileRef = 0DD210B7222A8E27007B9B88 /* scene.gltf */; };
+		0DD21102222A8E27007B9B88 /* scene.bin in Resources */ = {isa = PBXBuildFile; fileRef = 0DD210B8222A8E27007B9B88 /* scene.bin */; };
+		0DD212EA222A923A007B9B88 /* urn2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD212E3222A923A007B9B88 /* urn2.jpeg */; };
+		0DD212EB222A923A007B9B88 /* urn.zip in Resources */ = {isa = PBXBuildFile; fileRef = 0DD212E5222A923A007B9B88 /* urn.zip */; };
+		0DD212EC222A923A007B9B88 /* urn2.obj in Resources */ = {isa = PBXBuildFile; fileRef = 0DD212E7222A923A007B9B88 /* urn2.obj */; };
+		0DD212ED222A923A007B9B88 /* urn2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD212E8222A923A007B9B88 /* urn2.jpg */; };
+		0DD212EE222A923A007B9B88 /* urn2.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 0DD212E9222A923A007B9B88 /* urn2.mtl */; };
+		0DD212FF222A929D007B9B88 /* Treasure_chest_top_SpecularSmoothness.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD212F1222A929D007B9B88 /* Treasure_chest_top_SpecularSmoothness.png */; };
+		0DD21300222A929D007B9B88 /* Treasure_chest_top_Emission.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD212F2222A929D007B9B88 /* Treasure_chest_top_Emission.png */; };
+		0DD21301222A929D007B9B88 /* Lock_diffuse.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD212F3222A929D007B9B88 /* Lock_diffuse.png */; };
+		0DD21302222A929D007B9B88 /* Treasure_chest_grip_AlbedoTransparency.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD212F4222A929D007B9B88 /* Treasure_chest_grip_AlbedoTransparency.png */; };
+		0DD21303222A929D007B9B88 /* Treasure_chest_grip_base_Normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD212F5222A929D007B9B88 /* Treasure_chest_grip_base_Normal.png */; };
+		0DD21304222A929D007B9B88 /* Treasure_chest_bot_Emission.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD212F6222A929D007B9B88 /* Treasure_chest_bot_Emission.png */; };
+		0DD21305222A929D007B9B88 /* Treasure_chest_grip_base_SpecularSmoothnes.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD212F7222A929D007B9B88 /* Treasure_chest_grip_base_SpecularSmoothnes.png */; };
+		0DD21306222A929D007B9B88 /* Treasure_chest_top_Normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD212F8222A929D007B9B88 /* Treasure_chest_top_Normal.png */; };
+		0DD21307222A929D007B9B88 /* Treasure_chest_bot_Normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD212F9222A929D007B9B88 /* Treasure_chest_bot_Normal.png */; };
+		0DD21308222A929D007B9B88 /* Treasure_chest_grip_Normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD212FA222A929D007B9B88 /* Treasure_chest_grip_Normal.png */; };
+		0DD21309222A929D007B9B88 /* Treasure_chest_bot_SpecularSmoothness.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD212FB222A929D007B9B88 /* Treasure_chest_bot_SpecularSmoothness.png */; };
+		0DD2130A222A929D007B9B88 /* Treasure_chest_grip_SpecularSmoothness.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD212FC222A929D007B9B88 /* Treasure_chest_grip_SpecularSmoothness.png */; };
+		0DD2130B222A929D007B9B88 /* Treasure chest.fbx in Resources */ = {isa = PBXBuildFile; fileRef = 0DD212FE222A929D007B9B88 /* Treasure chest.fbx */; };
+		0DD21314222A92A9007B9B88 /* roughness2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD2130E222A92A9007B9B88 /* roughness2.png */; };
+		0DD21315222A92A9007B9B88 /* metalic.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD2130F222A92A9007B9B88 /* metalic.png */; };
+		0DD21316222A92A9007B9B88 /* diffuse2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD21310222A92A9007B9B88 /* diffuse2.png */; };
+		0DD21317222A92A9007B9B88 /* specular2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD21311222A92A9007B9B88 /* specular2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -295,241 +156,103 @@
 		0DD20E6D222A5695007B9B88 /* xmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = xmark.png; sourceTree = "<group>"; };
 		0DD20E6F222A56A0007B9B88 /* log.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = log.png; sourceTree = "<group>"; };
 		0DD20E71222A56A7007B9B88 /* output-onlinepngtools.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "output-onlinepngtools.png"; sourceTree = "<group>"; };
-		0DD20E96222A88A8007B9B88 /* LockMetal2_albedo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LockMetal2_albedo.jpg; sourceTree = "<group>"; };
-		0DD20E97222A88A8007B9B88 /* chestWoodOpen_3_roughness.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestWoodOpen_3_roughness.jpg; sourceTree = "<group>"; };
-		0DD20E98222A88A8007B9B88 /* LockMetal_roughness.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LockMetal_roughness.jpg; sourceTree = "<group>"; };
-		0DD20E99222A88A8007B9B88 /* chestStoneOpen_1_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chestStoneOpen_1_normal.png; sourceTree = "<group>"; };
-		0DD20E9A222A88A8007B9B88 /* chestWoodClosed_1_metallic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestWoodClosed_1_metallic.jpg; sourceTree = "<group>"; };
-		0DD20E9B222A88A8007B9B88 /* chestMetalClosed_2_AO.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestMetalClosed_2_AO.jpg; sourceTree = "<group>"; };
-		0DD20E9C222A88A8007B9B88 /* LockWood_metallic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LockWood_metallic.jpg; sourceTree = "<group>"; };
-		0DD20E9D222A88A8007B9B88 /* chestStoneOpen_3_roughness.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestStoneOpen_3_roughness.jpg; sourceTree = "<group>"; };
-		0DD20E9E222A88A8007B9B88 /* chestWoodOpen_3_albedo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestWoodOpen_3_albedo.jpg; sourceTree = "<group>"; };
-		0DD20E9F222A88A8007B9B88 /* chestMetalOpen_3_albedo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestMetalOpen_3_albedo.jpg; sourceTree = "<group>"; };
-		0DD20EA0222A88A8007B9B88 /* chestMetalOpen_1_AO.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestMetalOpen_1_AO.jpg; sourceTree = "<group>"; };
-		0DD20EA1222A88A8007B9B88 /* chestMetalOpen_3_metallic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestMetalOpen_3_metallic.jpg; sourceTree = "<group>"; };
-		0DD20EA2222A88A8007B9B88 /* chestMetalClosed_1_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chestMetalClosed_1_normal.png; sourceTree = "<group>"; };
-		0DD20EA3222A88A8007B9B88 /* chestStoneOpen_1_AO.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestStoneOpen_1_AO.jpg; sourceTree = "<group>"; };
-		0DD20EA4222A88A8007B9B88 /* chestWoodClosed_1_albedo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestWoodClosed_1_albedo.jpg; sourceTree = "<group>"; };
-		0DD20EA5222A88A8007B9B88 /* LockMetal_albedo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LockMetal_albedo.jpg; sourceTree = "<group>"; };
-		0DD20EA6222A88A8007B9B88 /* Ryb_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ryb_normal.png; sourceTree = "<group>"; };
-		0DD20EA7222A88A8007B9B88 /* Ryb2_albedo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Ryb2_albedo.jpg; sourceTree = "<group>"; };
-		0DD20EA8222A88A8007B9B88 /* chestStoneClosed_2_AO.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestStoneClosed_2_AO.jpg; sourceTree = "<group>"; };
-		0DD20EA9222A88A8007B9B88 /* chestStoneOpen_3_AO.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestStoneOpen_3_AO.jpg; sourceTree = "<group>"; };
-		0DD20EAA222A88A8007B9B88 /* chestMetalOpen_3_AO.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestMetalOpen_3_AO.jpg; sourceTree = "<group>"; };
-		0DD20EAB222A88A8007B9B88 /* chestStoneClosed_1_metallic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestStoneClosed_1_metallic.jpg; sourceTree = "<group>"; };
-		0DD20EAC222A88A8007B9B88 /* chestWoodOpen_2_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chestWoodOpen_2_normal.png; sourceTree = "<group>"; };
-		0DD20EAD222A88A8007B9B88 /* LockMetal2_AO.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LockMetal2_AO.jpg; sourceTree = "<group>"; };
-		0DD20EAE222A88A8007B9B88 /* chestMetalOpen_2_metallic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestMetalOpen_2_metallic.jpg; sourceTree = "<group>"; };
-		0DD20EAF222A88A8007B9B88 /* chestMetalClosed_1_metallic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestMetalClosed_1_metallic.jpg; sourceTree = "<group>"; };
-		0DD20EB0222A88A8007B9B88 /* chestWoodClosed_2_AO.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestWoodClosed_2_AO.jpg; sourceTree = "<group>"; };
-		0DD20EB1222A88A8007B9B88 /* chestStoneClosed_2_albedo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestStoneClosed_2_albedo.jpg; sourceTree = "<group>"; };
-		0DD20EB2222A88A8007B9B88 /* LockMetal_metallic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LockMetal_metallic.jpg; sourceTree = "<group>"; };
-		0DD20EB3222A88A8007B9B88 /* LockStone_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LockStone_normal.png; sourceTree = "<group>"; };
-		0DD20EB4222A88A8007B9B88 /* chestMetalOpen_2_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chestMetalOpen_2_normal.png; sourceTree = "<group>"; };
-		0DD20EB5222A88A8007B9B88 /* LockStone_metallic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LockStone_metallic.jpg; sourceTree = "<group>"; };
-		0DD20EB6222A88A8007B9B88 /* chestWoodOpen_1_metallic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestWoodOpen_1_metallic.jpg; sourceTree = "<group>"; };
-		0DD20EB7222A88A8007B9B88 /* chestStoneOpen_3_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chestStoneOpen_3_normal.png; sourceTree = "<group>"; };
-		0DD20EB8222A88A8007B9B88 /* chestWoodClosed_2_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chestWoodClosed_2_normal.png; sourceTree = "<group>"; };
-		0DD20EB9222A88A8007B9B88 /* chestMetalOpen_1_albedo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestMetalOpen_1_albedo.jpg; sourceTree = "<group>"; };
-		0DD20EBA222A88A8007B9B88 /* chestMetalOpen_1_roughness.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestMetalOpen_1_roughness.jpg; sourceTree = "<group>"; };
-		0DD20EBB222A88A8007B9B88 /* chestStoneClosed_1_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chestStoneClosed_1_normal.png; sourceTree = "<group>"; };
-		0DD20EBC222A88A8007B9B88 /* chestStoneOpen_3_metallic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestStoneOpen_3_metallic.jpg; sourceTree = "<group>"; };
-		0DD20EBD222A88A8007B9B88 /* chestWoodOpen_2_AO.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestWoodOpen_2_AO.jpg; sourceTree = "<group>"; };
-		0DD20EBE222A88A8007B9B88 /* LockStone_roughness.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LockStone_roughness.jpg; sourceTree = "<group>"; };
-		0DD20EBF222A88A8007B9B88 /* LockWood2_AO.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LockWood2_AO.jpg; sourceTree = "<group>"; };
-		0DD20EC0222A88A8007B9B88 /* chestWoodOpen_1_albedo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestWoodOpen_1_albedo.jpg; sourceTree = "<group>"; };
-		0DD20EC1222A88A8007B9B88 /* chestMetalOpen_2_roughness.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestMetalOpen_2_roughness.jpg; sourceTree = "<group>"; };
-		0DD20EC2222A88A8007B9B88 /* LockWood_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LockWood_normal.png; sourceTree = "<group>"; };
-		0DD20EC3222A88A8007B9B88 /* LockWood2_albedo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LockWood2_albedo.jpg; sourceTree = "<group>"; };
-		0DD20EC4222A88A8007B9B88 /* Ryb_roughness.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Ryb_roughness.jpg; sourceTree = "<group>"; };
-		0DD20EC5222A88A8007B9B88 /* chestStoneOpen_2_albedo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestStoneOpen_2_albedo.jpg; sourceTree = "<group>"; };
-		0DD20EC6222A88A8007B9B88 /* plane_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plane_normal.png; sourceTree = "<group>"; };
-		0DD20EC7222A88A8007B9B88 /* chestMetalClosed_2_albedo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestMetalClosed_2_albedo.jpg; sourceTree = "<group>"; };
-		0DD20EC8222A88A8007B9B88 /* LockWood2_metallic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LockWood2_metallic.jpg; sourceTree = "<group>"; };
-		0DD20EC9222A88A8007B9B88 /* LockStone2_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LockStone2_normal.png; sourceTree = "<group>"; };
-		0DD20ECA222A88A8007B9B88 /* chestStoneOpen_2_metallic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestStoneOpen_2_metallic.jpg; sourceTree = "<group>"; };
-		0DD20ECB222A88A8007B9B88 /* LockMetal2_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LockMetal2_normal.png; sourceTree = "<group>"; };
-		0DD20ECC222A88A8007B9B88 /* chestStoneOpen_1_albedo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestStoneOpen_1_albedo.jpg; sourceTree = "<group>"; };
-		0DD20ECD222A88A8007B9B88 /* chestWoodOpen_2_metallic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestWoodOpen_2_metallic.jpg; sourceTree = "<group>"; };
-		0DD20ECE222A88A8007B9B88 /* LockMetal2_metallic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LockMetal2_metallic.jpg; sourceTree = "<group>"; };
-		0DD20ECF222A88A8007B9B88 /* chestStoneClosed_1_AO.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestStoneClosed_1_AO.jpg; sourceTree = "<group>"; };
-		0DD20ED0222A88A8007B9B88 /* chestMetalOpen_3_roughness.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestMetalOpen_3_roughness.jpg; sourceTree = "<group>"; };
-		0DD20ED1222A88A8007B9B88 /* LockMetal2_roughness.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LockMetal2_roughness.jpg; sourceTree = "<group>"; };
-		0DD20ED2222A88A8007B9B88 /* chestWoodClosed_2_roughness.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestWoodClosed_2_roughness.jpg; sourceTree = "<group>"; };
-		0DD20ED3222A88A8007B9B88 /* Ryb_AO.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Ryb_AO.jpg; sourceTree = "<group>"; };
-		0DD20ED4222A88A8007B9B88 /* chestWoodClosed_1_AO.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestWoodClosed_1_AO.jpg; sourceTree = "<group>"; };
-		0DD20ED5222A88A8007B9B88 /* chestWoodOpen_3_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chestWoodOpen_3_normal.png; sourceTree = "<group>"; };
-		0DD20ED6222A88A8007B9B88 /* chestMetalClosed_1_albedo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestMetalClosed_1_albedo.jpg; sourceTree = "<group>"; };
-		0DD20ED7222A88A8007B9B88 /* chestMetalOpen_3_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chestMetalOpen_3_normal.png; sourceTree = "<group>"; };
-		0DD20ED8222A88A8007B9B88 /* chestMetalClosed_2_roughness.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestMetalClosed_2_roughness.jpg; sourceTree = "<group>"; };
-		0DD20ED9222A88A8007B9B88 /* chestWoodOpen_3_metallic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestWoodOpen_3_metallic.jpg; sourceTree = "<group>"; };
-		0DD20EDA222A88A8007B9B88 /* LockStone2_roughness.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LockStone2_roughness.jpg; sourceTree = "<group>"; };
-		0DD20EDB222A88A8007B9B88 /* chestWoodClosed_1_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chestWoodClosed_1_normal.png; sourceTree = "<group>"; };
-		0DD20EDC222A88A8007B9B88 /* LockMetal_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LockMetal_normal.png; sourceTree = "<group>"; };
-		0DD20EDD222A88A8007B9B88 /* chestWoodClosed_1_roughness.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestWoodClosed_1_roughness.jpg; sourceTree = "<group>"; };
-		0DD20EDE222A88A8007B9B88 /* Ryb2_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ryb2_normal.png; sourceTree = "<group>"; };
-		0DD20EDF222A88A8007B9B88 /* chestMetalClosed_1_AO.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestMetalClosed_1_AO.jpg; sourceTree = "<group>"; };
-		0DD20EE0222A88A8007B9B88 /* Ryb_albedo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Ryb_albedo.jpg; sourceTree = "<group>"; };
-		0DD20EE1222A88A8007B9B88 /* plane_AO.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = plane_AO.jpg; sourceTree = "<group>"; };
-		0DD20EE2222A88A8007B9B88 /* chestMetalClosed_1_roughness.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestMetalClosed_1_roughness.jpg; sourceTree = "<group>"; };
-		0DD20EE3222A88A8007B9B88 /* chestStoneOpen_1_metallic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestStoneOpen_1_metallic.jpg; sourceTree = "<group>"; };
-		0DD20EE4222A88A8007B9B88 /* LockMetal_AO.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LockMetal_AO.jpg; sourceTree = "<group>"; };
-		0DD20EE5222A88A8007B9B88 /* chestStoneOpen_2_AO.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestStoneOpen_2_AO.jpg; sourceTree = "<group>"; };
-		0DD20EE6222A88A8007B9B88 /* chestWoodOpen_2_albedo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestWoodOpen_2_albedo.jpg; sourceTree = "<group>"; };
-		0DD20EE7222A88A8007B9B88 /* chestMetalOpen_2_AO.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestMetalOpen_2_AO.jpg; sourceTree = "<group>"; };
-		0DD20EE8222A88A8007B9B88 /* LockStone_AO.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LockStone_AO.jpg; sourceTree = "<group>"; };
-		0DD20EE9222A88A8007B9B88 /* LockWood2_roughness.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LockWood2_roughness.jpg; sourceTree = "<group>"; };
-		0DD20EEA222A88A8007B9B88 /* LockStone_albedo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LockStone_albedo.jpg; sourceTree = "<group>"; };
-		0DD20EEB222A88A8007B9B88 /* chestStoneClosed_2_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chestStoneClosed_2_normal.png; sourceTree = "<group>"; };
-		0DD20EEC222A88A8007B9B88 /* chestMetalOpen_2_albedo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestMetalOpen_2_albedo.jpg; sourceTree = "<group>"; };
-		0DD20EED222A88A8007B9B88 /* plane_metallic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = plane_metallic.jpg; sourceTree = "<group>"; };
-		0DD20EEE222A88A8007B9B88 /* chestWoodClosed_2_metallic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestWoodClosed_2_metallic.jpg; sourceTree = "<group>"; };
-		0DD20EEF222A88A8007B9B88 /* LockWood_AO.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LockWood_AO.jpg; sourceTree = "<group>"; };
-		0DD20EF0222A88A8007B9B88 /* plane_roughness.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = plane_roughness.jpg; sourceTree = "<group>"; };
-		0DD20EF1222A88A8007B9B88 /* chestWoodOpen_3_AO.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestWoodOpen_3_AO.jpg; sourceTree = "<group>"; };
-		0DD20EF2222A88A8007B9B88 /* chestWoodClosed_2_albedo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestWoodClosed_2_albedo.jpg; sourceTree = "<group>"; };
-		0DD20EF3222A88A8007B9B88 /* chestStoneOpen_3_albedo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestStoneOpen_3_albedo.jpg; sourceTree = "<group>"; };
-		0DD20EF4222A88A8007B9B88 /* LockStone2_metallic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LockStone2_metallic.jpg; sourceTree = "<group>"; };
-		0DD20EF5222A88A8007B9B88 /* chestMetalOpen_1_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chestMetalOpen_1_normal.png; sourceTree = "<group>"; };
-		0DD20EF6222A88A8007B9B88 /* chestStoneOpen_1_roughness.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestStoneOpen_1_roughness.jpg; sourceTree = "<group>"; };
-		0DD20EF7222A88A8007B9B88 /* LockStone2_AO.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LockStone2_AO.jpg; sourceTree = "<group>"; };
-		0DD20EF8222A88A8007B9B88 /* chestStoneClosed_1_albedo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestStoneClosed_1_albedo.jpg; sourceTree = "<group>"; };
-		0DD20EF9222A88A8007B9B88 /* chestStoneClosed_1_roughness.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestStoneClosed_1_roughness.jpg; sourceTree = "<group>"; };
-		0DD20EFA222A88A8007B9B88 /* chestWoodOpen_1_roughness.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestWoodOpen_1_roughness.jpg; sourceTree = "<group>"; };
-		0DD20EFB222A88A8007B9B88 /* chestWoodOpen_1_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chestWoodOpen_1_normal.png; sourceTree = "<group>"; };
-		0DD20EFC222A88A8007B9B88 /* chestStoneOpen_2_roughness.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestStoneOpen_2_roughness.jpg; sourceTree = "<group>"; };
-		0DD20EFD222A88A8007B9B88 /* LockWood_albedo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LockWood_albedo.jpg; sourceTree = "<group>"; };
-		0DD20EFE222A88A8007B9B88 /* LockWood2_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LockWood2_normal.png; sourceTree = "<group>"; };
-		0DD20EFF222A88A8007B9B88 /* Ryb_metallic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Ryb_metallic.jpg; sourceTree = "<group>"; };
-		0DD20F00222A88A8007B9B88 /* Ryb2_metallic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Ryb2_metallic.jpg; sourceTree = "<group>"; };
-		0DD20F01222A88A8007B9B88 /* chestStoneClosed_2_roughness.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestStoneClosed_2_roughness.jpg; sourceTree = "<group>"; };
-		0DD20F02222A88A8007B9B88 /* chestStoneOpen_2_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chestStoneOpen_2_normal.png; sourceTree = "<group>"; };
-		0DD20F03222A88A8007B9B88 /* plane_albedo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = plane_albedo.jpg; sourceTree = "<group>"; };
-		0DD20F04222A88A8007B9B88 /* chestWoodOpen_2_roughness.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestWoodOpen_2_roughness.jpg; sourceTree = "<group>"; };
-		0DD20F05222A88A9007B9B88 /* chestMetalClosed_2_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chestMetalClosed_2_normal.png; sourceTree = "<group>"; };
-		0DD20F06222A88A9007B9B88 /* LockStone2_albedo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LockStone2_albedo.jpg; sourceTree = "<group>"; };
-		0DD20F07222A88A9007B9B88 /* Ryb2_AO.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Ryb2_AO.jpg; sourceTree = "<group>"; };
-		0DD20F08222A88A9007B9B88 /* Ryb2_roughness.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Ryb2_roughness.jpg; sourceTree = "<group>"; };
-		0DD20F09222A88A9007B9B88 /* chestMetalClosed_2_metallic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestMetalClosed_2_metallic.jpg; sourceTree = "<group>"; };
-		0DD20F0A222A88A9007B9B88 /* LockWood_roughness.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LockWood_roughness.jpg; sourceTree = "<group>"; };
-		0DD20F0B222A88A9007B9B88 /* chestWoodOpen_1_AO.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestWoodOpen_1_AO.jpg; sourceTree = "<group>"; };
-		0DD20F0C222A88A9007B9B88 /* chestStoneClosed_2_metallic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestStoneClosed_2_metallic.jpg; sourceTree = "<group>"; };
-		0DD20F0D222A88A9007B9B88 /* chestMetalOpen_1_metallic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestMetalOpen_1_metallic.jpg; sourceTree = "<group>"; };
-		0DD20F0E222A88A9007B9B88 /* model.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; path = model.dae; sourceTree = "<group>"; };
-		0DD20F89222A88F1007B9B88 /* LockWood2_roughness.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LockWood2_roughness.jpeg; sourceTree = "<group>"; };
-		0DD20F8A222A88F1007B9B88 /* LockWood2_metallic.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LockWood2_metallic.jpeg; sourceTree = "<group>"; };
-		0DD20F8B222A88F1007B9B88 /* chestStoneOpen_1_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chestStoneOpen_1_normal.png; sourceTree = "<group>"; };
-		0DD20F8C222A88F1007B9B88 /* chestMetalOpen_2_roughness.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestMetalOpen_2_roughness.jpeg; sourceTree = "<group>"; };
-		0DD20F8D222A88F1007B9B88 /* chestStoneOpen_2_roughness.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestStoneOpen_2_roughness.jpeg; sourceTree = "<group>"; };
-		0DD20F8E222A88F1007B9B88 /* chestWoodOpen_3_roughness.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestWoodOpen_3_roughness.jpeg; sourceTree = "<group>"; };
-		0DD20F8F222A88F1007B9B88 /* LockStone2_AO.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LockStone2_AO.jpeg; sourceTree = "<group>"; };
-		0DD20F90222A88F1007B9B88 /* chestMetalClosed_1_albedo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestMetalClosed_1_albedo.jpeg; sourceTree = "<group>"; };
-		0DD20F91222A88F1007B9B88 /* chestMetalClosed_1_metallic.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestMetalClosed_1_metallic.jpeg; sourceTree = "<group>"; };
-		0DD20F92222A88F1007B9B88 /* LockStone2_metallic.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LockStone2_metallic.jpeg; sourceTree = "<group>"; };
-		0DD20F93222A88F1007B9B88 /* chestMetalClosed_1_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chestMetalClosed_1_normal.png; sourceTree = "<group>"; };
-		0DD20F94222A88F1007B9B88 /* chestWoodClosed_1_metallic.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestWoodClosed_1_metallic.jpeg; sourceTree = "<group>"; };
-		0DD20F95222A88F1007B9B88 /* chestMetalClosed_2_metallic.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestMetalClosed_2_metallic.jpeg; sourceTree = "<group>"; };
-		0DD20F96222A88F1007B9B88 /* Ryb_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ryb_normal.png; sourceTree = "<group>"; };
-		0DD20F97222A88F1007B9B88 /* chestMetalOpen_1_albedo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestMetalOpen_1_albedo.jpeg; sourceTree = "<group>"; };
-		0DD20F98222A88F1007B9B88 /* LockStone2_roughness.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LockStone2_roughness.jpeg; sourceTree = "<group>"; };
-		0DD20F99222A88F1007B9B88 /* chestWoodClosed_2_metallic.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestWoodClosed_2_metallic.jpeg; sourceTree = "<group>"; };
-		0DD20F9A222A88F1007B9B88 /* LockMetal_albedo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LockMetal_albedo.jpeg; sourceTree = "<group>"; };
-		0DD20F9B222A88F1007B9B88 /* chestWoodOpen_2_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chestWoodOpen_2_normal.png; sourceTree = "<group>"; };
-		0DD20F9C222A88F1007B9B88 /* chestMetalOpen_3_roughness.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestMetalOpen_3_roughness.jpeg; sourceTree = "<group>"; };
-		0DD20F9D222A88F1007B9B88 /* LockMetal2_metallic.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LockMetal2_metallic.jpeg; sourceTree = "<group>"; };
-		0DD20F9E222A88F1007B9B88 /* plane_albedo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = plane_albedo.jpeg; sourceTree = "<group>"; };
-		0DD20F9F222A88F1007B9B88 /* chestWoodOpen_2_roughness.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestWoodOpen_2_roughness.jpeg; sourceTree = "<group>"; };
-		0DD20FA0222A88F1007B9B88 /* chestMetalOpen_3_metallic.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestMetalOpen_3_metallic.jpeg; sourceTree = "<group>"; };
-		0DD20FA1222A88F1007B9B88 /* chestStoneOpen_3_roughness.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestStoneOpen_3_roughness.jpeg; sourceTree = "<group>"; };
-		0DD20FA2222A88F1007B9B88 /* chestMetalOpen_2_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chestMetalOpen_2_normal.png; sourceTree = "<group>"; };
-		0DD20FA3222A88F1007B9B88 /* chestWoodClosed_2_roughness.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestWoodClosed_2_roughness.jpeg; sourceTree = "<group>"; };
-		0DD20FA4222A88F1007B9B88 /* LockWood_metallic.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LockWood_metallic.jpeg; sourceTree = "<group>"; };
-		0DD20FA5222A88F1007B9B88 /* Ryb2_metallic.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Ryb2_metallic.jpeg; sourceTree = "<group>"; };
-		0DD20FA6222A88F1007B9B88 /* chestStoneOpen_1_roughness.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestStoneOpen_1_roughness.jpeg; sourceTree = "<group>"; };
-		0DD20FA7222A88F1007B9B88 /* chestWoodOpen_3_albedo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestWoodOpen_3_albedo.jpeg; sourceTree = "<group>"; };
-		0DD20FA8222A88F1007B9B88 /* chestMetalOpen_1_roughness.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestMetalOpen_1_roughness.jpeg; sourceTree = "<group>"; };
-		0DD20FA9222A88F1007B9B88 /* LockMetal2_roughness.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LockMetal2_roughness.jpeg; sourceTree = "<group>"; };
-		0DD20FAA222A88F1007B9B88 /* chestStoneOpen_3_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chestStoneOpen_3_normal.png; sourceTree = "<group>"; };
-		0DD20FAB222A88F1007B9B88 /* chestWoodClosed_2_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chestWoodClosed_2_normal.png; sourceTree = "<group>"; };
-		0DD20FAC222A88F1007B9B88 /* chestStoneClosed_2_metallic.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestStoneClosed_2_metallic.jpeg; sourceTree = "<group>"; };
-		0DD20FAD222A88F1007B9B88 /* LockWood_albedo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LockWood_albedo.jpeg; sourceTree = "<group>"; };
-		0DD20FAE222A88F1007B9B88 /* chestWoodOpen_2_metallic.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestWoodOpen_2_metallic.jpeg; sourceTree = "<group>"; };
-		0DD20FAF222A88F1007B9B88 /* chestStoneClosed_1_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chestStoneClosed_1_normal.png; sourceTree = "<group>"; };
-		0DD20FB0222A88F1007B9B88 /* chestMetalOpen_2_albedo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestMetalOpen_2_albedo.jpeg; sourceTree = "<group>"; };
-		0DD20FB1222A88F1007B9B88 /* Ryb2_roughness.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Ryb2_roughness.jpeg; sourceTree = "<group>"; };
-		0DD20FB2222A88F1007B9B88 /* chestStoneOpen_2_metallic.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestStoneOpen_2_metallic.jpeg; sourceTree = "<group>"; };
-		0DD20FB3222A88F1007B9B88 /* LockStone_AO.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LockStone_AO.jpeg; sourceTree = "<group>"; };
-		0DD20FB4222A88F1007B9B88 /* chestStoneOpen_3_albedo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestStoneOpen_3_albedo.jpeg; sourceTree = "<group>"; };
-		0DD20FB5222A88F1007B9B88 /* chestStoneClosed_1_metallic.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestStoneClosed_1_metallic.jpeg; sourceTree = "<group>"; };
-		0DD20FB6222A88F1007B9B88 /* chestWoodOpen_1_metallic.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestWoodOpen_1_metallic.jpeg; sourceTree = "<group>"; };
-		0DD20FB7222A88F1007B9B88 /* chestStoneOpen_1_metallic.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestStoneOpen_1_metallic.jpeg; sourceTree = "<group>"; };
-		0DD20FB8222A88F1007B9B88 /* chestMetalClosed_2_albedo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestMetalClosed_2_albedo.jpeg; sourceTree = "<group>"; };
-		0DD20FB9222A88F1007B9B88 /* LockWood2_AO.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LockWood2_AO.jpeg; sourceTree = "<group>"; };
-		0DD20FBA222A88F1007B9B88 /* plane_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plane_normal.png; sourceTree = "<group>"; };
-		0DD20FBB222A88F1007B9B88 /* Ryb_AO.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Ryb_AO.jpeg; sourceTree = "<group>"; };
-		0DD20FBC222A88F1007B9B88 /* chestWoodClosed_1_roughness.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestWoodClosed_1_roughness.jpeg; sourceTree = "<group>"; };
-		0DD20FBD222A88F1007B9B88 /* plane_metallic.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = plane_metallic.jpeg; sourceTree = "<group>"; };
-		0DD20FBE222A88F1007B9B88 /* LockStone2_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LockStone2_normal.png; sourceTree = "<group>"; };
-		0DD20FBF222A88F1007B9B88 /* chestWoodOpen_1_roughness.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestWoodOpen_1_roughness.jpeg; sourceTree = "<group>"; };
-		0DD20FC0222A88F1007B9B88 /* Ryb2_albedo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Ryb2_albedo.jpeg; sourceTree = "<group>"; };
-		0DD20FC1222A88F1007B9B88 /* LockMetal2_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LockMetal2_normal.png; sourceTree = "<group>"; };
-		0DD20FC2222A88F1007B9B88 /* plane_AO.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = plane_AO.jpeg; sourceTree = "<group>"; };
-		0DD20FC3222A88F1007B9B88 /* chestWoodOpen_1_albedo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestWoodOpen_1_albedo.jpeg; sourceTree = "<group>"; };
-		0DD20FC4222A88F1007B9B88 /* chestMetalClosed_2_AO.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestMetalClosed_2_AO.jpeg; sourceTree = "<group>"; };
-		0DD20FC5222A88F1007B9B88 /* chestStoneOpen_3_AO.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestStoneOpen_3_AO.jpeg; sourceTree = "<group>"; };
-		0DD20FC6222A88F1007B9B88 /* LockWood2_albedo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LockWood2_albedo.jpeg; sourceTree = "<group>"; };
-		0DD20FC7222A88F1007B9B88 /* chestStoneClosed_1_albedo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestStoneClosed_1_albedo.jpeg; sourceTree = "<group>"; };
-		0DD20FC8222A88F1007B9B88 /* chestWoodOpen_3_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chestWoodOpen_3_normal.png; sourceTree = "<group>"; };
-		0DD20FC9222A88F1007B9B88 /* chestMetalOpen_3_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chestMetalOpen_3_normal.png; sourceTree = "<group>"; };
-		0DD20FCA222A88F1007B9B88 /* chestWoodClosed_1_albedo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestWoodClosed_1_albedo.jpeg; sourceTree = "<group>"; };
-		0DD20FCB222A88F1007B9B88 /* chestStoneOpen_1_albedo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestStoneOpen_1_albedo.jpeg; sourceTree = "<group>"; };
-		0DD20FCC222A88F1007B9B88 /* LockMetal2_albedo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LockMetal2_albedo.jpeg; sourceTree = "<group>"; };
-		0DD20FCD222A88F1007B9B88 /* chestStoneClosed_1_AO.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestStoneClosed_1_AO.jpeg; sourceTree = "<group>"; };
-		0DD20FCE222A88F1007B9B88 /* chestStoneOpen_2_AO.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestStoneOpen_2_AO.jpeg; sourceTree = "<group>"; };
-		0DD20FCF222A88F1007B9B88 /* chestWoodClosed_1_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chestWoodClosed_1_normal.png; sourceTree = "<group>"; };
-		0DD20FD0222A88F1007B9B88 /* LockMetal_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LockMetal_normal.png; sourceTree = "<group>"; };
-		0DD20FD1222A88F1007B9B88 /* LockStone2_albedo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LockStone2_albedo.jpeg; sourceTree = "<group>"; };
-		0DD20FD2222A88F1007B9B88 /* Ryb2_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ryb2_normal.png; sourceTree = "<group>"; };
-		0DD20FD3222A88F1007B9B88 /* chestMetalOpen_1_AO.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestMetalOpen_1_AO.jpeg; sourceTree = "<group>"; };
-		0DD20FD4222A88F1007B9B88 /* plane_roughness.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = plane_roughness.jpeg; sourceTree = "<group>"; };
-		0DD20FD5222A88F1007B9B88 /* chestWoodOpen_1_AO.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestWoodOpen_1_AO.jpeg; sourceTree = "<group>"; };
-		0DD20FD6222A88F1007B9B88 /* chestStoneOpen_3_metallic.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestStoneOpen_3_metallic.jpeg; sourceTree = "<group>"; };
-		0DD20FD7222A88F1007B9B88 /* chestMetalClosed_1_roughness.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestMetalClosed_1_roughness.jpeg; sourceTree = "<group>"; };
-		0DD20FD8222A88F1007B9B88 /* chestStoneClosed_2_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chestStoneClosed_2_normal.png; sourceTree = "<group>"; };
-		0DD20FD9222A88F1007B9B88 /* Ryb_roughness.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Ryb_roughness.jpeg; sourceTree = "<group>"; };
-		0DD20FDA222A88F1007B9B88 /* chestWoodOpen_3_metallic.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestWoodOpen_3_metallic.jpeg; sourceTree = "<group>"; };
-		0DD20FDB222A88F1007B9B88 /* chestWoodClosed_1_AO.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestWoodClosed_1_AO.jpeg; sourceTree = "<group>"; };
-		0DD20FDC222A88F1007B9B88 /* LockMetal_metallic.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LockMetal_metallic.jpeg; sourceTree = "<group>"; };
-		0DD20FDD222A88F1007B9B88 /* chestStoneClosed_1_roughness.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestStoneClosed_1_roughness.jpeg; sourceTree = "<group>"; };
-		0DD20FDE222A88F1007B9B88 /* chestMetalClosed_1_AO.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestMetalClosed_1_AO.jpeg; sourceTree = "<group>"; };
-		0DD20FDF222A88F1007B9B88 /* LockStone_albedo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LockStone_albedo.jpeg; sourceTree = "<group>"; };
-		0DD20FE0222A88F1007B9B88 /* chestMetalOpen_3_AO.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestMetalOpen_3_AO.jpeg; sourceTree = "<group>"; };
-		0DD20FE1222A88F1007B9B88 /* chestWoodOpen_3_AO.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestWoodOpen_3_AO.jpeg; sourceTree = "<group>"; };
-		0DD20FE2222A88F1007B9B88 /* chestMetalOpen_1_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chestMetalOpen_1_normal.png; sourceTree = "<group>"; };
-		0DD20FE3222A88F1007B9B88 /* LockWood_AO.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LockWood_AO.jpeg; sourceTree = "<group>"; };
-		0DD20FE4222A88F1007B9B88 /* Ryb2_AO.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Ryb2_AO.jpeg; sourceTree = "<group>"; };
-		0DD20FE5222A88F1007B9B88 /* chestMetalOpen_2_metallic.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestMetalOpen_2_metallic.jpeg; sourceTree = "<group>"; };
-		0DD20FE6222A88F1007B9B88 /* LockMetal2_AO.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LockMetal2_AO.jpeg; sourceTree = "<group>"; };
-		0DD20FE7222A88F1007B9B88 /* chestWoodOpen_1_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chestWoodOpen_1_normal.png; sourceTree = "<group>"; };
-		0DD20FE8222A88F1007B9B88 /* LockStone_roughness.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LockStone_roughness.jpeg; sourceTree = "<group>"; };
-		0DD20FE9222A88F1007B9B88 /* chestWoodOpen_2_AO.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestWoodOpen_2_AO.jpeg; sourceTree = "<group>"; };
-		0DD20FEA222A88F1007B9B88 /* LockWood2_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LockWood2_normal.png; sourceTree = "<group>"; };
-		0DD20FEB222A88F1007B9B88 /* chestStoneOpen_2_albedo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestStoneOpen_2_albedo.jpeg; sourceTree = "<group>"; };
-		0DD20FEC222A88F1007B9B88 /* LockStone_metallic.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LockStone_metallic.jpeg; sourceTree = "<group>"; };
-		0DD20FED222A88F1007B9B88 /* chestWoodClosed_2_albedo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestWoodClosed_2_albedo.jpeg; sourceTree = "<group>"; };
-		0DD20FEE222A88F1007B9B88 /* chestStoneClosed_2_albedo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestStoneClosed_2_albedo.jpeg; sourceTree = "<group>"; };
-		0DD20FEF222A88F1007B9B88 /* chestMetalOpen_1_metallic.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestMetalOpen_1_metallic.jpeg; sourceTree = "<group>"; };
-		0DD20FF0222A88F1007B9B88 /* chestStoneOpen_2_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chestStoneOpen_2_normal.png; sourceTree = "<group>"; };
-		0DD20FF1222A88F1007B9B88 /* chestWoodClosed_2_AO.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestWoodClosed_2_AO.jpeg; sourceTree = "<group>"; };
-		0DD20FF2222A88F1007B9B88 /* chestMetalOpen_3_albedo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestMetalOpen_3_albedo.jpeg; sourceTree = "<group>"; };
-		0DD20FF3222A88F1007B9B88 /* chestStoneClosed_2_roughness.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestStoneClosed_2_roughness.jpeg; sourceTree = "<group>"; };
-		0DD20FF4222A88F1007B9B88 /* chestStoneOpen_1_AO.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestStoneOpen_1_AO.jpeg; sourceTree = "<group>"; };
-		0DD20FF5222A88F1007B9B88 /* chestStoneClosed_2_AO.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestStoneClosed_2_AO.jpeg; sourceTree = "<group>"; };
-		0DD20FF6222A88F1007B9B88 /* chestMetalClosed_2_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chestMetalClosed_2_normal.png; sourceTree = "<group>"; };
-		0DD20FF7222A88F1007B9B88 /* chestWoodOpen_2_albedo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestWoodOpen_2_albedo.jpeg; sourceTree = "<group>"; };
-		0DD20FF8222A88F1007B9B88 /* chestMetalClosed_2_roughness.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestMetalClosed_2_roughness.jpeg; sourceTree = "<group>"; };
-		0DD20FF9222A88F1007B9B88 /* LockWood_roughness.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LockWood_roughness.jpeg; sourceTree = "<group>"; };
-		0DD20FFA222A88F1007B9B88 /* chestMetalOpen_2_AO.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestMetalOpen_2_AO.jpeg; sourceTree = "<group>"; };
+		0DD2106F222A8E27007B9B88 /* chestStoneOpen_1_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chestStoneOpen_1_normal.png; sourceTree = "<group>"; };
+		0DD21070222A8E27007B9B88 /* LockMetal_metallicRoughness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LockMetal_metallicRoughness.png; sourceTree = "<group>"; };
+		0DD21071222A8E27007B9B88 /* plane_baseColor.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = plane_baseColor.jpeg; sourceTree = "<group>"; };
+		0DD21072222A8E27007B9B88 /* chestMetalClosed_1_baseColor.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestMetalClosed_1_baseColor.jpeg; sourceTree = "<group>"; };
+		0DD21073222A8E27007B9B88 /* chestMetalClosed_1_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chestMetalClosed_1_normal.png; sourceTree = "<group>"; };
+		0DD21074222A8E27007B9B88 /* chestStoneOpen_3_metallicRoughness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chestStoneOpen_3_metallicRoughness.png; sourceTree = "<group>"; };
+		0DD21075222A8E27007B9B88 /* chestStoneClosed_1_baseColor.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestStoneClosed_1_baseColor.jpeg; sourceTree = "<group>"; };
+		0DD21076222A8E27007B9B88 /* chestWoodOpen_3_metallicRoughness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chestWoodOpen_3_metallicRoughness.png; sourceTree = "<group>"; };
+		0DD21077222A8E27007B9B88 /* chestWoodOpen_2_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chestWoodOpen_2_normal.png; sourceTree = "<group>"; };
+		0DD21078222A8E27007B9B88 /* chestStoneOpen_1_metallicRoughness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chestStoneOpen_1_metallicRoughness.png; sourceTree = "<group>"; };
+		0DD21079222A8E27007B9B88 /* chestWoodOpen_1_metallicRoughness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chestWoodOpen_1_metallicRoughness.png; sourceTree = "<group>"; };
+		0DD2107A222A8E27007B9B88 /* LockStone_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LockStone_normal.png; sourceTree = "<group>"; };
+		0DD2107B222A8E27007B9B88 /* chestMetalOpen_2_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chestMetalOpen_2_normal.png; sourceTree = "<group>"; };
+		0DD2107C222A8E27007B9B88 /* LockStone_baseColor.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LockStone_baseColor.jpeg; sourceTree = "<group>"; };
+		0DD2107D222A8E27007B9B88 /* chestMetalOpen_1_metallicRoughness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chestMetalOpen_1_metallicRoughness.png; sourceTree = "<group>"; };
+		0DD2107E222A8E27007B9B88 /* chestMetalClosed_1_metallicRoughness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chestMetalClosed_1_metallicRoughness.png; sourceTree = "<group>"; };
+		0DD2107F222A8E27007B9B88 /* LockStone2_metallicRoughness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LockStone2_metallicRoughness.png; sourceTree = "<group>"; };
+		0DD21080222A8E27007B9B88 /* LockMetal2_metallicRoughness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LockMetal2_metallicRoughness.png; sourceTree = "<group>"; };
+		0DD21081222A8E27007B9B88 /* material_baseColor.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = material_baseColor.jpeg; sourceTree = "<group>"; };
+		0DD21082222A8E27007B9B88 /* chestStoneOpen_3_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chestStoneOpen_3_normal.png; sourceTree = "<group>"; };
+		0DD21083222A8E27007B9B88 /* chestWoodClosed_2_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chestWoodClosed_2_normal.png; sourceTree = "<group>"; };
+		0DD21084222A8E27007B9B88 /* Ryb2_metallicRoughness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ryb2_metallicRoughness.png; sourceTree = "<group>"; };
+		0DD21085222A8E27007B9B88 /* LockWood_metallicRoughness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LockWood_metallicRoughness.png; sourceTree = "<group>"; };
+		0DD21086222A8E27007B9B88 /* chestStoneClosed_2_baseColor.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestStoneClosed_2_baseColor.jpeg; sourceTree = "<group>"; };
+		0DD21087222A8E27007B9B88 /* chestStoneClosed_1_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chestStoneClosed_1_normal.png; sourceTree = "<group>"; };
+		0DD21088222A8E27007B9B88 /* LockWood_baseColor.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LockWood_baseColor.jpeg; sourceTree = "<group>"; };
+		0DD21089222A8E27007B9B88 /* plane_metallicRoughness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plane_metallicRoughness.png; sourceTree = "<group>"; };
+		0DD2108A222A8E27007B9B88 /* chestMetalClosed_2_baseColor.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestMetalClosed_2_baseColor.jpeg; sourceTree = "<group>"; };
+		0DD2108B222A8E27007B9B88 /* LockWood_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LockWood_normal.png; sourceTree = "<group>"; };
+		0DD2108C222A8E27007B9B88 /* chestStoneClosed_1_metallicRoughness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chestStoneClosed_1_metallicRoughness.png; sourceTree = "<group>"; };
+		0DD2108D222A8E27007B9B88 /* chestWoodClosed_2_metallicRoughness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chestWoodClosed_2_metallicRoughness.png; sourceTree = "<group>"; };
+		0DD2108E222A8E27007B9B88 /* chestMetalOpen_3_metallicRoughness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chestMetalOpen_3_metallicRoughness.png; sourceTree = "<group>"; };
+		0DD2108F222A8E27007B9B88 /* plane_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plane_normal.png; sourceTree = "<group>"; };
+		0DD21090222A8E27007B9B88 /* LockMetal_baseColor.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LockMetal_baseColor.jpeg; sourceTree = "<group>"; };
+		0DD21091222A8E27007B9B88 /* LockStone_metallicRoughness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LockStone_metallicRoughness.png; sourceTree = "<group>"; };
+		0DD21092222A8E27007B9B88 /* LockStone2_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LockStone2_normal.png; sourceTree = "<group>"; };
+		0DD21093222A8E27007B9B88 /* LockWood2_metallicRoughness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LockWood2_metallicRoughness.png; sourceTree = "<group>"; };
+		0DD21094222A8E27007B9B88 /* LockMetal2_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LockMetal2_normal.png; sourceTree = "<group>"; };
+		0DD21095222A8E27007B9B88 /* chestWoodOpen_2_metallicRoughness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chestWoodOpen_2_metallicRoughness.png; sourceTree = "<group>"; };
+		0DD21096222A8E27007B9B88 /* LockStone2_baseColor.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LockStone2_baseColor.jpeg; sourceTree = "<group>"; };
+		0DD21097222A8E27007B9B88 /* chestStoneOpen_2_metallicRoughness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chestStoneOpen_2_metallicRoughness.png; sourceTree = "<group>"; };
+		0DD21098222A8E27007B9B88 /* chestMetalOpen_3_baseColor.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestMetalOpen_3_baseColor.jpeg; sourceTree = "<group>"; };
+		0DD21099222A8E27007B9B88 /* chestWoodOpen_3_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chestWoodOpen_3_normal.png; sourceTree = "<group>"; };
+		0DD2109A222A8E27007B9B88 /* chestStoneOpen_3_baseColor.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestStoneOpen_3_baseColor.jpeg; sourceTree = "<group>"; };
+		0DD2109B222A8E27007B9B88 /* chestWoodOpen_2_baseColor.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestWoodOpen_2_baseColor.jpeg; sourceTree = "<group>"; };
+		0DD2109C222A8E27007B9B88 /* chestMetalOpen_3_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chestMetalOpen_3_normal.png; sourceTree = "<group>"; };
+		0DD2109D222A8E27007B9B88 /* chestWoodClosed_2_baseColor.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestWoodClosed_2_baseColor.jpeg; sourceTree = "<group>"; };
+		0DD2109E222A8E27007B9B88 /* LockWood2_baseColor.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LockWood2_baseColor.jpeg; sourceTree = "<group>"; };
+		0DD2109F222A8E27007B9B88 /* chestWoodClosed_1_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chestWoodClosed_1_normal.png; sourceTree = "<group>"; };
+		0DD210A0222A8E27007B9B88 /* LockMetal_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LockMetal_normal.png; sourceTree = "<group>"; };
+		0DD210A1222A8E27007B9B88 /* Ryb2_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Ryb2_normal.png; sourceTree = "<group>"; };
+		0DD210A2222A8E27007B9B88 /* chestMetalOpen_2_baseColor.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestMetalOpen_2_baseColor.jpeg; sourceTree = "<group>"; };
+		0DD210A3222A8E27007B9B88 /* material_metallicRoughness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = material_metallicRoughness.png; sourceTree = "<group>"; };
+		0DD210A4222A8E27007B9B88 /* chestWoodOpen_3_baseColor.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestWoodOpen_3_baseColor.jpeg; sourceTree = "<group>"; };
+		0DD210A5222A8E27007B9B88 /* chestStoneOpen_2_baseColor.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestStoneOpen_2_baseColor.jpeg; sourceTree = "<group>"; };
+		0DD210A6222A8E27007B9B88 /* chestStoneClosed_2_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chestStoneClosed_2_normal.png; sourceTree = "<group>"; };
+		0DD210A7222A8E27007B9B88 /* material_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = material_normal.png; sourceTree = "<group>"; };
+		0DD210A8222A8E27007B9B88 /* chestWoodClosed_1_baseColor.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestWoodClosed_1_baseColor.jpeg; sourceTree = "<group>"; };
+		0DD210A9222A8E27007B9B88 /* chestMetalOpen_1_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chestMetalOpen_1_normal.png; sourceTree = "<group>"; };
+		0DD210AA222A8E27007B9B88 /* chestWoodOpen_1_baseColor.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestWoodOpen_1_baseColor.jpeg; sourceTree = "<group>"; };
+		0DD210AB222A8E27007B9B88 /* chestWoodOpen_1_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chestWoodOpen_1_normal.png; sourceTree = "<group>"; };
+		0DD210AC222A8E27007B9B88 /* chestWoodClosed_1_metallicRoughness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chestWoodClosed_1_metallicRoughness.png; sourceTree = "<group>"; };
+		0DD210AD222A8E27007B9B88 /* chestStoneClosed_2_metallicRoughness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chestStoneClosed_2_metallicRoughness.png; sourceTree = "<group>"; };
+		0DD210AE222A8E27007B9B88 /* chestStoneOpen_1_baseColor.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestStoneOpen_1_baseColor.jpeg; sourceTree = "<group>"; };
+		0DD210AF222A8E27007B9B88 /* LockWood2_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LockWood2_normal.png; sourceTree = "<group>"; };
+		0DD210B0222A8E27007B9B88 /* chestMetalOpen_1_baseColor.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chestMetalOpen_1_baseColor.jpeg; sourceTree = "<group>"; };
+		0DD210B1222A8E27007B9B88 /* chestStoneOpen_2_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chestStoneOpen_2_normal.png; sourceTree = "<group>"; };
+		0DD210B2222A8E27007B9B88 /* LockMetal2_baseColor.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = LockMetal2_baseColor.jpeg; sourceTree = "<group>"; };
+		0DD210B3222A8E27007B9B88 /* chestMetalClosed_2_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chestMetalClosed_2_normal.png; sourceTree = "<group>"; };
+		0DD210B4222A8E27007B9B88 /* Ryb2_baseColor.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Ryb2_baseColor.jpeg; sourceTree = "<group>"; };
+		0DD210B5222A8E27007B9B88 /* chestMetalClosed_2_metallicRoughness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chestMetalClosed_2_metallicRoughness.png; sourceTree = "<group>"; };
+		0DD210B6222A8E27007B9B88 /* chestMetalOpen_2_metallicRoughness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chestMetalOpen_2_metallicRoughness.png; sourceTree = "<group>"; };
+		0DD210B7222A8E27007B9B88 /* scene.gltf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = scene.gltf; sourceTree = "<group>"; };
+		0DD210B8222A8E27007B9B88 /* scene.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = scene.bin; sourceTree = "<group>"; };
+		0DD21103222A8E5C007B9B88 /* scene.bin.cpgz */ = {isa = PBXFileReference; lastKnownFileType = file; path = scene.bin.cpgz; sourceTree = "<group>"; };
+		0DD212E3222A923A007B9B88 /* urn2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = urn2.jpeg; sourceTree = "<group>"; };
+		0DD212E5222A923A007B9B88 /* urn.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = urn.zip; sourceTree = "<group>"; };
+		0DD212E7222A923A007B9B88 /* urn2.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = urn2.obj; sourceTree = "<group>"; };
+		0DD212E8222A923A007B9B88 /* urn2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = urn2.jpg; sourceTree = "<group>"; };
+		0DD212E9222A923A007B9B88 /* urn2.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = urn2.mtl; sourceTree = "<group>"; };
+		0DD212F1222A929D007B9B88 /* Treasure_chest_top_SpecularSmoothness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Treasure_chest_top_SpecularSmoothness.png; sourceTree = "<group>"; };
+		0DD212F2222A929D007B9B88 /* Treasure_chest_top_Emission.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Treasure_chest_top_Emission.png; sourceTree = "<group>"; };
+		0DD212F3222A929D007B9B88 /* Lock_diffuse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lock_diffuse.png; sourceTree = "<group>"; };
+		0DD212F4222A929D007B9B88 /* Treasure_chest_grip_AlbedoTransparency.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Treasure_chest_grip_AlbedoTransparency.png; sourceTree = "<group>"; };
+		0DD212F5222A929D007B9B88 /* Treasure_chest_grip_base_Normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Treasure_chest_grip_base_Normal.png; sourceTree = "<group>"; };
+		0DD212F6222A929D007B9B88 /* Treasure_chest_bot_Emission.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Treasure_chest_bot_Emission.png; sourceTree = "<group>"; };
+		0DD212F7222A929D007B9B88 /* Treasure_chest_grip_base_SpecularSmoothnes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Treasure_chest_grip_base_SpecularSmoothnes.png; sourceTree = "<group>"; };
+		0DD212F8222A929D007B9B88 /* Treasure_chest_top_Normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Treasure_chest_top_Normal.png; sourceTree = "<group>"; };
+		0DD212F9222A929D007B9B88 /* Treasure_chest_bot_Normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Treasure_chest_bot_Normal.png; sourceTree = "<group>"; };
+		0DD212FA222A929D007B9B88 /* Treasure_chest_grip_Normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Treasure_chest_grip_Normal.png; sourceTree = "<group>"; };
+		0DD212FB222A929D007B9B88 /* Treasure_chest_bot_SpecularSmoothness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Treasure_chest_bot_SpecularSmoothness.png; sourceTree = "<group>"; };
+		0DD212FC222A929D007B9B88 /* Treasure_chest_grip_SpecularSmoothness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Treasure_chest_grip_SpecularSmoothness.png; sourceTree = "<group>"; };
+		0DD212FE222A929D007B9B88 /* Treasure chest.fbx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Treasure chest.fbx"; sourceTree = "<group>"; };
+		0DD2130E222A92A9007B9B88 /* roughness2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = roughness2.png; sourceTree = "<group>"; };
+		0DD2130F222A92A9007B9B88 /* metalic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = metalic.png; sourceTree = "<group>"; };
+		0DD21310222A92A9007B9B88 /* diffuse2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diffuse2.png; sourceTree = "<group>"; };
+		0DD21311222A92A9007B9B88 /* specular2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = specular2.png; sourceTree = "<group>"; };
 		0DE77DE02229E5BE00682B87 /* Scan_12-57-24.arobject */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Scan_12-57-24.arobject"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -581,13 +304,15 @@
 		0DA4D72722152A2000D36D81 /* ARcache */ = {
 			isa = PBXGroup;
 			children = (
+				0DD212EF222A929D007B9B88 /* magic-treasure-chest */,
+				0DD212E1222A9239007B9B88 /* burial-chest */,
+				0DD2106D222A8E27007B9B88 /* treasure_chest_pack */,
 				0DD20E6D222A5695007B9B88 /* xmark.png */,
 				0DD20E6F222A56A0007B9B88 /* log.png */,
 				0DD20E71222A56A7007B9B88 /* output-onlinepngtools.png */,
-				0DD20E94222A88A8007B9B88 /* model */,
 				0DA4D72822152A2000D36D81 /* AppDelegate.swift */,
+				0DD2130C222A92A9007B9B88 /* jewelry-chest */,
 				0DD20E69222A4F16007B9B88 /* IMG_0006.png */,
-				0DD20F88222A88F1007B9B88 /* textures */,
 				0DE77DE02229E5BE00682B87 /* Scan_12-57-24.arobject */,
 				0DA4D72A22152A2000D36D81 /* art.scnassets */,
 				0DA4D72C22152A2000D36D81 /* ViewController.swift */,
@@ -627,261 +352,193 @@
 			path = "New Group";
 			sourceTree = "<group>";
 		};
-		0DD20E94222A88A8007B9B88 /* model */ = {
+		0DD2106D222A8E27007B9B88 /* treasure_chest_pack */ = {
 			isa = PBXGroup;
 			children = (
-				0DD20F0E222A88A9007B9B88 /* model.dae */,
-				0DD20E95222A88A8007B9B88 /* textures */,
+				0DD21103222A8E5C007B9B88 /* scene.bin.cpgz */,
+				0DD2106E222A8E27007B9B88 /* textures */,
+				0DD210B7222A8E27007B9B88 /* scene.gltf */,
+				0DD210B8222A8E27007B9B88 /* scene.bin */,
 			);
-			path = model;
+			path = treasure_chest_pack;
 			sourceTree = "<group>";
 		};
-		0DD20E95222A88A8007B9B88 /* textures */ = {
+		0DD2106E222A8E27007B9B88 /* textures */ = {
 			isa = PBXGroup;
 			children = (
-				0DD20E96222A88A8007B9B88 /* LockMetal2_albedo.jpg */,
-				0DD20E97222A88A8007B9B88 /* chestWoodOpen_3_roughness.jpg */,
-				0DD20E98222A88A8007B9B88 /* LockMetal_roughness.jpg */,
-				0DD20E99222A88A8007B9B88 /* chestStoneOpen_1_normal.png */,
-				0DD20E9A222A88A8007B9B88 /* chestWoodClosed_1_metallic.jpg */,
-				0DD20E9B222A88A8007B9B88 /* chestMetalClosed_2_AO.jpg */,
-				0DD20E9C222A88A8007B9B88 /* LockWood_metallic.jpg */,
-				0DD20E9D222A88A8007B9B88 /* chestStoneOpen_3_roughness.jpg */,
-				0DD20E9E222A88A8007B9B88 /* chestWoodOpen_3_albedo.jpg */,
-				0DD20E9F222A88A8007B9B88 /* chestMetalOpen_3_albedo.jpg */,
-				0DD20EA0222A88A8007B9B88 /* chestMetalOpen_1_AO.jpg */,
-				0DD20EA1222A88A8007B9B88 /* chestMetalOpen_3_metallic.jpg */,
-				0DD20EA2222A88A8007B9B88 /* chestMetalClosed_1_normal.png */,
-				0DD20EA3222A88A8007B9B88 /* chestStoneOpen_1_AO.jpg */,
-				0DD20EA4222A88A8007B9B88 /* chestWoodClosed_1_albedo.jpg */,
-				0DD20EA5222A88A8007B9B88 /* LockMetal_albedo.jpg */,
-				0DD20EA6222A88A8007B9B88 /* Ryb_normal.png */,
-				0DD20EA7222A88A8007B9B88 /* Ryb2_albedo.jpg */,
-				0DD20EA8222A88A8007B9B88 /* chestStoneClosed_2_AO.jpg */,
-				0DD20EA9222A88A8007B9B88 /* chestStoneOpen_3_AO.jpg */,
-				0DD20EAA222A88A8007B9B88 /* chestMetalOpen_3_AO.jpg */,
-				0DD20EAB222A88A8007B9B88 /* chestStoneClosed_1_metallic.jpg */,
-				0DD20EAC222A88A8007B9B88 /* chestWoodOpen_2_normal.png */,
-				0DD20EAD222A88A8007B9B88 /* LockMetal2_AO.jpg */,
-				0DD20EAE222A88A8007B9B88 /* chestMetalOpen_2_metallic.jpg */,
-				0DD20EAF222A88A8007B9B88 /* chestMetalClosed_1_metallic.jpg */,
-				0DD20EB0222A88A8007B9B88 /* chestWoodClosed_2_AO.jpg */,
-				0DD20EB1222A88A8007B9B88 /* chestStoneClosed_2_albedo.jpg */,
-				0DD20EB2222A88A8007B9B88 /* LockMetal_metallic.jpg */,
-				0DD20EB3222A88A8007B9B88 /* LockStone_normal.png */,
-				0DD20EB4222A88A8007B9B88 /* chestMetalOpen_2_normal.png */,
-				0DD20EB5222A88A8007B9B88 /* LockStone_metallic.jpg */,
-				0DD20EB6222A88A8007B9B88 /* chestWoodOpen_1_metallic.jpg */,
-				0DD20EB7222A88A8007B9B88 /* chestStoneOpen_3_normal.png */,
-				0DD20EB8222A88A8007B9B88 /* chestWoodClosed_2_normal.png */,
-				0DD20EB9222A88A8007B9B88 /* chestMetalOpen_1_albedo.jpg */,
-				0DD20EBA222A88A8007B9B88 /* chestMetalOpen_1_roughness.jpg */,
-				0DD20EBB222A88A8007B9B88 /* chestStoneClosed_1_normal.png */,
-				0DD20EBC222A88A8007B9B88 /* chestStoneOpen_3_metallic.jpg */,
-				0DD20EBD222A88A8007B9B88 /* chestWoodOpen_2_AO.jpg */,
-				0DD20EBE222A88A8007B9B88 /* LockStone_roughness.jpg */,
-				0DD20EBF222A88A8007B9B88 /* LockWood2_AO.jpg */,
-				0DD20EC0222A88A8007B9B88 /* chestWoodOpen_1_albedo.jpg */,
-				0DD20EC1222A88A8007B9B88 /* chestMetalOpen_2_roughness.jpg */,
-				0DD20EC2222A88A8007B9B88 /* LockWood_normal.png */,
-				0DD20EC3222A88A8007B9B88 /* LockWood2_albedo.jpg */,
-				0DD20EC4222A88A8007B9B88 /* Ryb_roughness.jpg */,
-				0DD20EC5222A88A8007B9B88 /* chestStoneOpen_2_albedo.jpg */,
-				0DD20EC6222A88A8007B9B88 /* plane_normal.png */,
-				0DD20EC7222A88A8007B9B88 /* chestMetalClosed_2_albedo.jpg */,
-				0DD20EC8222A88A8007B9B88 /* LockWood2_metallic.jpg */,
-				0DD20EC9222A88A8007B9B88 /* LockStone2_normal.png */,
-				0DD20ECA222A88A8007B9B88 /* chestStoneOpen_2_metallic.jpg */,
-				0DD20ECB222A88A8007B9B88 /* LockMetal2_normal.png */,
-				0DD20ECC222A88A8007B9B88 /* chestStoneOpen_1_albedo.jpg */,
-				0DD20ECD222A88A8007B9B88 /* chestWoodOpen_2_metallic.jpg */,
-				0DD20ECE222A88A8007B9B88 /* LockMetal2_metallic.jpg */,
-				0DD20ECF222A88A8007B9B88 /* chestStoneClosed_1_AO.jpg */,
-				0DD20ED0222A88A8007B9B88 /* chestMetalOpen_3_roughness.jpg */,
-				0DD20ED1222A88A8007B9B88 /* LockMetal2_roughness.jpg */,
-				0DD20ED2222A88A8007B9B88 /* chestWoodClosed_2_roughness.jpg */,
-				0DD20ED3222A88A8007B9B88 /* Ryb_AO.jpg */,
-				0DD20ED4222A88A8007B9B88 /* chestWoodClosed_1_AO.jpg */,
-				0DD20ED5222A88A8007B9B88 /* chestWoodOpen_3_normal.png */,
-				0DD20ED6222A88A8007B9B88 /* chestMetalClosed_1_albedo.jpg */,
-				0DD20ED7222A88A8007B9B88 /* chestMetalOpen_3_normal.png */,
-				0DD20ED8222A88A8007B9B88 /* chestMetalClosed_2_roughness.jpg */,
-				0DD20ED9222A88A8007B9B88 /* chestWoodOpen_3_metallic.jpg */,
-				0DD20EDA222A88A8007B9B88 /* LockStone2_roughness.jpg */,
-				0DD20EDB222A88A8007B9B88 /* chestWoodClosed_1_normal.png */,
-				0DD20EDC222A88A8007B9B88 /* LockMetal_normal.png */,
-				0DD20EDD222A88A8007B9B88 /* chestWoodClosed_1_roughness.jpg */,
-				0DD20EDE222A88A8007B9B88 /* Ryb2_normal.png */,
-				0DD20EDF222A88A8007B9B88 /* chestMetalClosed_1_AO.jpg */,
-				0DD20EE0222A88A8007B9B88 /* Ryb_albedo.jpg */,
-				0DD20EE1222A88A8007B9B88 /* plane_AO.jpg */,
-				0DD20EE2222A88A8007B9B88 /* chestMetalClosed_1_roughness.jpg */,
-				0DD20EE3222A88A8007B9B88 /* chestStoneOpen_1_metallic.jpg */,
-				0DD20EE4222A88A8007B9B88 /* LockMetal_AO.jpg */,
-				0DD20EE5222A88A8007B9B88 /* chestStoneOpen_2_AO.jpg */,
-				0DD20EE6222A88A8007B9B88 /* chestWoodOpen_2_albedo.jpg */,
-				0DD20EE7222A88A8007B9B88 /* chestMetalOpen_2_AO.jpg */,
-				0DD20EE8222A88A8007B9B88 /* LockStone_AO.jpg */,
-				0DD20EE9222A88A8007B9B88 /* LockWood2_roughness.jpg */,
-				0DD20EEA222A88A8007B9B88 /* LockStone_albedo.jpg */,
-				0DD20EEB222A88A8007B9B88 /* chestStoneClosed_2_normal.png */,
-				0DD20EEC222A88A8007B9B88 /* chestMetalOpen_2_albedo.jpg */,
-				0DD20EED222A88A8007B9B88 /* plane_metallic.jpg */,
-				0DD20EEE222A88A8007B9B88 /* chestWoodClosed_2_metallic.jpg */,
-				0DD20EEF222A88A8007B9B88 /* LockWood_AO.jpg */,
-				0DD20EF0222A88A8007B9B88 /* plane_roughness.jpg */,
-				0DD20EF1222A88A8007B9B88 /* chestWoodOpen_3_AO.jpg */,
-				0DD20EF2222A88A8007B9B88 /* chestWoodClosed_2_albedo.jpg */,
-				0DD20EF3222A88A8007B9B88 /* chestStoneOpen_3_albedo.jpg */,
-				0DD20EF4222A88A8007B9B88 /* LockStone2_metallic.jpg */,
-				0DD20EF5222A88A8007B9B88 /* chestMetalOpen_1_normal.png */,
-				0DD20EF6222A88A8007B9B88 /* chestStoneOpen_1_roughness.jpg */,
-				0DD20EF7222A88A8007B9B88 /* LockStone2_AO.jpg */,
-				0DD20EF8222A88A8007B9B88 /* chestStoneClosed_1_albedo.jpg */,
-				0DD20EF9222A88A8007B9B88 /* chestStoneClosed_1_roughness.jpg */,
-				0DD20EFA222A88A8007B9B88 /* chestWoodOpen_1_roughness.jpg */,
-				0DD20EFB222A88A8007B9B88 /* chestWoodOpen_1_normal.png */,
-				0DD20EFC222A88A8007B9B88 /* chestStoneOpen_2_roughness.jpg */,
-				0DD20EFD222A88A8007B9B88 /* LockWood_albedo.jpg */,
-				0DD20EFE222A88A8007B9B88 /* LockWood2_normal.png */,
-				0DD20EFF222A88A8007B9B88 /* Ryb_metallic.jpg */,
-				0DD20F00222A88A8007B9B88 /* Ryb2_metallic.jpg */,
-				0DD20F01222A88A8007B9B88 /* chestStoneClosed_2_roughness.jpg */,
-				0DD20F02222A88A8007B9B88 /* chestStoneOpen_2_normal.png */,
-				0DD20F03222A88A8007B9B88 /* plane_albedo.jpg */,
-				0DD20F04222A88A8007B9B88 /* chestWoodOpen_2_roughness.jpg */,
-				0DD20F05222A88A9007B9B88 /* chestMetalClosed_2_normal.png */,
-				0DD20F06222A88A9007B9B88 /* LockStone2_albedo.jpg */,
-				0DD20F07222A88A9007B9B88 /* Ryb2_AO.jpg */,
-				0DD20F08222A88A9007B9B88 /* Ryb2_roughness.jpg */,
-				0DD20F09222A88A9007B9B88 /* chestMetalClosed_2_metallic.jpg */,
-				0DD20F0A222A88A9007B9B88 /* LockWood_roughness.jpg */,
-				0DD20F0B222A88A9007B9B88 /* chestWoodOpen_1_AO.jpg */,
-				0DD20F0C222A88A9007B9B88 /* chestStoneClosed_2_metallic.jpg */,
-				0DD20F0D222A88A9007B9B88 /* chestMetalOpen_1_metallic.jpg */,
+				0DD2106F222A8E27007B9B88 /* chestStoneOpen_1_normal.png */,
+				0DD21070222A8E27007B9B88 /* LockMetal_metallicRoughness.png */,
+				0DD21071222A8E27007B9B88 /* plane_baseColor.jpeg */,
+				0DD21072222A8E27007B9B88 /* chestMetalClosed_1_baseColor.jpeg */,
+				0DD21073222A8E27007B9B88 /* chestMetalClosed_1_normal.png */,
+				0DD21074222A8E27007B9B88 /* chestStoneOpen_3_metallicRoughness.png */,
+				0DD21075222A8E27007B9B88 /* chestStoneClosed_1_baseColor.jpeg */,
+				0DD21076222A8E27007B9B88 /* chestWoodOpen_3_metallicRoughness.png */,
+				0DD21077222A8E27007B9B88 /* chestWoodOpen_2_normal.png */,
+				0DD21078222A8E27007B9B88 /* chestStoneOpen_1_metallicRoughness.png */,
+				0DD21079222A8E27007B9B88 /* chestWoodOpen_1_metallicRoughness.png */,
+				0DD2107A222A8E27007B9B88 /* LockStone_normal.png */,
+				0DD2107B222A8E27007B9B88 /* chestMetalOpen_2_normal.png */,
+				0DD2107C222A8E27007B9B88 /* LockStone_baseColor.jpeg */,
+				0DD2107D222A8E27007B9B88 /* chestMetalOpen_1_metallicRoughness.png */,
+				0DD2107E222A8E27007B9B88 /* chestMetalClosed_1_metallicRoughness.png */,
+				0DD2107F222A8E27007B9B88 /* LockStone2_metallicRoughness.png */,
+				0DD21080222A8E27007B9B88 /* LockMetal2_metallicRoughness.png */,
+				0DD21081222A8E27007B9B88 /* material_baseColor.jpeg */,
+				0DD21082222A8E27007B9B88 /* chestStoneOpen_3_normal.png */,
+				0DD21083222A8E27007B9B88 /* chestWoodClosed_2_normal.png */,
+				0DD21084222A8E27007B9B88 /* Ryb2_metallicRoughness.png */,
+				0DD21085222A8E27007B9B88 /* LockWood_metallicRoughness.png */,
+				0DD21086222A8E27007B9B88 /* chestStoneClosed_2_baseColor.jpeg */,
+				0DD21087222A8E27007B9B88 /* chestStoneClosed_1_normal.png */,
+				0DD21088222A8E27007B9B88 /* LockWood_baseColor.jpeg */,
+				0DD21089222A8E27007B9B88 /* plane_metallicRoughness.png */,
+				0DD2108A222A8E27007B9B88 /* chestMetalClosed_2_baseColor.jpeg */,
+				0DD2108B222A8E27007B9B88 /* LockWood_normal.png */,
+				0DD2108C222A8E27007B9B88 /* chestStoneClosed_1_metallicRoughness.png */,
+				0DD2108D222A8E27007B9B88 /* chestWoodClosed_2_metallicRoughness.png */,
+				0DD2108E222A8E27007B9B88 /* chestMetalOpen_3_metallicRoughness.png */,
+				0DD2108F222A8E27007B9B88 /* plane_normal.png */,
+				0DD21090222A8E27007B9B88 /* LockMetal_baseColor.jpeg */,
+				0DD21091222A8E27007B9B88 /* LockStone_metallicRoughness.png */,
+				0DD21092222A8E27007B9B88 /* LockStone2_normal.png */,
+				0DD21093222A8E27007B9B88 /* LockWood2_metallicRoughness.png */,
+				0DD21094222A8E27007B9B88 /* LockMetal2_normal.png */,
+				0DD21095222A8E27007B9B88 /* chestWoodOpen_2_metallicRoughness.png */,
+				0DD21096222A8E27007B9B88 /* LockStone2_baseColor.jpeg */,
+				0DD21097222A8E27007B9B88 /* chestStoneOpen_2_metallicRoughness.png */,
+				0DD21098222A8E27007B9B88 /* chestMetalOpen_3_baseColor.jpeg */,
+				0DD21099222A8E27007B9B88 /* chestWoodOpen_3_normal.png */,
+				0DD2109A222A8E27007B9B88 /* chestStoneOpen_3_baseColor.jpeg */,
+				0DD2109B222A8E27007B9B88 /* chestWoodOpen_2_baseColor.jpeg */,
+				0DD2109C222A8E27007B9B88 /* chestMetalOpen_3_normal.png */,
+				0DD2109D222A8E27007B9B88 /* chestWoodClosed_2_baseColor.jpeg */,
+				0DD2109E222A8E27007B9B88 /* LockWood2_baseColor.jpeg */,
+				0DD2109F222A8E27007B9B88 /* chestWoodClosed_1_normal.png */,
+				0DD210A0222A8E27007B9B88 /* LockMetal_normal.png */,
+				0DD210A1222A8E27007B9B88 /* Ryb2_normal.png */,
+				0DD210A2222A8E27007B9B88 /* chestMetalOpen_2_baseColor.jpeg */,
+				0DD210A3222A8E27007B9B88 /* material_metallicRoughness.png */,
+				0DD210A4222A8E27007B9B88 /* chestWoodOpen_3_baseColor.jpeg */,
+				0DD210A5222A8E27007B9B88 /* chestStoneOpen_2_baseColor.jpeg */,
+				0DD210A6222A8E27007B9B88 /* chestStoneClosed_2_normal.png */,
+				0DD210A7222A8E27007B9B88 /* material_normal.png */,
+				0DD210A8222A8E27007B9B88 /* chestWoodClosed_1_baseColor.jpeg */,
+				0DD210A9222A8E27007B9B88 /* chestMetalOpen_1_normal.png */,
+				0DD210AA222A8E27007B9B88 /* chestWoodOpen_1_baseColor.jpeg */,
+				0DD210AB222A8E27007B9B88 /* chestWoodOpen_1_normal.png */,
+				0DD210AC222A8E27007B9B88 /* chestWoodClosed_1_metallicRoughness.png */,
+				0DD210AD222A8E27007B9B88 /* chestStoneClosed_2_metallicRoughness.png */,
+				0DD210AE222A8E27007B9B88 /* chestStoneOpen_1_baseColor.jpeg */,
+				0DD210AF222A8E27007B9B88 /* LockWood2_normal.png */,
+				0DD210B0222A8E27007B9B88 /* chestMetalOpen_1_baseColor.jpeg */,
+				0DD210B1222A8E27007B9B88 /* chestStoneOpen_2_normal.png */,
+				0DD210B2222A8E27007B9B88 /* LockMetal2_baseColor.jpeg */,
+				0DD210B3222A8E27007B9B88 /* chestMetalClosed_2_normal.png */,
+				0DD210B4222A8E27007B9B88 /* Ryb2_baseColor.jpeg */,
+				0DD210B5222A8E27007B9B88 /* chestMetalClosed_2_metallicRoughness.png */,
+				0DD210B6222A8E27007B9B88 /* chestMetalOpen_2_metallicRoughness.png */,
 			);
 			path = textures;
 			sourceTree = "<group>";
 		};
-		0DD20F88222A88F1007B9B88 /* textures */ = {
+		0DD212E1222A9239007B9B88 /* burial-chest */ = {
 			isa = PBXGroup;
 			children = (
-				0DD20F89222A88F1007B9B88 /* LockWood2_roughness.jpeg */,
-				0DD20F8A222A88F1007B9B88 /* LockWood2_metallic.jpeg */,
-				0DD20F8B222A88F1007B9B88 /* chestStoneOpen_1_normal.png */,
-				0DD20F8C222A88F1007B9B88 /* chestMetalOpen_2_roughness.jpeg */,
-				0DD20F8D222A88F1007B9B88 /* chestStoneOpen_2_roughness.jpeg */,
-				0DD20F8E222A88F1007B9B88 /* chestWoodOpen_3_roughness.jpeg */,
-				0DD20F8F222A88F1007B9B88 /* LockStone2_AO.jpeg */,
-				0DD20F90222A88F1007B9B88 /* chestMetalClosed_1_albedo.jpeg */,
-				0DD20F91222A88F1007B9B88 /* chestMetalClosed_1_metallic.jpeg */,
-				0DD20F92222A88F1007B9B88 /* LockStone2_metallic.jpeg */,
-				0DD20F93222A88F1007B9B88 /* chestMetalClosed_1_normal.png */,
-				0DD20F94222A88F1007B9B88 /* chestWoodClosed_1_metallic.jpeg */,
-				0DD20F95222A88F1007B9B88 /* chestMetalClosed_2_metallic.jpeg */,
-				0DD20F96222A88F1007B9B88 /* Ryb_normal.png */,
-				0DD20F97222A88F1007B9B88 /* chestMetalOpen_1_albedo.jpeg */,
-				0DD20F98222A88F1007B9B88 /* LockStone2_roughness.jpeg */,
-				0DD20F99222A88F1007B9B88 /* chestWoodClosed_2_metallic.jpeg */,
-				0DD20F9A222A88F1007B9B88 /* LockMetal_albedo.jpeg */,
-				0DD20F9B222A88F1007B9B88 /* chestWoodOpen_2_normal.png */,
-				0DD20F9C222A88F1007B9B88 /* chestMetalOpen_3_roughness.jpeg */,
-				0DD20F9D222A88F1007B9B88 /* LockMetal2_metallic.jpeg */,
-				0DD20F9E222A88F1007B9B88 /* plane_albedo.jpeg */,
-				0DD20F9F222A88F1007B9B88 /* chestWoodOpen_2_roughness.jpeg */,
-				0DD20FA0222A88F1007B9B88 /* chestMetalOpen_3_metallic.jpeg */,
-				0DD20FA1222A88F1007B9B88 /* chestStoneOpen_3_roughness.jpeg */,
-				0DD20FA2222A88F1007B9B88 /* chestMetalOpen_2_normal.png */,
-				0DD20FA3222A88F1007B9B88 /* chestWoodClosed_2_roughness.jpeg */,
-				0DD20FA4222A88F1007B9B88 /* LockWood_metallic.jpeg */,
-				0DD20FA5222A88F1007B9B88 /* Ryb2_metallic.jpeg */,
-				0DD20FA6222A88F1007B9B88 /* chestStoneOpen_1_roughness.jpeg */,
-				0DD20FA7222A88F1007B9B88 /* chestWoodOpen_3_albedo.jpeg */,
-				0DD20FA8222A88F1007B9B88 /* chestMetalOpen_1_roughness.jpeg */,
-				0DD20FA9222A88F1007B9B88 /* LockMetal2_roughness.jpeg */,
-				0DD20FAA222A88F1007B9B88 /* chestStoneOpen_3_normal.png */,
-				0DD20FAB222A88F1007B9B88 /* chestWoodClosed_2_normal.png */,
-				0DD20FAC222A88F1007B9B88 /* chestStoneClosed_2_metallic.jpeg */,
-				0DD20FAD222A88F1007B9B88 /* LockWood_albedo.jpeg */,
-				0DD20FAE222A88F1007B9B88 /* chestWoodOpen_2_metallic.jpeg */,
-				0DD20FAF222A88F1007B9B88 /* chestStoneClosed_1_normal.png */,
-				0DD20FB0222A88F1007B9B88 /* chestMetalOpen_2_albedo.jpeg */,
-				0DD20FB1222A88F1007B9B88 /* Ryb2_roughness.jpeg */,
-				0DD20FB2222A88F1007B9B88 /* chestStoneOpen_2_metallic.jpeg */,
-				0DD20FB3222A88F1007B9B88 /* LockStone_AO.jpeg */,
-				0DD20FB4222A88F1007B9B88 /* chestStoneOpen_3_albedo.jpeg */,
-				0DD20FB5222A88F1007B9B88 /* chestStoneClosed_1_metallic.jpeg */,
-				0DD20FB6222A88F1007B9B88 /* chestWoodOpen_1_metallic.jpeg */,
-				0DD20FB7222A88F1007B9B88 /* chestStoneOpen_1_metallic.jpeg */,
-				0DD20FB8222A88F1007B9B88 /* chestMetalClosed_2_albedo.jpeg */,
-				0DD20FB9222A88F1007B9B88 /* LockWood2_AO.jpeg */,
-				0DD20FBA222A88F1007B9B88 /* plane_normal.png */,
-				0DD20FBB222A88F1007B9B88 /* Ryb_AO.jpeg */,
-				0DD20FBC222A88F1007B9B88 /* chestWoodClosed_1_roughness.jpeg */,
-				0DD20FBD222A88F1007B9B88 /* plane_metallic.jpeg */,
-				0DD20FBE222A88F1007B9B88 /* LockStone2_normal.png */,
-				0DD20FBF222A88F1007B9B88 /* chestWoodOpen_1_roughness.jpeg */,
-				0DD20FC0222A88F1007B9B88 /* Ryb2_albedo.jpeg */,
-				0DD20FC1222A88F1007B9B88 /* LockMetal2_normal.png */,
-				0DD20FC2222A88F1007B9B88 /* plane_AO.jpeg */,
-				0DD20FC3222A88F1007B9B88 /* chestWoodOpen_1_albedo.jpeg */,
-				0DD20FC4222A88F1007B9B88 /* chestMetalClosed_2_AO.jpeg */,
-				0DD20FC5222A88F1007B9B88 /* chestStoneOpen_3_AO.jpeg */,
-				0DD20FC6222A88F1007B9B88 /* LockWood2_albedo.jpeg */,
-				0DD20FC7222A88F1007B9B88 /* chestStoneClosed_1_albedo.jpeg */,
-				0DD20FC8222A88F1007B9B88 /* chestWoodOpen_3_normal.png */,
-				0DD20FC9222A88F1007B9B88 /* chestMetalOpen_3_normal.png */,
-				0DD20FCA222A88F1007B9B88 /* chestWoodClosed_1_albedo.jpeg */,
-				0DD20FCB222A88F1007B9B88 /* chestStoneOpen_1_albedo.jpeg */,
-				0DD20FCC222A88F1007B9B88 /* LockMetal2_albedo.jpeg */,
-				0DD20FCD222A88F1007B9B88 /* chestStoneClosed_1_AO.jpeg */,
-				0DD20FCE222A88F1007B9B88 /* chestStoneOpen_2_AO.jpeg */,
-				0DD20FCF222A88F1007B9B88 /* chestWoodClosed_1_normal.png */,
-				0DD20FD0222A88F1007B9B88 /* LockMetal_normal.png */,
-				0DD20FD1222A88F1007B9B88 /* LockStone2_albedo.jpeg */,
-				0DD20FD2222A88F1007B9B88 /* Ryb2_normal.png */,
-				0DD20FD3222A88F1007B9B88 /* chestMetalOpen_1_AO.jpeg */,
-				0DD20FD4222A88F1007B9B88 /* plane_roughness.jpeg */,
-				0DD20FD5222A88F1007B9B88 /* chestWoodOpen_1_AO.jpeg */,
-				0DD20FD6222A88F1007B9B88 /* chestStoneOpen_3_metallic.jpeg */,
-				0DD20FD7222A88F1007B9B88 /* chestMetalClosed_1_roughness.jpeg */,
-				0DD20FD8222A88F1007B9B88 /* chestStoneClosed_2_normal.png */,
-				0DD20FD9222A88F1007B9B88 /* Ryb_roughness.jpeg */,
-				0DD20FDA222A88F1007B9B88 /* chestWoodOpen_3_metallic.jpeg */,
-				0DD20FDB222A88F1007B9B88 /* chestWoodClosed_1_AO.jpeg */,
-				0DD20FDC222A88F1007B9B88 /* LockMetal_metallic.jpeg */,
-				0DD20FDD222A88F1007B9B88 /* chestStoneClosed_1_roughness.jpeg */,
-				0DD20FDE222A88F1007B9B88 /* chestMetalClosed_1_AO.jpeg */,
-				0DD20FDF222A88F1007B9B88 /* LockStone_albedo.jpeg */,
-				0DD20FE0222A88F1007B9B88 /* chestMetalOpen_3_AO.jpeg */,
-				0DD20FE1222A88F1007B9B88 /* chestWoodOpen_3_AO.jpeg */,
-				0DD20FE2222A88F1007B9B88 /* chestMetalOpen_1_normal.png */,
-				0DD20FE3222A88F1007B9B88 /* LockWood_AO.jpeg */,
-				0DD20FE4222A88F1007B9B88 /* Ryb2_AO.jpeg */,
-				0DD20FE5222A88F1007B9B88 /* chestMetalOpen_2_metallic.jpeg */,
-				0DD20FE6222A88F1007B9B88 /* LockMetal2_AO.jpeg */,
-				0DD20FE7222A88F1007B9B88 /* chestWoodOpen_1_normal.png */,
-				0DD20FE8222A88F1007B9B88 /* LockStone_roughness.jpeg */,
-				0DD20FE9222A88F1007B9B88 /* chestWoodOpen_2_AO.jpeg */,
-				0DD20FEA222A88F1007B9B88 /* LockWood2_normal.png */,
-				0DD20FEB222A88F1007B9B88 /* chestStoneOpen_2_albedo.jpeg */,
-				0DD20FEC222A88F1007B9B88 /* LockStone_metallic.jpeg */,
-				0DD20FED222A88F1007B9B88 /* chestWoodClosed_2_albedo.jpeg */,
-				0DD20FEE222A88F1007B9B88 /* chestStoneClosed_2_albedo.jpeg */,
-				0DD20FEF222A88F1007B9B88 /* chestMetalOpen_1_metallic.jpeg */,
-				0DD20FF0222A88F1007B9B88 /* chestStoneOpen_2_normal.png */,
-				0DD20FF1222A88F1007B9B88 /* chestWoodClosed_2_AO.jpeg */,
-				0DD20FF2222A88F1007B9B88 /* chestMetalOpen_3_albedo.jpeg */,
-				0DD20FF3222A88F1007B9B88 /* chestStoneClosed_2_roughness.jpeg */,
-				0DD20FF4222A88F1007B9B88 /* chestStoneOpen_1_AO.jpeg */,
-				0DD20FF5222A88F1007B9B88 /* chestStoneClosed_2_AO.jpeg */,
-				0DD20FF6222A88F1007B9B88 /* chestMetalClosed_2_normal.png */,
-				0DD20FF7222A88F1007B9B88 /* chestWoodOpen_2_albedo.jpeg */,
-				0DD20FF8222A88F1007B9B88 /* chestMetalClosed_2_roughness.jpeg */,
-				0DD20FF9222A88F1007B9B88 /* LockWood_roughness.jpeg */,
-				0DD20FFA222A88F1007B9B88 /* chestMetalOpen_2_AO.jpeg */,
+				0DD212E2222A923A007B9B88 /* textures */,
+				0DD212E4222A923A007B9B88 /* source */,
+			);
+			path = "burial-chest";
+			sourceTree = "<group>";
+		};
+		0DD212E2222A923A007B9B88 /* textures */ = {
+			isa = PBXGroup;
+			children = (
+				0DD212E3222A923A007B9B88 /* urn2.jpeg */,
 			);
 			path = textures;
+			sourceTree = "<group>";
+		};
+		0DD212E4222A923A007B9B88 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				0DD212E5222A923A007B9B88 /* urn.zip */,
+				0DD212E6222A923A007B9B88 /* urn */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		0DD212E6222A923A007B9B88 /* urn */ = {
+			isa = PBXGroup;
+			children = (
+				0DD212E7222A923A007B9B88 /* urn2.obj */,
+				0DD212E8222A923A007B9B88 /* urn2.jpg */,
+				0DD212E9222A923A007B9B88 /* urn2.mtl */,
+			);
+			path = urn;
+			sourceTree = "<group>";
+		};
+		0DD212EF222A929D007B9B88 /* magic-treasure-chest */ = {
+			isa = PBXGroup;
+			children = (
+				0DD212F0222A929D007B9B88 /* textures */,
+				0DD212FD222A929D007B9B88 /* source */,
+			);
+			path = "magic-treasure-chest";
+			sourceTree = "<group>";
+		};
+		0DD212F0222A929D007B9B88 /* textures */ = {
+			isa = PBXGroup;
+			children = (
+				0DD212F1222A929D007B9B88 /* Treasure_chest_top_SpecularSmoothness.png */,
+				0DD212F2222A929D007B9B88 /* Treasure_chest_top_Emission.png */,
+				0DD212F3222A929D007B9B88 /* Lock_diffuse.png */,
+				0DD212F4222A929D007B9B88 /* Treasure_chest_grip_AlbedoTransparency.png */,
+				0DD212F5222A929D007B9B88 /* Treasure_chest_grip_base_Normal.png */,
+				0DD212F6222A929D007B9B88 /* Treasure_chest_bot_Emission.png */,
+				0DD212F7222A929D007B9B88 /* Treasure_chest_grip_base_SpecularSmoothnes.png */,
+				0DD212F8222A929D007B9B88 /* Treasure_chest_top_Normal.png */,
+				0DD212F9222A929D007B9B88 /* Treasure_chest_bot_Normal.png */,
+				0DD212FA222A929D007B9B88 /* Treasure_chest_grip_Normal.png */,
+				0DD212FB222A929D007B9B88 /* Treasure_chest_bot_SpecularSmoothness.png */,
+				0DD212FC222A929D007B9B88 /* Treasure_chest_grip_SpecularSmoothness.png */,
+			);
+			path = textures;
+			sourceTree = "<group>";
+		};
+		0DD212FD222A929D007B9B88 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				0DD212FE222A929D007B9B88 /* Treasure chest.fbx */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		0DD2130C222A92A9007B9B88 /* jewelry-chest */ = {
+			isa = PBXGroup;
+			children = (
+				0DD2130D222A92A9007B9B88 /* textures */,
+				0DD21312222A92A9007B9B88 /* source */,
+			);
+			path = "jewelry-chest";
+			sourceTree = "<group>";
+		};
+		0DD2130D222A92A9007B9B88 /* textures */ = {
+			isa = PBXGroup;
+			children = (
+				0DD2130E222A92A9007B9B88 /* roughness2.png */,
+				0DD2130F222A92A9007B9B88 /* metalic.png */,
+				0DD21310222A92A9007B9B88 /* diffuse2.png */,
+				0DD21311222A92A9007B9B88 /* specular2.png */,
+			);
+			path = textures;
+			sourceTree = "<group>";
+		};
+		0DD21312222A92A9007B9B88 /* source */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -991,250 +648,111 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DD20F7F222A88A9007B9B88 /* LockStone2_albedo.jpg in Resources */,
-				0DD21043222A88F1007B9B88 /* LockStone2_albedo.jpeg in Resources */,
-				0DD21051222A88F1007B9B88 /* LockStone_albedo.jpeg in Resources */,
-				0DD20F58222A88A9007B9B88 /* chestMetalClosed_1_AO.jpg in Resources */,
-				0DD2102B222A88F1007B9B88 /* LockWood2_AO.jpeg in Resources */,
-				0DD20F77222A88A9007B9B88 /* LockWood2_normal.png in Resources */,
-				0DD2103F222A88F1007B9B88 /* chestStoneClosed_1_AO.jpeg in Resources */,
-				0DD2102E222A88F1007B9B88 /* chestWoodClosed_1_roughness.jpeg in Resources */,
-				0DD20F74222A88A9007B9B88 /* chestWoodOpen_1_normal.png in Resources */,
-				0DD20F49222A88A9007B9B88 /* chestMetalOpen_3_roughness.jpg in Resources */,
-				0DD20F15222A88A9007B9B88 /* LockWood_metallic.jpg in Resources */,
-				0DD20F84222A88A9007B9B88 /* chestWoodOpen_1_AO.jpg in Resources */,
-				0DD20F23222A88A9007B9B88 /* chestMetalOpen_3_AO.jpg in Resources */,
-				0DD20F5B222A88A9007B9B88 /* chestMetalClosed_1_roughness.jpg in Resources */,
-				0DD20F7C222A88A9007B9B88 /* plane_albedo.jpg in Resources */,
-				0DD2103E222A88F1007B9B88 /* LockMetal2_albedo.jpeg in Resources */,
-				0DD21026222A88F1007B9B88 /* chestStoneOpen_3_albedo.jpeg in Resources */,
-				0DD20F59222A88A9007B9B88 /* Ryb_albedo.jpg in Resources */,
-				0DD20F6A222A88A9007B9B88 /* chestWoodOpen_3_AO.jpg in Resources */,
-				0DD20F72222A88A9007B9B88 /* chestStoneClosed_1_roughness.jpg in Resources */,
+				0DD210C4222A8E27007B9B88 /* LockStone_normal.png in Resources */,
+				0DD210DA222A8E27007B9B88 /* LockMetal_baseColor.jpeg in Resources */,
+				0DD21314222A92A9007B9B88 /* roughness2.png in Resources */,
 				0DA4D72B22152A2000D36D81 /* art.scnassets in Resources */,
-				0DD21004222A88F1007B9B88 /* LockStone2_metallic.jpeg in Resources */,
-				0DD20F41222A88A9007B9B88 /* LockWood2_metallic.jpg in Resources */,
-				0DD20F83222A88A9007B9B88 /* LockWood_roughness.jpg in Resources */,
-				0DD20F61222A88A9007B9B88 /* LockStone_AO.jpg in Resources */,
+				0DD212FF222A929D007B9B88 /* Treasure_chest_top_SpecularSmoothness.png in Resources */,
+				0DD210CA222A8E27007B9B88 /* LockMetal2_metallicRoughness.png in Resources */,
 				0DD20E6A222A4F16007B9B88 /* IMG_0006.png in Resources */,
-				0DD20F75222A88A9007B9B88 /* chestStoneOpen_2_roughness.jpg in Resources */,
-				0DD21016222A88F1007B9B88 /* LockWood_metallic.jpeg in Resources */,
-				0DD20F6C222A88A9007B9B88 /* chestStoneOpen_3_albedo.jpg in Resources */,
-				0DD20F3C222A88A9007B9B88 /* LockWood2_albedo.jpg in Resources */,
-				0DD2105B222A88F2007B9B88 /* chestWoodOpen_2_AO.jpeg in Resources */,
-				0DD20F6B222A88A9007B9B88 /* chestWoodClosed_2_albedo.jpg in Resources */,
-				0DD21017222A88F1007B9B88 /* Ryb2_metallic.jpeg in Resources */,
-				0DD20F66222A88A9007B9B88 /* plane_metallic.jpg in Resources */,
-				0DD20F26222A88A9007B9B88 /* LockMetal2_AO.jpg in Resources */,
-				0DD20F7A222A88A9007B9B88 /* chestStoneClosed_2_roughness.jpg in Resources */,
-				0DD20F4C222A88A9007B9B88 /* Ryb_AO.jpg in Resources */,
-				0DD20F29222A88A9007B9B88 /* chestWoodClosed_2_AO.jpg in Resources */,
-				0DD20F22222A88A9007B9B88 /* chestStoneOpen_3_AO.jpg in Resources */,
-				0DD20F82222A88A9007B9B88 /* chestMetalClosed_2_metallic.jpg in Resources */,
-				0DD20F1D222A88A9007B9B88 /* chestWoodClosed_1_albedo.jpg in Resources */,
-				0DD21021222A88F1007B9B88 /* chestStoneClosed_1_normal.png in Resources */,
-				0DD20F47222A88A9007B9B88 /* LockMetal2_metallic.jpg in Resources */,
-				0DD20F10222A88A9007B9B88 /* chestWoodOpen_3_roughness.jpg in Resources */,
-				0DD20FFD222A88F1007B9B88 /* chestStoneOpen_1_normal.png in Resources */,
-				0DD20F69222A88A9007B9B88 /* plane_roughness.jpg in Resources */,
-				0DD20F48222A88A9007B9B88 /* chestStoneClosed_1_AO.jpg in Resources */,
-				0DD2101B222A88F1007B9B88 /* LockMetal2_roughness.jpeg in Resources */,
-				0DD20F87222A88A9007B9B88 /* model.dae in Resources */,
-				0DD20F11222A88A9007B9B88 /* LockMetal_roughness.jpg in Resources */,
-				0DD2100A222A88F1007B9B88 /* LockStone2_roughness.jpeg in Resources */,
-				0DD21024222A88F1007B9B88 /* chestStoneOpen_2_metallic.jpeg in Resources */,
-				0DD20F4D222A88A9007B9B88 /* chestWoodClosed_1_AO.jpg in Resources */,
-				0DD20F32222A88A9007B9B88 /* chestMetalOpen_1_albedo.jpg in Resources */,
-				0DD20F25222A88A9007B9B88 /* chestWoodOpen_2_normal.png in Resources */,
-				0DD21012222A88F1007B9B88 /* chestMetalOpen_3_metallic.jpeg in Resources */,
-				0DD2100E222A88F1007B9B88 /* chestMetalOpen_3_roughness.jpeg in Resources */,
-				0DD21030222A88F1007B9B88 /* LockStone2_normal.png in Resources */,
-				0DD20F78222A88A9007B9B88 /* Ryb_metallic.jpg in Resources */,
-				0DD21036222A88F1007B9B88 /* chestMetalClosed_2_AO.jpeg in Resources */,
-				0DD20F34222A88A9007B9B88 /* chestStoneClosed_1_normal.png in Resources */,
-				0DD21068222A88F2007B9B88 /* chestMetalClosed_2_normal.png in Resources */,
-				0DD20FFF222A88F1007B9B88 /* chestStoneOpen_2_roughness.jpeg in Resources */,
-				0DD20F6E222A88A9007B9B88 /* chestMetalOpen_1_normal.png in Resources */,
-				0DD21055222A88F2007B9B88 /* LockWood_AO.jpeg in Resources */,
-				0DD21018222A88F1007B9B88 /* chestStoneOpen_1_roughness.jpeg in Resources */,
-				0DD20F40222A88A9007B9B88 /* chestMetalClosed_2_albedo.jpg in Resources */,
-				0DD20F2D222A88A9007B9B88 /* chestMetalOpen_2_normal.png in Resources */,
-				0DD21052222A88F1007B9B88 /* chestMetalOpen_3_AO.jpeg in Resources */,
-				0DD21034222A88F1007B9B88 /* plane_AO.jpeg in Resources */,
-				0DD20F5A222A88A9007B9B88 /* plane_AO.jpg in Resources */,
-				0DD20F63222A88A9007B9B88 /* LockStone_albedo.jpg in Resources */,
-				0DD2104B222A88F1007B9B88 /* Ryb_roughness.jpeg in Resources */,
-				0DD21005222A88F1007B9B88 /* chestMetalClosed_1_normal.png in Resources */,
-				0DD20F46222A88A9007B9B88 /* chestWoodOpen_2_metallic.jpg in Resources */,
-				0DD2102A222A88F1007B9B88 /* chestMetalClosed_2_albedo.jpeg in Resources */,
-				0DD21056222A88F2007B9B88 /* Ryb2_AO.jpeg in Resources */,
-				0DD21028222A88F1007B9B88 /* chestWoodOpen_1_metallic.jpeg in Resources */,
-				0DD21062222A88F2007B9B88 /* chestStoneOpen_2_normal.png in Resources */,
-				0DD21046222A88F1007B9B88 /* plane_roughness.jpeg in Resources */,
-				0DD20F65222A88A9007B9B88 /* chestMetalOpen_2_albedo.jpg in Resources */,
-				0DD20F79222A88A9007B9B88 /* Ryb2_metallic.jpg in Resources */,
-				0DD20F1C222A88A9007B9B88 /* chestStoneOpen_1_AO.jpg in Resources */,
-				0DD20F45222A88A9007B9B88 /* chestStoneOpen_1_albedo.jpg in Resources */,
-				0DD20F4A222A88A9007B9B88 /* LockMetal2_roughness.jpg in Resources */,
-				0DD2105D222A88F2007B9B88 /* chestStoneOpen_2_albedo.jpeg in Resources */,
-				0DD20F51222A88A9007B9B88 /* chestMetalClosed_2_roughness.jpg in Resources */,
-				0DD20F7B222A88A9007B9B88 /* chestStoneOpen_2_normal.png in Resources */,
-				0DD21047222A88F1007B9B88 /* chestWoodOpen_1_AO.jpeg in Resources */,
-				0DD21011222A88F1007B9B88 /* chestWoodOpen_2_roughness.jpeg in Resources */,
-				0DD20F27222A88A9007B9B88 /* chestMetalOpen_2_metallic.jpg in Resources */,
-				0DD20F2B222A88A9007B9B88 /* LockMetal_metallic.jpg in Resources */,
-				0DD21025222A88F1007B9B88 /* LockStone_AO.jpeg in Resources */,
-				0DD20F50222A88A9007B9B88 /* chestMetalOpen_3_normal.png in Resources */,
-				0DD2104F222A88F1007B9B88 /* chestStoneClosed_1_roughness.jpeg in Resources */,
-				0DD2105F222A88F2007B9B88 /* chestWoodClosed_2_albedo.jpeg in Resources */,
-				0DD2105E222A88F2007B9B88 /* LockStone_metallic.jpeg in Resources */,
-				0DD20F3D222A88A9007B9B88 /* Ryb_roughness.jpg in Resources */,
-				0DD20F39222A88A9007B9B88 /* chestWoodOpen_1_albedo.jpg in Resources */,
-				0DD20F67222A88A9007B9B88 /* chestWoodClosed_2_metallic.jpg in Resources */,
-				0DD20F52222A88A9007B9B88 /* chestWoodOpen_3_metallic.jpg in Resources */,
-				0DD20F38222A88A9007B9B88 /* LockWood2_AO.jpg in Resources */,
-				0DD20F68222A88A9007B9B88 /* LockWood_AO.jpg in Resources */,
-				0DD20F33222A88A9007B9B88 /* chestMetalOpen_1_roughness.jpg in Resources */,
-				0DD20F60222A88A9007B9B88 /* chestMetalOpen_2_AO.jpg in Resources */,
-				0DD21000222A88F1007B9B88 /* chestWoodOpen_3_roughness.jpeg in Resources */,
-				0DD21049222A88F1007B9B88 /* chestMetalClosed_1_roughness.jpeg in Resources */,
-				0DD21035222A88F1007B9B88 /* chestWoodOpen_1_albedo.jpeg in Resources */,
-				0DD20F4B222A88A9007B9B88 /* chestWoodClosed_2_roughness.jpg in Resources */,
-				0DD21037222A88F1007B9B88 /* chestStoneOpen_3_AO.jpeg in Resources */,
-				0DD20F71222A88A9007B9B88 /* chestStoneClosed_1_albedo.jpg in Resources */,
-				0DD21032222A88F1007B9B88 /* Ryb2_albedo.jpeg in Resources */,
-				0DD20F64222A88A9007B9B88 /* chestStoneClosed_2_normal.png in Resources */,
-				0DD2106A222A88F2007B9B88 /* chestMetalClosed_2_roughness.jpeg in Resources */,
-				0DD20F85222A88A9007B9B88 /* chestStoneClosed_2_metallic.jpg in Resources */,
-				0DD2101D222A88F1007B9B88 /* chestWoodClosed_2_normal.png in Resources */,
-				0DD2106B222A88F2007B9B88 /* LockWood_roughness.jpeg in Resources */,
-				0DD2104A222A88F1007B9B88 /* chestStoneClosed_2_normal.png in Resources */,
-				0DD20F54222A88A9007B9B88 /* chestWoodClosed_1_normal.png in Resources */,
-				0DD21031222A88F1007B9B88 /* chestWoodOpen_1_roughness.jpeg in Resources */,
-				0DD2101A222A88F1007B9B88 /* chestMetalOpen_1_roughness.jpeg in Resources */,
-				0DD20F4E222A88A9007B9B88 /* chestWoodOpen_3_normal.png in Resources */,
-				0DD2105C222A88F2007B9B88 /* LockWood2_normal.png in Resources */,
-				0DD20F0F222A88A9007B9B88 /* LockMetal2_albedo.jpg in Resources */,
-				0DD20F42222A88A9007B9B88 /* LockStone2_normal.png in Resources */,
-				0DD2103A222A88F1007B9B88 /* chestWoodOpen_3_normal.png in Resources */,
-				0DD21053222A88F1007B9B88 /* chestWoodOpen_3_AO.jpeg in Resources */,
-				0DD2100F222A88F1007B9B88 /* LockMetal2_metallic.jpeg in Resources */,
-				0DD20F70222A88A9007B9B88 /* LockStone2_AO.jpg in Resources */,
-				0DD21039222A88F1007B9B88 /* chestStoneClosed_1_albedo.jpeg in Resources */,
-				0DD20F2C222A88A9007B9B88 /* LockStone_normal.png in Resources */,
-				0DD21027222A88F1007B9B88 /* chestStoneClosed_1_metallic.jpeg in Resources */,
-				0DD20F2F222A88A9007B9B88 /* chestWoodOpen_1_metallic.jpg in Resources */,
-				0DD20F14222A88A9007B9B88 /* chestMetalClosed_2_AO.jpg in Resources */,
-				0DD2105A222A88F2007B9B88 /* LockStone_roughness.jpeg in Resources */,
-				0DD21014222A88F1007B9B88 /* chestMetalOpen_2_normal.png in Resources */,
-				0DD21050222A88F1007B9B88 /* chestMetalClosed_1_AO.jpeg in Resources */,
-				0DD20F73222A88A9007B9B88 /* chestWoodOpen_1_roughness.jpg in Resources */,
-				0DD2104E222A88F1007B9B88 /* LockMetal_metallic.jpeg in Resources */,
-				0DD20F55222A88A9007B9B88 /* LockMetal_normal.png in Resources */,
-				0DD20F1E222A88A9007B9B88 /* LockMetal_albedo.jpg in Resources */,
-				0DD21058222A88F2007B9B88 /* LockMetal2_AO.jpeg in Resources */,
-				0DD20F12222A88A9007B9B88 /* chestStoneOpen_1_normal.png in Resources */,
-				0DD21069222A88F2007B9B88 /* chestWoodOpen_2_albedo.jpeg in Resources */,
-				0DD21009222A88F1007B9B88 /* chestMetalOpen_1_albedo.jpeg in Resources */,
+				0DD21300222A929D007B9B88 /* Treasure_chest_top_Emission.png in Resources */,
+				0DD210DE222A8E27007B9B88 /* LockMetal2_normal.png in Resources */,
+				0DD210FB222A8E27007B9B88 /* chestStoneOpen_2_normal.png in Resources */,
+				0DD210F8222A8E27007B9B88 /* chestStoneOpen_1_baseColor.jpeg in Resources */,
+				0DD210D6222A8E27007B9B88 /* chestStoneClosed_1_metallicRoughness.png in Resources */,
+				0DD212EC222A923A007B9B88 /* urn2.obj in Resources */,
+				0DD210D1222A8E27007B9B88 /* chestStoneClosed_1_normal.png in Resources */,
+				0DD2130B222A929D007B9B88 /* Treasure chest.fbx in Resources */,
+				0DD210D8222A8E27007B9B88 /* chestMetalOpen_3_metallicRoughness.png in Resources */,
+				0DD210BD222A8E27007B9B88 /* chestMetalClosed_1_normal.png in Resources */,
+				0DD21302222A929D007B9B88 /* Treasure_chest_grip_AlbedoTransparency.png in Resources */,
+				0DD21308222A929D007B9B88 /* Treasure_chest_grip_Normal.png in Resources */,
+				0DD210D3222A8E27007B9B88 /* plane_metallicRoughness.png in Resources */,
+				0DD21315222A92A9007B9B88 /* metalic.png in Resources */,
+				0DD21303222A929D007B9B88 /* Treasure_chest_grip_base_Normal.png in Resources */,
+				0DD212ED222A923A007B9B88 /* urn2.jpg in Resources */,
+				0DD210CD222A8E27007B9B88 /* chestWoodClosed_2_normal.png in Resources */,
+				0DD212EB222A923A007B9B88 /* urn.zip in Resources */,
+				0DD21305222A929D007B9B88 /* Treasure_chest_grip_base_SpecularSmoothnes.png in Resources */,
+				0DD210C7222A8E27007B9B88 /* chestMetalOpen_1_metallicRoughness.png in Resources */,
+				0DD21101222A8E27007B9B88 /* scene.gltf in Resources */,
+				0DD210F4222A8E27007B9B88 /* chestWoodOpen_1_baseColor.jpeg in Resources */,
+				0DD21304222A929D007B9B88 /* Treasure_chest_bot_Emission.png in Resources */,
+				0DD21316222A92A9007B9B88 /* diffuse2.png in Resources */,
+				0DD210EE222A8E27007B9B88 /* chestWoodOpen_3_baseColor.jpeg in Resources */,
+				0DD210F1222A8E27007B9B88 /* material_normal.png in Resources */,
+				0DD210E4222A8E27007B9B88 /* chestStoneOpen_3_baseColor.jpeg in Resources */,
+				0DD210E3222A8E27007B9B88 /* chestWoodOpen_3_normal.png in Resources */,
+				0DD210FA222A8E27007B9B88 /* chestMetalOpen_1_baseColor.jpeg in Resources */,
+				0DD210EF222A8E27007B9B88 /* chestStoneOpen_2_baseColor.jpeg in Resources */,
+				0DD210C6222A8E27007B9B88 /* LockStone_baseColor.jpeg in Resources */,
+				0DD210EA222A8E27007B9B88 /* LockMetal_normal.png in Resources */,
+				0DD210D0222A8E27007B9B88 /* chestStoneClosed_2_baseColor.jpeg in Resources */,
+				0DD210BF222A8E27007B9B88 /* chestStoneClosed_1_baseColor.jpeg in Resources */,
+				0DD210C0222A8E27007B9B88 /* chestWoodOpen_3_metallicRoughness.png in Resources */,
+				0DD210DB222A8E27007B9B88 /* LockStone_metallicRoughness.png in Resources */,
+				0DD210C5222A8E27007B9B88 /* chestMetalOpen_2_normal.png in Resources */,
+				0DD210CB222A8E27007B9B88 /* material_baseColor.jpeg in Resources */,
+				0DD210C3222A8E27007B9B88 /* chestWoodOpen_1_metallicRoughness.png in Resources */,
+				0DD2130A222A929D007B9B88 /* Treasure_chest_grip_SpecularSmoothness.png in Resources */,
+				0DD212EA222A923A007B9B88 /* urn2.jpeg in Resources */,
+				0DD210FE222A8E27007B9B88 /* Ryb2_baseColor.jpeg in Resources */,
+				0DD210E8222A8E27007B9B88 /* LockWood2_baseColor.jpeg in Resources */,
+				0DD210BA222A8E27007B9B88 /* LockMetal_metallicRoughness.png in Resources */,
+				0DD210BB222A8E27007B9B88 /* plane_baseColor.jpeg in Resources */,
+				0DD210F5222A8E27007B9B88 /* chestWoodOpen_1_normal.png in Resources */,
+				0DD210D4222A8E27007B9B88 /* chestMetalClosed_2_baseColor.jpeg in Resources */,
+				0DD210F2222A8E27007B9B88 /* chestWoodClosed_1_baseColor.jpeg in Resources */,
+				0DD210FF222A8E27007B9B88 /* chestMetalClosed_2_metallicRoughness.png in Resources */,
+				0DD210D9222A8E27007B9B88 /* plane_normal.png in Resources */,
+				0DD210B9222A8E27007B9B88 /* chestStoneOpen_1_normal.png in Resources */,
+				0DD210BC222A8E27007B9B88 /* chestMetalClosed_1_baseColor.jpeg in Resources */,
+				0DD210D2222A8E27007B9B88 /* LockWood_baseColor.jpeg in Resources */,
+				0DD210F0222A8E27007B9B88 /* chestStoneClosed_2_normal.png in Resources */,
+				0DD210DC222A8E27007B9B88 /* LockStone2_normal.png in Resources */,
+				0DD21307222A929D007B9B88 /* Treasure_chest_bot_Normal.png in Resources */,
+				0DD21306222A929D007B9B88 /* Treasure_chest_top_Normal.png in Resources */,
+				0DD210F3222A8E27007B9B88 /* chestMetalOpen_1_normal.png in Resources */,
 				0DD20E6E222A5695007B9B88 /* xmark.png in Resources */,
-				0DD20FFB222A88F1007B9B88 /* LockWood2_roughness.jpeg in Resources */,
-				0DD2104C222A88F1007B9B88 /* chestWoodOpen_3_metallic.jpeg in Resources */,
-				0DD21063222A88F2007B9B88 /* chestWoodClosed_2_AO.jpeg in Resources */,
-				0DD20F37222A88A9007B9B88 /* LockStone_roughness.jpg in Resources */,
-				0DD20F43222A88A9007B9B88 /* chestStoneOpen_2_metallic.jpg in Resources */,
-				0DD2103C222A88F1007B9B88 /* chestWoodClosed_1_albedo.jpeg in Resources */,
-				0DD21002222A88F1007B9B88 /* chestMetalClosed_1_albedo.jpeg in Resources */,
-				0DD20F4F222A88A9007B9B88 /* chestMetalClosed_1_albedo.jpg in Resources */,
-				0DD20F5F222A88A9007B9B88 /* chestWoodOpen_2_albedo.jpg in Resources */,
-				0DD20F2E222A88A9007B9B88 /* LockStone_metallic.jpg in Resources */,
-				0DD21015222A88F1007B9B88 /* chestWoodClosed_2_roughness.jpeg in Resources */,
-				0DD21059222A88F2007B9B88 /* chestWoodOpen_1_normal.png in Resources */,
-				0DD2100B222A88F1007B9B88 /* chestWoodClosed_2_metallic.jpeg in Resources */,
-				0DD20F3F222A88A9007B9B88 /* plane_normal.png in Resources */,
-				0DD20F76222A88A9007B9B88 /* LockWood_albedo.jpg in Resources */,
-				0DD21060222A88F2007B9B88 /* chestStoneClosed_2_albedo.jpeg in Resources */,
-				0DD20F35222A88A9007B9B88 /* chestStoneOpen_3_metallic.jpg in Resources */,
+				0DD210DF222A8E27007B9B88 /* chestWoodOpen_2_metallicRoughness.png in Resources */,
+				0DD210E6222A8E27007B9B88 /* chestMetalOpen_3_normal.png in Resources */,
+				0DD210E2222A8E27007B9B88 /* chestMetalOpen_3_baseColor.jpeg in Resources */,
+				0DD210FD222A8E27007B9B88 /* chestMetalClosed_2_normal.png in Resources */,
+				0DD210CE222A8E27007B9B88 /* Ryb2_metallicRoughness.png in Resources */,
+				0DD210ED222A8E27007B9B88 /* material_metallicRoughness.png in Resources */,
 				0DA4D73522152A2300D36D81 /* LaunchScreen.storyboard in Resources */,
-				0DD21040222A88F1007B9B88 /* chestStoneOpen_2_AO.jpeg in Resources */,
 				0DD20E72222A56A7007B9B88 /* output-onlinepngtools.png in Resources */,
-				0DD21061222A88F2007B9B88 /* chestMetalOpen_1_metallic.jpeg in Resources */,
-				0DD20F1A222A88A9007B9B88 /* chestMetalOpen_3_metallic.jpg in Resources */,
-				0DD2103D222A88F1007B9B88 /* chestStoneOpen_1_albedo.jpeg in Resources */,
-				0DD2103B222A88F1007B9B88 /* chestMetalOpen_3_normal.png in Resources */,
-				0DD21038222A88F1007B9B88 /* LockWood2_albedo.jpeg in Resources */,
-				0DD20F20222A88A9007B9B88 /* Ryb2_albedo.jpg in Resources */,
-				0DD20F80222A88A9007B9B88 /* Ryb2_AO.jpg in Resources */,
-				0DD20F57222A88A9007B9B88 /* Ryb2_normal.png in Resources */,
-				0DD20F7E222A88A9007B9B88 /* chestMetalClosed_2_normal.png in Resources */,
-				0DD20F13222A88A9007B9B88 /* chestWoodClosed_1_metallic.jpg in Resources */,
-				0DD21064222A88F2007B9B88 /* chestMetalOpen_3_albedo.jpeg in Resources */,
-				0DD21007222A88F1007B9B88 /* chestMetalClosed_2_metallic.jpeg in Resources */,
-				0DD20F6D222A88A9007B9B88 /* LockStone2_metallic.jpg in Resources */,
-				0DD20F53222A88A9007B9B88 /* LockStone2_roughness.jpg in Resources */,
-				0DD2100C222A88F1007B9B88 /* LockMetal_albedo.jpeg in Resources */,
-				0DD20F7D222A88A9007B9B88 /* chestWoodOpen_2_roughness.jpg in Resources */,
-				0DD20F5E222A88A9007B9B88 /* chestStoneOpen_2_AO.jpg in Resources */,
-				0DD20F86222A88A9007B9B88 /* chestMetalOpen_1_metallic.jpg in Resources */,
-				0DD20F16222A88A9007B9B88 /* chestStoneOpen_3_roughness.jpg in Resources */,
-				0DD20F21222A88A9007B9B88 /* chestStoneClosed_2_AO.jpg in Resources */,
-				0DD20F5D222A88A9007B9B88 /* LockMetal_AO.jpg in Resources */,
-				0DD2102F222A88F1007B9B88 /* plane_metallic.jpeg in Resources */,
-				0DD20F19222A88A9007B9B88 /* chestMetalOpen_1_AO.jpg in Resources */,
-				0DD21003222A88F1007B9B88 /* chestMetalClosed_1_metallic.jpeg in Resources */,
-				0DD20F17222A88A9007B9B88 /* chestWoodOpen_3_albedo.jpg in Resources */,
+				0DD21317222A92A9007B9B88 /* specular2.png in Resources */,
+				0DD210D5222A8E27007B9B88 /* LockWood_normal.png in Resources */,
+				0DD21100222A8E27007B9B88 /* chestMetalOpen_2_metallicRoughness.png in Resources */,
+				0DD210C2222A8E27007B9B88 /* chestStoneOpen_1_metallicRoughness.png in Resources */,
+				0DD210E1222A8E27007B9B88 /* chestStoneOpen_2_metallicRoughness.png in Resources */,
+				0DD210EC222A8E27007B9B88 /* chestMetalOpen_2_baseColor.jpeg in Resources */,
+				0DD210E7222A8E27007B9B88 /* chestWoodClosed_2_baseColor.jpeg in Resources */,
 				0DD20E70222A56A0007B9B88 /* log.png in Resources */,
-				0DD21044222A88F1007B9B88 /* Ryb2_normal.png in Resources */,
-				0DD21054222A88F2007B9B88 /* chestMetalOpen_1_normal.png in Resources */,
-				0DD21020222A88F1007B9B88 /* chestWoodOpen_2_metallic.jpeg in Resources */,
-				0DD2102D222A88F1007B9B88 /* Ryb_AO.jpeg in Resources */,
-				0DD21008222A88F1007B9B88 /* Ryb_normal.png in Resources */,
-				0DD2101C222A88F1007B9B88 /* chestStoneOpen_3_normal.png in Resources */,
-				0DD20FFE222A88F1007B9B88 /* chestMetalOpen_2_roughness.jpeg in Resources */,
-				0DD20F62222A88A9007B9B88 /* LockWood2_roughness.jpg in Resources */,
-				0DD20F56222A88A9007B9B88 /* chestWoodClosed_1_roughness.jpg in Resources */,
-				0DD20F81222A88A9007B9B88 /* Ryb2_roughness.jpg in Resources */,
-				0DD2101E222A88F1007B9B88 /* chestStoneClosed_2_metallic.jpeg in Resources */,
-				0DD20FFC222A88F1007B9B88 /* LockWood2_metallic.jpeg in Resources */,
+				0DD210CF222A8E27007B9B88 /* LockWood_metallicRoughness.png in Resources */,
+				0DD210D7222A8E27007B9B88 /* chestWoodClosed_2_metallicRoughness.png in Resources */,
+				0DD210BE222A8E27007B9B88 /* chestStoneOpen_3_metallicRoughness.png in Resources */,
+				0DD210C8222A8E27007B9B88 /* chestMetalClosed_1_metallicRoughness.png in Resources */,
+				0DD210C9222A8E27007B9B88 /* LockStone2_metallicRoughness.png in Resources */,
+				0DD210F7222A8E27007B9B88 /* chestStoneClosed_2_metallicRoughness.png in Resources */,
+				0DD210E0222A8E27007B9B88 /* LockStone2_baseColor.jpeg in Resources */,
+				0DD21301222A929D007B9B88 /* Lock_diffuse.png in Resources */,
+				0DD210FC222A8E27007B9B88 /* LockMetal2_baseColor.jpeg in Resources */,
 				0DA4D73222152A2300D36D81 /* Assets.xcassets in Resources */,
-				0DD20F2A222A88A9007B9B88 /* chestStoneClosed_2_albedo.jpg in Resources */,
-				0DD21001222A88F1007B9B88 /* LockStone2_AO.jpeg in Resources */,
-				0DD20F3B222A88A9007B9B88 /* LockWood_normal.png in Resources */,
-				0DD2106C222A88F2007B9B88 /* chestMetalOpen_2_AO.jpeg in Resources */,
-				0DD20F1B222A88A9007B9B88 /* chestMetalClosed_1_normal.png in Resources */,
-				0DD20F18222A88A9007B9B88 /* chestMetalOpen_3_albedo.jpg in Resources */,
-				0DD20F44222A88A9007B9B88 /* LockMetal2_normal.png in Resources */,
-				0DD21019222A88F1007B9B88 /* chestWoodOpen_3_albedo.jpeg in Resources */,
-				0DD21013222A88F1007B9B88 /* chestStoneOpen_3_roughness.jpeg in Resources */,
-				0DD21029222A88F1007B9B88 /* chestStoneOpen_1_metallic.jpeg in Resources */,
-				0DD21057222A88F2007B9B88 /* chestMetalOpen_2_metallic.jpeg in Resources */,
-				0DD20F6F222A88A9007B9B88 /* chestStoneOpen_1_roughness.jpg in Resources */,
-				0DD20F30222A88A9007B9B88 /* chestStoneOpen_3_normal.png in Resources */,
-				0DD21010222A88F1007B9B88 /* plane_albedo.jpeg in Resources */,
-				0DD21067222A88F2007B9B88 /* chestStoneClosed_2_AO.jpeg in Resources */,
-				0DD20F31222A88A9007B9B88 /* chestWoodClosed_2_normal.png in Resources */,
-				0DD20F36222A88A9007B9B88 /* chestWoodOpen_2_AO.jpg in Resources */,
+				0DD210F9222A8E27007B9B88 /* LockWood2_normal.png in Resources */,
+				0DD21309222A929D007B9B88 /* Treasure_chest_bot_SpecularSmoothness.png in Resources */,
 				0DA4D73022152A2000D36D81 /* Main.storyboard in Resources */,
-				0DD20F5C222A88A9007B9B88 /* chestStoneOpen_1_metallic.jpg in Resources */,
-				0DD21006222A88F1007B9B88 /* chestWoodClosed_1_metallic.jpeg in Resources */,
-				0DD21048222A88F1007B9B88 /* chestStoneOpen_3_metallic.jpeg in Resources */,
-				0DD21023222A88F1007B9B88 /* Ryb2_roughness.jpeg in Resources */,
-				0DD21042222A88F1007B9B88 /* LockMetal_normal.png in Resources */,
-				0DD21065222A88F2007B9B88 /* chestStoneClosed_2_roughness.jpeg in Resources */,
-				0DD20F3A222A88A9007B9B88 /* chestMetalOpen_2_roughness.jpg in Resources */,
-				0DD2101F222A88F1007B9B88 /* LockWood_albedo.jpeg in Resources */,
-				0DD20F3E222A88A9007B9B88 /* chestStoneOpen_2_albedo.jpg in Resources */,
-				0DD2104D222A88F1007B9B88 /* chestWoodClosed_1_AO.jpeg in Resources */,
-				0DD20F24222A88A9007B9B88 /* chestStoneClosed_1_metallic.jpg in Resources */,
-				0DD21045222A88F1007B9B88 /* chestMetalOpen_1_AO.jpeg in Resources */,
-				0DD20F1F222A88A9007B9B88 /* Ryb_normal.png in Resources */,
-				0DD2102C222A88F1007B9B88 /* plane_normal.png in Resources */,
-				0DD21033222A88F1007B9B88 /* LockMetal2_normal.png in Resources */,
+				0DD212EE222A923A007B9B88 /* urn2.mtl in Resources */,
+				0DD210E9222A8E27007B9B88 /* chestWoodClosed_1_normal.png in Resources */,
+				0DD210EB222A8E27007B9B88 /* Ryb2_normal.png in Resources */,
+				0DD210E5222A8E27007B9B88 /* chestWoodOpen_2_baseColor.jpeg in Resources */,
+				0DD21102222A8E27007B9B88 /* scene.bin in Resources */,
+				0DD210F6222A8E27007B9B88 /* chestWoodClosed_1_metallicRoughness.png in Resources */,
+				0DD210DD222A8E27007B9B88 /* LockWood2_metallicRoughness.png in Resources */,
+				0DD210C1222A8E27007B9B88 /* chestWoodOpen_2_normal.png in Resources */,
 				0DD20E6C222A55EE007B9B88 /* output-onlinepngtools (1).png in Resources */,
-				0DD21066222A88F2007B9B88 /* chestStoneOpen_1_AO.jpeg in Resources */,
-				0DD21022222A88F1007B9B88 /* chestMetalOpen_2_albedo.jpeg in Resources */,
-				0DD2100D222A88F1007B9B88 /* chestWoodOpen_2_normal.png in Resources */,
-				0DD21041222A88F1007B9B88 /* chestWoodClosed_1_normal.png in Resources */,
-				0DD20F28222A88A9007B9B88 /* chestMetalClosed_1_metallic.jpg in Resources */,
+				0DD210CC222A8E27007B9B88 /* chestStoneOpen_3_normal.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

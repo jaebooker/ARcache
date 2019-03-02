@@ -73,14 +73,14 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         super.viewWillAppear(animated)
         
         // Create a session configuration
-        //let configuration = ARWorldTrackingConfiguration()
-        //configuration.detectionObjects = ARReferenceObject.referenceObjects(inGroupNamed: "CacheAnchors", bundle: Bundle.main)!
+        let configuration = ARWorldTrackingConfiguration()
+        configuration.detectionObjects = ARReferenceObject.referenceObjects(inGroupNamed: "CacheAnchors", bundle: Bundle.main)!
         let imageConfiguration = ARImageTrackingConfiguration()
         guard let arImages = ARReferenceImage.referenceImages(inGroupNamed: "PhotoAnchors", bundle: nil) else { return }
         imageConfiguration.trackingImages = arImages
         // Run the view's session
-        sceneView.session.run(imageConfiguration)
-        //sceneView.session.run(configuration)
+        //sceneView.session.run(imageConfiguration)
+        sceneView.session.run(configuration)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -160,9 +160,15 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         //diffuse (how light renders), contents (appearance of material)
         cacheShape.materials = [material]
         //cacheNode.geometry = cacheShape
-        let cacheNode = SCNNode(geometry: cacheShape)
-        cacheNode.position = position
-        sceneView.scene.rootNode.addChildNode(cacheNode)
+        guard let cacheScene = SCNScene(named: "art.scnassets/ship.scn") else { return }
+        guard let cacheSceneNode = cacheScene.rootNode.childNode(withName: "cache", recursively: false) else { return }
+        let physicsShape = SCNPhysicsShape(node: cacheSceneNode, options: [SCNPhysicsShape.Option.type: SCNPhysicsShape.ShapeType.concavePolyhedron])
+        let physicsBody = SCNPhysicsBody(type: .static, shape: physicsShape)
+        cacheSceneNode.physicsBody = physicsBody
+        sceneView.scene.rootNode.addChildNode(cacheSceneNode)
+        //let cacheNode = SCNNode(geometry: cacheShape)
+        cacheSceneNode.position = position
+        sceneView.scene.rootNode.addChildNode(cacheSceneNode)
     }
 //    func registerGestureRecognizer(){
 //        let tap = UITapGestureRecognizer(target: self, action: #selector(handleTap))
