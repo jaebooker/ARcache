@@ -55,7 +55,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         //        // Create a new scene
-        //        let scene = SCNScene(named: "art.scnassets/ship.scn")!
+        let scene = SCNScene(named: "art.scnassets/ship.scn")!
         //
         //        // Set the scene to the view
         //        sceneView.scene = scene
@@ -65,7 +65,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
         // Show statistics such as fps and timing information
         sceneView.showsStatistics = true
-        let scene = SCNScene()
+        //let scene = SCNScene()
         sceneView.scene = scene
     }
     
@@ -73,10 +73,14 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         super.viewWillAppear(animated)
         
         // Create a session configuration
-        let configuration = ARWorldTrackingConfiguration()
-        configuration.detectionObjects = ARReferenceObject.referenceObjects(inGroupNamed: "CacheAnchors", bundle: Bundle.main)!
+        //let configuration = ARWorldTrackingConfiguration()
+        //configuration.detectionObjects = ARReferenceObject.referenceObjects(inGroupNamed: "CacheAnchors", bundle: Bundle.main)!
+        let imageConfiguration = ARImageTrackingConfiguration()
+        guard let arImages = ARReferenceImage.referenceImages(inGroupNamed: "PhotoAnchors", bundle: nil) else { return }
+        imageConfiguration.trackingImages = arImages
         // Run the view's session
-        sceneView.session.run(configuration)
+        sceneView.session.run(imageConfiguration)
+        //sceneView.session.run(configuration)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -104,20 +108,39 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     }
     func renderer(_ renderer: SCNSceneRenderer, nodeFor anchor: ARAnchor) -> SCNNode? {
         print("anchor made")
-        let openCacheShape = SCNBox(width: 0.07, height: 0.2, length: 0.2, chamferRadius: 0.1)
-        let material = SCNMaterial()
-        material.diffuse.contents = UIImage(named: "starman")
-        //diffuse (how light renders), contents (appearance of material)
-        openCacheShape.materials = [material]
-        //cacheNode.geometry = cacheShape
-        let openCacheNode = SCNNode(geometry: openCacheShape)
-        if hitVectorStorage != nil {
-            openCacheNode.position = hitVectorStorage!
+        let node = SCNNode()
+        if let objectAnchor = anchor as? ARObjectAnchor {
+            let plane = SCNPlane(width: CGFloat(objectAnchor.referenceObject.extent.x * 0.8), height: CGFloat(objectAnchor.referenceObject.extent.y * 0.5))
+            plane.cornerRadius = plane.width * 0.125
+            let displayScene = SKScene(fileNamed: "cacheScene")
+            plane.firstMaterial?.diffuse.contents = displayScene
+            plane.firstMaterial!.isDoubleSided = true
+            plane.firstMaterial?.diffuse.contentsTransform = SCNMatrix4Translate(SCNMatrix4MakeScale(1, -1, 1), 0, 1, 0)
+            let planeNode = SCNNode(geometry: plane)
+            planeNode.position = SCNVector3Make(objectAnchor.referenceObject.center.x, objectAnchor.referenceObject.center.y + 0.35, objectAnchor.referenceObject.center.z)
+            node.addChildNode(planeNode)
         }
-        return openCacheNode
-//        let node = SCNNode()
+        return node
+    }
+    func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
+            print("rendering!")
+            let openCacheShape = SCNBox(width: 0.07, height: 0.2, length: 0.2, chamferRadius: 0.1)
+            let material = SCNMaterial()
+            material.diffuse.contents = UIImage(named: "starman")
+            //diffuse (how light renders), contents (appearance of material)
+            openCacheShape.materials = [material]
+            //cacheNode.geometry = cacheShape
+            let openCacheNode = SCNNode(geometry: openCacheShape)
+            //       sceneView.scene.rootNode.addChildNode(openCacheNode)
+            guard anchor is ARImageAnchor else { return }
+            //container, yo
+            //        guard let container = sceneView.scene.rootNode.childNode(withName: "art.scnassets/ship.scn", recursively: false) else { return }
+            //        container.removeFromParentNode()
+            node.addChildNode(openCacheNode)
+            //container.isHidden = false
+        }
 //        if let objectAnchor = anchor as? ARObjectAnchor {
-//            let plane = SCNPlane(width: CGFloat(objectAnchor.referenceObject.extent.x), height: CGFloat(objectAnchor.referenceObject.extent.y))
+//            let plane = SCNPlane(width: CGFloat(objectAnchor.referenceObject.extent.x *0.8), height: CGFloat(objectAnchor.referenceObject.extent.y *0.5))
 //            plane.cornerRadius = plane.width
 //            let spriteKitScene = SKScene(fileNamed: "ship")
 //            plane.firstMaterial?.diffuse.contents = spriteKitScene
@@ -128,7 +151,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
 //            node.addChildNode(planeNode)
 //        }
 //        return node
-    }
+//    }
     //let cacheNode: SCNNode?
     func createCache(position: SCNVector3) {
         let cacheShape = SCNBox(width: 0.1, height: 0.1, length: 0.2, chamferRadius: 0.1)
