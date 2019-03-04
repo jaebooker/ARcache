@@ -112,10 +112,6 @@
 		0DD21309222A929D007B9B88 /* Treasure_chest_bot_SpecularSmoothness.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD212FB222A929D007B9B88 /* Treasure_chest_bot_SpecularSmoothness.png */; };
 		0DD2130A222A929D007B9B88 /* Treasure_chest_grip_SpecularSmoothness.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD212FC222A929D007B9B88 /* Treasure_chest_grip_SpecularSmoothness.png */; };
 		0DD2130B222A929D007B9B88 /* Treasure chest.fbx in Resources */ = {isa = PBXBuildFile; fileRef = 0DD212FE222A929D007B9B88 /* Treasure chest.fbx */; };
-		0DD21314222A92A9007B9B88 /* roughness2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD2130E222A92A9007B9B88 /* roughness2.png */; };
-		0DD21315222A92A9007B9B88 /* metalic.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD2130F222A92A9007B9B88 /* metalic.png */; };
-		0DD21316222A92A9007B9B88 /* diffuse2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD21310222A92A9007B9B88 /* diffuse2.png */; };
-		0DD21317222A92A9007B9B88 /* specular2.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD21311222A92A9007B9B88 /* specular2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -249,10 +245,6 @@
 		0DD212FB222A929D007B9B88 /* Treasure_chest_bot_SpecularSmoothness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Treasure_chest_bot_SpecularSmoothness.png; sourceTree = "<group>"; };
 		0DD212FC222A929D007B9B88 /* Treasure_chest_grip_SpecularSmoothness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Treasure_chest_grip_SpecularSmoothness.png; sourceTree = "<group>"; };
 		0DD212FE222A929D007B9B88 /* Treasure chest.fbx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Treasure chest.fbx"; sourceTree = "<group>"; };
-		0DD2130E222A92A9007B9B88 /* roughness2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = roughness2.png; sourceTree = "<group>"; };
-		0DD2130F222A92A9007B9B88 /* metalic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = metalic.png; sourceTree = "<group>"; };
-		0DD21310222A92A9007B9B88 /* diffuse2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = diffuse2.png; sourceTree = "<group>"; };
-		0DD21311222A92A9007B9B88 /* specular2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = specular2.png; sourceTree = "<group>"; };
 		0DE77DE02229E5BE00682B87 /* Scan_12-57-24.arobject */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Scan_12-57-24.arobject"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -526,10 +518,6 @@
 		0DD2130D222A92A9007B9B88 /* textures */ = {
 			isa = PBXGroup;
 			children = (
-				0DD2130E222A92A9007B9B88 /* roughness2.png */,
-				0DD2130F222A92A9007B9B88 /* metalic.png */,
-				0DD21310222A92A9007B9B88 /* diffuse2.png */,
-				0DD21311222A92A9007B9B88 /* specular2.png */,
 			);
 			path = textures;
 			sourceTree = "<group>";
@@ -650,7 +638,6 @@
 			files = (
 				0DD210C4222A8E27007B9B88 /* LockStone_normal.png in Resources */,
 				0DD210DA222A8E27007B9B88 /* LockMetal_baseColor.jpeg in Resources */,
-				0DD21314222A92A9007B9B88 /* roughness2.png in Resources */,
 				0DA4D72B22152A2000D36D81 /* art.scnassets in Resources */,
 				0DD212FF222A929D007B9B88 /* Treasure_chest_top_SpecularSmoothness.png in Resources */,
 				0DD210CA222A8E27007B9B88 /* LockMetal2_metallicRoughness.png in Resources */,
@@ -668,7 +655,6 @@
 				0DD21302222A929D007B9B88 /* Treasure_chest_grip_AlbedoTransparency.png in Resources */,
 				0DD21308222A929D007B9B88 /* Treasure_chest_grip_Normal.png in Resources */,
 				0DD210D3222A8E27007B9B88 /* plane_metallicRoughness.png in Resources */,
-				0DD21315222A92A9007B9B88 /* metalic.png in Resources */,
 				0DD21303222A929D007B9B88 /* Treasure_chest_grip_base_Normal.png in Resources */,
 				0DD212ED222A923A007B9B88 /* urn2.jpg in Resources */,
 				0DD210CD222A8E27007B9B88 /* chestWoodClosed_2_normal.png in Resources */,
@@ -678,7 +664,6 @@
 				0DD21101222A8E27007B9B88 /* scene.gltf in Resources */,
 				0DD210F4222A8E27007B9B88 /* chestWoodOpen_1_baseColor.jpeg in Resources */,
 				0DD21304222A929D007B9B88 /* Treasure_chest_bot_Emission.png in Resources */,
-				0DD21316222A92A9007B9B88 /* diffuse2.png in Resources */,
 				0DD210EE222A8E27007B9B88 /* chestWoodOpen_3_baseColor.jpeg in Resources */,
 				0DD210F1222A8E27007B9B88 /* material_normal.png in Resources */,
 				0DD210E4222A8E27007B9B88 /* chestStoneOpen_3_baseColor.jpeg in Resources */,
@@ -722,7 +707,6 @@
 				0DD210ED222A8E27007B9B88 /* material_metallicRoughness.png in Resources */,
 				0DA4D73522152A2300D36D81 /* LaunchScreen.storyboard in Resources */,
 				0DD20E72222A56A7007B9B88 /* output-onlinepngtools.png in Resources */,
-				0DD21317222A92A9007B9B88 /* specular2.png in Resources */,
 				0DD210D5222A8E27007B9B88 /* LockWood_normal.png in Resources */,
 				0DD21100222A8E27007B9B88 /* chestMetalOpen_2_metallicRoughness.png in Resources */,
 				0DD210C2222A8E27007B9B88 /* chestStoneOpen_1_metallicRoughness.png in Resources */,

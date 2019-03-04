@@ -79,8 +79,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         guard let arImages = ARReferenceImage.referenceImages(inGroupNamed: "PhotoAnchors", bundle: nil) else { return }
         imageConfiguration.trackingImages = arImages
         // Run the view's session
-        //sceneView.session.run(imageConfiguration)
-        sceneView.session.run(configuration)
+        sceneView.session.run(imageConfiguration)
+        //sceneView.session.run(configuration)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -134,10 +134,12 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             //       sceneView.scene.rootNode.addChildNode(openCacheNode)
             guard anchor is ARImageAnchor else { return }
             //container, yo
-            //        guard let container = sceneView.scene.rootNode.childNode(withName: "art.scnassets/ship.scn", recursively: false) else { return }
-            //        container.removeFromParentNode()
-            node.addChildNode(openCacheNode)
-            //container.isHidden = false
+            guard let container = sceneView.scene.rootNode.childNode(withName: "container", recursively: false) else { return }
+        
+            container.removeFromParentNode()
+            node.addChildNode(container)
+            //node.addChildNode(openCacheNode)
+            container.isHidden = false
         }
 //        if let objectAnchor = anchor as? ARObjectAnchor {
 //            let plane = SCNPlane(width: CGFloat(objectAnchor.referenceObject.extent.x *0.8), height: CGFloat(objectAnchor.referenceObject.extent.y *0.5))
