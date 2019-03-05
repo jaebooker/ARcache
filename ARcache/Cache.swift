@@ -8,7 +8,8 @@
 
 import Foundation
 
-struct Swift: Encodable, Decodable {
+struct Cache: Encodable, Decodable {
+    let _id: Int = 0
     var notes: [String]
     let xcoordinate: Double
     let ycoordinate: Double

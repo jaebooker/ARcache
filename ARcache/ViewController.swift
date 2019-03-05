@@ -12,6 +12,7 @@ import ARKit
 
 class ViewController: UIViewController, ARSCNViewDelegate {
     //var currentNode: SCNNode!
+    var cacheArray: [Cache] = []
     var isOpen: Bool = false
     var hitVectorStorage: SCNVector3?
     var touchesBeginning: Bool = false
@@ -45,6 +46,23 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         openCacheButton.setTitle("Close", for: .normal)
     }
     @IBAction func startCache(_ sender: Any) {
+        //getting API
+        guard let url = URL(string: "https://44158af4.ngrok.io/todos") else { return }
+        let session = URLSession.shared
+        let task = session.dataTask(with: url) { (data, _, _) in
+            guard let data = data else { return }
+            do {
+                let apiEvents = try JSONDecoder().decode([Cache].self, from: data)
+                //looping through decoded caches
+                for apiEvent in apiEvents {
+                // appending caches to array
+                self.cacheArray.append(apiEvent)
+                print(apiEvent)
+               }
+            } catch { }
+        }
+        task.resume()
+        print("complete")
         cacheButton.isHidden = true
         insertCacheButton.isHidden = false
         touchesBeginning = true
