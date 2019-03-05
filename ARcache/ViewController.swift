@@ -124,6 +124,25 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             touchesBeginning = false
             insertCacheButton.isHidden = true
             openCacheButton.isHidden = false
+            guard let url = URL(string: "https://44158af4.ngrok.io/todos") else { return }
+            var request = URLRequest(url: url)
+            request.httpMethod = "POST"
+            request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+            let newCache = Cache(notes: ["Congrats! You found a new cache!"], xcoordinate: 032.234, ycoordinate: 234244)
+            do {
+                let jsonBody = try JSONEncoder().encode(newCache)
+                request.httpBody = jsonBody
+            } catch {}
+            let session = URLSession.shared
+            let task = session.dataTask(with: request) { (data, _, _) in
+                guard let data = data else { return }
+                do {
+                    let sentPost = try JSONDecoder().decode(Cache.self, from: data)
+                    print(sentPost)
+                    print("i am here in the sent Post")
+                } catch {}
+            }
+            task.resume()
         }
     }
     func renderer(_ renderer: SCNSceneRenderer, nodeFor anchor: ARAnchor) -> SCNNode? {
