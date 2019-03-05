@@ -96,9 +96,6 @@
 		0DD21102222A8E27007B9B88 /* scene.bin in Resources */ = {isa = PBXBuildFile; fileRef = 0DD210B8222A8E27007B9B88 /* scene.bin */; };
 		0DD212EA222A923A007B9B88 /* urn2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD212E3222A923A007B9B88 /* urn2.jpeg */; };
 		0DD212EB222A923A007B9B88 /* urn.zip in Resources */ = {isa = PBXBuildFile; fileRef = 0DD212E5222A923A007B9B88 /* urn.zip */; };
-		0DD212EC222A923A007B9B88 /* urn2.obj in Resources */ = {isa = PBXBuildFile; fileRef = 0DD212E7222A923A007B9B88 /* urn2.obj */; };
-		0DD212ED222A923A007B9B88 /* urn2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0DD212E8222A923A007B9B88 /* urn2.jpg */; };
-		0DD212EE222A923A007B9B88 /* urn2.mtl in Resources */ = {isa = PBXBuildFile; fileRef = 0DD212E9222A923A007B9B88 /* urn2.mtl */; };
 		0DD212FF222A929D007B9B88 /* Treasure_chest_top_SpecularSmoothness.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD212F1222A929D007B9B88 /* Treasure_chest_top_SpecularSmoothness.png */; };
 		0DD21300222A929D007B9B88 /* Treasure_chest_top_Emission.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD212F2222A929D007B9B88 /* Treasure_chest_top_Emission.png */; };
 		0DD21301222A929D007B9B88 /* Lock_diffuse.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD212F3222A929D007B9B88 /* Lock_diffuse.png */; };
@@ -229,9 +226,6 @@
 		0DD21103222A8E5C007B9B88 /* scene.bin.cpgz */ = {isa = PBXFileReference; lastKnownFileType = file; path = scene.bin.cpgz; sourceTree = "<group>"; };
 		0DD212E3222A923A007B9B88 /* urn2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = urn2.jpeg; sourceTree = "<group>"; };
 		0DD212E5222A923A007B9B88 /* urn.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = urn.zip; sourceTree = "<group>"; };
-		0DD212E7222A923A007B9B88 /* urn2.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = urn2.obj; sourceTree = "<group>"; };
-		0DD212E8222A923A007B9B88 /* urn2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = urn2.jpg; sourceTree = "<group>"; };
-		0DD212E9222A923A007B9B88 /* urn2.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = urn2.mtl; sourceTree = "<group>"; };
 		0DD212F1222A929D007B9B88 /* Treasure_chest_top_SpecularSmoothness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Treasure_chest_top_SpecularSmoothness.png; sourceTree = "<group>"; };
 		0DD212F2222A929D007B9B88 /* Treasure_chest_top_Emission.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Treasure_chest_top_Emission.png; sourceTree = "<group>"; };
 		0DD212F3222A929D007B9B88 /* Lock_diffuse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Lock_diffuse.png; sourceTree = "<group>"; };
@@ -455,19 +449,8 @@
 			isa = PBXGroup;
 			children = (
 				0DD212E5222A923A007B9B88 /* urn.zip */,
-				0DD212E6222A923A007B9B88 /* urn */,
 			);
 			path = source;
-			sourceTree = "<group>";
-		};
-		0DD212E6222A923A007B9B88 /* urn */ = {
-			isa = PBXGroup;
-			children = (
-				0DD212E7222A923A007B9B88 /* urn2.obj */,
-				0DD212E8222A923A007B9B88 /* urn2.jpg */,
-				0DD212E9222A923A007B9B88 /* urn2.mtl */,
-			);
-			path = urn;
 			sourceTree = "<group>";
 		};
 		0DD212EF222A929D007B9B88 /* magic-treasure-chest */ = {
@@ -647,7 +630,6 @@
 				0DD210FB222A8E27007B9B88 /* chestStoneOpen_2_normal.png in Resources */,
 				0DD210F8222A8E27007B9B88 /* chestStoneOpen_1_baseColor.jpeg in Resources */,
 				0DD210D6222A8E27007B9B88 /* chestStoneClosed_1_metallicRoughness.png in Resources */,
-				0DD212EC222A923A007B9B88 /* urn2.obj in Resources */,
 				0DD210D1222A8E27007B9B88 /* chestStoneClosed_1_normal.png in Resources */,
 				0DD2130B222A929D007B9B88 /* Treasure chest.fbx in Resources */,
 				0DD210D8222A8E27007B9B88 /* chestMetalOpen_3_metallicRoughness.png in Resources */,
@@ -656,7 +638,6 @@
 				0DD21308222A929D007B9B88 /* Treasure_chest_grip_Normal.png in Resources */,
 				0DD210D3222A8E27007B9B88 /* plane_metallicRoughness.png in Resources */,
 				0DD21303222A929D007B9B88 /* Treasure_chest_grip_base_Normal.png in Resources */,
-				0DD212ED222A923A007B9B88 /* urn2.jpg in Resources */,
 				0DD210CD222A8E27007B9B88 /* chestWoodClosed_2_normal.png in Resources */,
 				0DD212EB222A923A007B9B88 /* urn.zip in Resources */,
 				0DD21305222A929D007B9B88 /* Treasure_chest_grip_base_SpecularSmoothnes.png in Resources */,
@@ -727,7 +708,6 @@
 				0DD210F9222A8E27007B9B88 /* LockWood2_normal.png in Resources */,
 				0DD21309222A929D007B9B88 /* Treasure_chest_bot_SpecularSmoothness.png in Resources */,
 				0DA4D73022152A2000D36D81 /* Main.storyboard in Resources */,
-				0DD212EE222A923A007B9B88 /* urn2.mtl in Resources */,
 				0DD210E9222A8E27007B9B88 /* chestWoodClosed_1_normal.png in Resources */,
 				0DD210EB222A8E27007B9B88 /* Ryb2_normal.png in Resources */,
 				0DD210E5222A8E27007B9B88 /* chestWoodOpen_2_baseColor.jpeg in Resources */,
