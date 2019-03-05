@@ -9,9 +9,10 @@
 import UIKit
 import SceneKit
 import ARKit
-
+import CoreLocation
 class ViewController: UIViewController, ARSCNViewDelegate {
     //var currentNode: SCNNode!
+    let locationManager = CLLocationManager()
     var cacheArray: [Cache] = []
     var isOpen: Bool = false
     var hitVectorStorage: SCNVector3?
@@ -124,11 +125,17 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             touchesBeginning = false
             insertCacheButton.isHidden = true
             openCacheButton.isHidden = false
+            var lat: Double = 0.0
+            var longi: Double = 0.0
+            if locationManager.location?.coordinate != nil {
+                lat = (locationManager.location?.coordinate.latitude)!
+                longi = (locationManager.location?.coordinate.longitude)!
+            }
+            let newCache = Cache(notes: ["Congrats! You found a new cache!"], xcoordinate: lat, ycoordinate: longi)
             guard let url = URL(string: "https://44158af4.ngrok.io/todos") else { return }
             var request = URLRequest(url: url)
             request.httpMethod = "POST"
             request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-            let newCache = Cache(notes: ["Congrats! You found a new cache!"], xcoordinate: 032.234, ycoordinate: 234244)
             do {
                 let jsonBody = try JSONEncoder().encode(newCache)
                 request.httpBody = jsonBody
