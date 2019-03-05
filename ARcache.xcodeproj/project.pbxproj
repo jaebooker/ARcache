@@ -109,6 +109,7 @@
 		0DD21309222A929D007B9B88 /* Treasure_chest_bot_SpecularSmoothness.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD212FB222A929D007B9B88 /* Treasure_chest_bot_SpecularSmoothness.png */; };
 		0DD2130A222A929D007B9B88 /* Treasure_chest_grip_SpecularSmoothness.png in Resources */ = {isa = PBXBuildFile; fileRef = 0DD212FC222A929D007B9B88 /* Treasure_chest_grip_SpecularSmoothness.png */; };
 		0DD2130B222A929D007B9B88 /* Treasure chest.fbx in Resources */ = {isa = PBXBuildFile; fileRef = 0DD212FE222A929D007B9B88 /* Treasure chest.fbx */; };
+		0DED8BAC222E4FAC00582230 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DED8BAB222E4FAC00582230 /* Cache.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -240,6 +241,7 @@
 		0DD212FC222A929D007B9B88 /* Treasure_chest_grip_SpecularSmoothness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Treasure_chest_grip_SpecularSmoothness.png; sourceTree = "<group>"; };
 		0DD212FE222A929D007B9B88 /* Treasure chest.fbx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "Treasure chest.fbx"; sourceTree = "<group>"; };
 		0DE77DE02229E5BE00682B87 /* Scan_12-57-24.arobject */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Scan_12-57-24.arobject"; sourceTree = "<group>"; };
+		0DED8BAB222E4FAC00582230 /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -309,6 +311,7 @@
 				0DD20E1F2229F408007B9B88 /* New Group */,
 				0DA4D73322152A2300D36D81 /* LaunchScreen.storyboard */,
 				0DA4D73622152A2300D36D81 /* Info.plist */,
+				0DED8BAB222E4FAC00582230 /* Cache.swift */,
 			);
 			path = ARcache;
 			sourceTree = "<group>";
@@ -742,6 +745,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0DA4D72D22152A2000D36D81 /* ViewController.swift in Sources */,
+				0DED8BAC222E4FAC00582230 /* Cache.swift in Sources */,
 				0DA4D72922152A2000D36D81 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
