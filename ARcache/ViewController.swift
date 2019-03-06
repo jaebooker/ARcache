@@ -12,7 +12,7 @@ import ARKit
 import CoreLocation
 class ViewController: UIViewController, ARSCNViewDelegate {
     //var currentNode: SCNNode!
-    let locationManager = CLLocationManager()
+    var locationManager = CLLocationManager()
     var cacheArray: [Cache] = []
     var isOpen: Bool = false
     var hitVectorStorage: SCNVector3?
@@ -48,7 +48,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     }
     @IBAction func startCache(_ sender: Any) {
         //getting API
-        guard let url = URL(string: "https://44158af4.ngrok.io/todos") else { return }
+        guard let url = URL(string: "https://632754a7.ngrok.io/todos") else { return }
         let session = URLSession.shared
         let task = session.dataTask(with: url) { (data, _, _) in
             guard let data = data else { return }
@@ -128,11 +128,12 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             var lat: Double = 0.0
             var longi: Double = 0.0
             if locationManager.location?.coordinate != nil {
+                print("hear I am")
                 lat = (locationManager.location?.coordinate.latitude)!
                 longi = (locationManager.location?.coordinate.longitude)!
             }
             let newCache = Cache(notes: ["Congrats! You found a new cache!"], xcoordinate: lat, ycoordinate: longi)
-            guard let url = URL(string: "https://44158af4.ngrok.io/todos") else { return }
+            guard let url = URL(string: "https://632754a7.ngrok.io/todos") else { return }
             var request = URLRequest(url: url)
             request.httpMethod = "POST"
             request.addValue("application/json", forHTTPHeaderField: "Content-Type")
