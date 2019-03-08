@@ -46,7 +46,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         isOpen = true
         insertCacheButton.isHidden = true
         cacheMessage.isHidden = false
-        cacheMessage.text = "You found a new cache!"
+        cacheMessage.text = cacheArray[0].notes[0]
         openCacheButton.setTitle("Close", for: .normal)
     }
     @IBAction func startCache(_ sender: Any) {
