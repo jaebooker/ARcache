@@ -12,6 +12,7 @@ import ARKit
 import CoreLocation
 class ViewController: UIViewController, ARSCNViewDelegate {
     //var currentNode: SCNNode!
+    @IBOutlet weak var cacheMessage: UILabel!
     var locationManager = CLLocationManager()
     var cacheArray: [Cache] = []
     var isOpen: Bool = false
@@ -44,6 +45,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
 //        sceneView.scene.rootNode.addChildNode(treasureNode)
         isOpen = true
         insertCacheButton.isHidden = true
+        cacheMessage.isHidden = false
+        cacheMessage.text = "You found a new cache!"
         openCacheButton.setTitle("Close", for: .normal)
     }
     @IBAction func startCache(_ sender: Any) {
