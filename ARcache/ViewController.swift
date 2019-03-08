@@ -48,7 +48,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     }
     @IBAction func startCache(_ sender: Any) {
         //getting API
-        guard let url = URL(string: "https://632754a7.ngrok.io/todos") else { return }
+        guard let url = URL(string: "https://arcache.vapor.cloud/caches") else { return }
         let session = URLSession.shared
         let task = session.dataTask(with: url) { (data, _, _) in
             guard let data = data else { return }
@@ -133,7 +133,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
                 longi = (locationManager.location?.coordinate.longitude)!
             }
             let newCache = Cache(notes: ["Congrats! You found a new cache!"], xcoordinate: lat, ycoordinate: longi)
-            guard let url = URL(string: "https://632754a7.ngrok.io/todos") else { return }
+            guard let url = URL(string: "https://arcache.vapor.cloud/caches") else { return }
             var request = URLRequest(url: url)
             request.httpMethod = "POST"
             request.addValue("application/json", forHTTPHeaderField: "Content-Type")
