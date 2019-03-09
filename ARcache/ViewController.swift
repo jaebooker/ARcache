@@ -188,22 +188,23 @@ class ViewController: UIViewController, ARSCNViewDelegate {
                 if (i.xcoordinate >= (userX-0.01)) && (i.xcoordinate <= (userX+0.01)) && (i.ycoordinate >= (userY-0.01)) && (i.ycoordinate <= (userY+0.01)) {
                     if let objectAnchor = anchor as? ARObjectAnchor {
                         let plane = SCNPlane(width: CGFloat(objectAnchor.referenceObject.extent.x * 0.8), height: CGFloat(objectAnchor.referenceObject.extent.y * 0.5))
-                        let box = SCNBox(width: CGFloat(objectAnchor.referenceObject.extent.x * 0.8), height: CGFloat(objectAnchor.referenceObject.extent.y * 0.5), length: CGFloat(objectAnchor.referenceObject.extent.x), chamferRadius: 0.0001)
+                        let box = SCNBox(width: 0.1, height: 0.1, length: 0.2, chamferRadius: 0.00001)
                         plane.cornerRadius = plane.width * 0.125
                         let displayScene = SKScene(fileNamed: "cacheScene")
-                        let cacheScene = SKScene(fileNamed: "cacheScene")
+                        let material = SCNMaterial()
+                        material.diffuse.contents = UIImage(named: "wood")
                         plane.firstMaterial?.diffuse.contents = displayScene
                         plane.firstMaterial!.isDoubleSided = true
                         plane.firstMaterial?.diffuse.contentsTransform = SCNMatrix4Translate(SCNMatrix4MakeScale(1, -1, 1), 0, 1, 0)
-                        box.firstMaterial?.diffuse.contents = cacheScene
+                        box.materials = [material]
                         let planeNode = SCNNode(geometry: plane)
                         let cacheNode = SCNNode(geometry: box)
                         planeNode.position = SCNVector3Make(objectAnchor.referenceObject.center.x, objectAnchor.referenceObject.center.y + 0.35, objectAnchor.referenceObject.center.z)
                         cacheNode.position = SCNVector3Make(objectAnchor.referenceObject.center.x, objectAnchor.referenceObject.center.y + 0.35, objectAnchor.referenceObject.center.z)
                         node.addChildNode(cacheNode)
                     }
+                    break
                 }
-                break
             }
         }
         print("anchor made")
@@ -211,9 +212,9 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     }
     func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
             print("rendering!")
-            let openCacheShape = SCNBox(width: 0.07, height: 0.2, length: 0.2, chamferRadius: 0.1)
+            let openCacheShape = SCNBox(width: 0.1, height: 0.1, length: 0.2, chamferRadius: 0.00001)
             let material = SCNMaterial()
-            material.diffuse.contents = UIImage(named: "starman")
+            material.diffuse.contents = UIImage(named: "wood")
             //diffuse (how light renders), contents (appearance of material)
             openCacheShape.materials = [material]
             //cacheNode.geometry = cacheShape
