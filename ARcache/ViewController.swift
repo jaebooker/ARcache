@@ -161,14 +161,19 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         let node = SCNNode()
         if let objectAnchor = anchor as? ARObjectAnchor {
             let plane = SCNPlane(width: CGFloat(objectAnchor.referenceObject.extent.x * 0.8), height: CGFloat(objectAnchor.referenceObject.extent.y * 0.5))
+            let box = SCNBox(width: CGFloat(objectAnchor.referenceObject.extent.x * 0.8), height: CGFloat(objectAnchor.referenceObject.extent.y * 0.5), length: CGFloat(objectAnchor.referenceObject.extent.x), chamferRadius: 0.0001)
             plane.cornerRadius = plane.width * 0.125
             let displayScene = SKScene(fileNamed: "cacheScene")
+            let cacheScene = SKScene(fileNamed: "cacheScene")
             plane.firstMaterial?.diffuse.contents = displayScene
             plane.firstMaterial!.isDoubleSided = true
             plane.firstMaterial?.diffuse.contentsTransform = SCNMatrix4Translate(SCNMatrix4MakeScale(1, -1, 1), 0, 1, 0)
+            box.firstMaterial?.diffuse.contents = cacheScene
             let planeNode = SCNNode(geometry: plane)
+            let cacheNode = SCNNode(geometry: box)
             planeNode.position = SCNVector3Make(objectAnchor.referenceObject.center.x, objectAnchor.referenceObject.center.y + 0.35, objectAnchor.referenceObject.center.z)
-            node.addChildNode(planeNode)
+            cacheNode.position = SCNVector3Make(objectAnchor.referenceObject.center.x, objectAnchor.referenceObject.center.y + 0.35, objectAnchor.referenceObject.center.z)
+            node.addChildNode(cacheNode)
         }
         return node
     }

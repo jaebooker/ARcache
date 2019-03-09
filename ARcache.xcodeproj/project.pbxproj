@@ -131,6 +131,7 @@
 
 /* Begin PBXFileReference section */
 		0D00940E223329C700417E2B /* Scan_14-45-25.arobject */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Scan_14-45-25.arobject"; sourceTree = "<group>"; };
+		0D00940F2233320700417E2B /* Scan_13-24-41.arobject */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Scan_13-24-41.arobject"; sourceTree = "<group>"; };
 		0DA4D72522152A2000D36D81 /* ARcache.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARcache.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DA4D72822152A2000D36D81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0DA4D72A22152A2000D36D81 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -306,6 +307,7 @@
 				0DA4D72A22152A2000D36D81 /* art.scnassets */,
 				0DA4D72C22152A2000D36D81 /* ViewController.swift */,
 				0D00940E223329C700417E2B /* Scan_14-45-25.arobject */,
+				0D00940F2233320700417E2B /* Scan_13-24-41.arobject */,
 				0DD20E66222A374D007B9B88 /* cacheScene.sks */,
 				0DD20E6B222A55EE007B9B88 /* output-onlinepngtools (1).png */,
 				0DA4D72E22152A2000D36D81 /* Main.storyboard */,
