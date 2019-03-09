@@ -66,6 +66,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             openCacheButton.setTitle("Close", for: .normal)
         }
     }
+    @IBOutlet weak var emailLabel: UILabel!
     @IBAction func takeCacheItem(_ sender: Any) {
         cacheMessage.text = "You have successfully taken the note: \(cacheArray[1].notes[0]) WRITE IT SOMEWHERE BEFORE PRESSING CLOSE!"
         cacheArray[1].notes[0] = "Note taken! Should have been quicker!"
@@ -90,6 +91,15 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         task.resume()
     }
     @IBAction func addCacheItem(_ sender: Any) {
+        insertCacheButton.isHidden = false
+        cacheMessage.text = "Fantastic! You're contributing to society! Now add the message you want to place in the cache! Examples: Simple greeting, game code, short poem, anything!"
+        firstMessage.text = "Your note"
+        inputStackView.isHidden = false
+        emailLabel.isHidden = true
+        emailField.isHidden = true
+        openCacheButton.isHidden = true
+        takeButton.isHidden = true
+        addButton.isHidden = true
     }
     @IBAction func startCache(_ sender: Any) {
         cacheButton.isHidden = true
@@ -98,42 +108,78 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         touchesBeginning = true
     }
     @IBAction func insertCacheButton(_ sender: Any) {
-        var lat: Double = 0.0
-        var longi: Double = 0.0
-        var messageSubmission: String = ""
-        var emailSubmission: String = ""
-        if messageField.text != nil {
-            messageSubmission = messageField.text!
-        }
-        if emailField.text != nil {
-            emailSubmission = emailField.text!
-        }
-        if locationManager.location?.coordinate != nil {
-            lat = (locationManager.location?.coordinate.latitude)!
-            longi = (locationManager.location?.coordinate.longitude)!
-        }
-        let newCache = Cache(notes: [emailSubmission, messageSubmission], xcoordinate: lat, ycoordinate: longi)
-        guard let url = URL(string: "https://arcache.vapor.cloud/caches") else { return }
-        var request = URLRequest(url: url)
-        request.httpMethod = "POST"
-        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-        do {
-            let jsonBody = try JSONEncoder().encode(newCache)
-            request.httpBody = jsonBody
-        } catch {}
-        let session = URLSession.shared
-        let task = session.dataTask(with: request) { (data, _, _) in
-            guard let data = data else { return }
+        if isOpen{
+            var messageSubmission: String = ""
+            if messageField.text != nil {
+                messageSubmission = messageField.text!
+            }
+            cacheArray[1].notes.append(messageSubmission)
+            let editedCache = Cache(notes: cacheArray[1].notes, xcoordinate: cacheArray[1].xcoordinate, ycoordinate: cacheArray[1].ycoordinate)
+            guard let url = URL(string: "https://arcache.vapor.cloud/caches/2") else { return }
+            var request = URLRequest(url: url)
+            request.httpMethod = "PATCH"
+            request.addValue("application/json", forHTTPHeaderField: "Content-Type")
             do {
-                let sentPost = try JSONDecoder().decode(Cache.self, from: data)
-                print(sentPost)
-                print("i am here in the sent Post")
+                let jsonBody = try JSONEncoder().encode(editedCache)
+                request.httpBody = jsonBody
             } catch {}
+            let session = URLSession.shared
+            let task = session.dataTask(with: request) { (data, _, _) in
+                guard let data = data else { return }
+                do {
+                    let sentPatch = try JSONDecoder().decode(Cache.self, from: data)
+                    print(sentPatch)
+                    print("I am here in the sent Update")
+                } catch {}
+            }
+            task.resume()
+            self.cacheMessage.text = "Congrats! You've just added to an Arcache! Happy hunting!"
+            self.firstMessage.text = "First Message!"
+            self.inputStackView.isHidden = true
+            self.insertCacheButton.isHidden = true
+            self.emailLabel.isHidden = false
+            self.emailField.isHidden = false
+            self.addButton.isHidden = false
+            openCacheButton.isHidden = false
+            takeButton.isHidden = false
+        } else {
+            var lat: Double = 0.0
+            var longi: Double = 0.0
+            var messageSubmission: String = ""
+            var emailSubmission: String = ""
+            if messageField.text != nil {
+                messageSubmission = messageField.text!
+            }
+            if emailField.text != nil {
+                emailSubmission = emailField.text!
+            }
+            if locationManager.location?.coordinate != nil {
+                lat = (locationManager.location?.coordinate.latitude)!
+                longi = (locationManager.location?.coordinate.longitude)!
+            }
+            let newCache = Cache(notes: [emailSubmission, messageSubmission], xcoordinate: lat, ycoordinate: longi)
+            guard let url = URL(string: "https://arcache.vapor.cloud/caches") else { return }
+            var request = URLRequest(url: url)
+            request.httpMethod = "POST"
+            request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+            do {
+                let jsonBody = try JSONEncoder().encode(newCache)
+                request.httpBody = jsonBody
+            } catch {}
+            let session = URLSession.shared
+            let task = session.dataTask(with: request) { (data, _, _) in
+                guard let data = data else { return }
+                do {
+                    let sentPost = try JSONDecoder().decode(Cache.self, from: data)
+                    print(sentPost)
+                    print("i am here in the sent Post")
+                } catch {}
+            }
+            task.resume()
+            self.cacheMessage.text = "Congrats! You've just made your first cache! It will be added to our app within the week! In the mean time, why don't you try searching for other caches?"
+            self.inputStackView.isHidden = true
+            self.insertCacheButton.isHidden = true
         }
-        task.resume()
-        self.cacheMessage.text = "Congrats! You've just made your first cache! It will be added to our app within the week! In the mean time, why don't you try searching for other caches?"
-        self.inputStackView.isHidden = true
-        self.insertCacheButton.isHidden = true
     }
     @IBOutlet weak var cacheButton: UIButton!
     @IBOutlet weak var openCacheButton: UIButton!
