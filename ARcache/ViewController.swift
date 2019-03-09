@@ -128,7 +128,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             createCache(position: hitVector)
             touchesBeginning = false
             insertCacheButton.isHidden = true
-            cacheMessage.text = "Good! You can now download the ArScanner on the App Store, scan the object you've placed the cache on, and send the scanned object to jaeson.booker@students.makeschool.com"
+            cacheMessage.text = "Good! If you are a developer, you can now download the ArScanner on the App Store, scan the object you've placed the cache on, and send the scanned object to jaeson.booker@students.makeschool.com"
             //openCacheButton.isHidden = false
             var lat: Double = 0.0
             var longi: Double = 0.0

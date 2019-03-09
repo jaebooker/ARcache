@@ -78,13 +78,45 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="center" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Tck-U2-u0N">
+                                <rect key="frame" x="0.0" y="554" width="414" height="135"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Message!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c0h-YK-wXz">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J07-8O-hkh">
+                                        <rect key="frame" x="0.0" y="35" width="414" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email to register cache with" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sWu-yV-iZg">
+                                        <rect key="frame" x="0.0" y="70" width="414" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qmF-Ss-UG1">
+                                        <rect key="frame" x="0.0" y="105" width="414" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="fQZ-KI-GVf" firstAttribute="trailing" secondItem="Tck-U2-u0N" secondAttribute="trailing" id="2sk-jm-QBe"/>
                             <constraint firstItem="BrB-h1-WRS" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" id="GsS-dJ-CKf"/>
                             <constraint firstItem="RMf-3z-0MZ" firstAttribute="centerX" secondItem="U0K-SW-4ec" secondAttribute="centerX" id="OzP-or-9CB"/>
+                            <constraint firstItem="Tck-U2-u0N" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" id="Slj-mG-U2p"/>
                             <constraint firstItem="BrB-h1-WRS" firstAttribute="bottom" secondItem="fQZ-KI-GVf" secondAttribute="bottom" id="VpT-BR-CcM"/>
                             <constraint firstItem="BrB-h1-WRS" firstAttribute="trailing" secondItem="fQZ-KI-GVf" secondAttribute="trailing" id="XyZ-9z-H8e"/>
+                            <constraint firstItem="RMf-3z-0MZ" firstAttribute="top" secondItem="Tck-U2-u0N" secondAttribute="bottom" constant="104" id="ZN4-SI-kxu"/>
                             <constraint firstItem="fQZ-KI-GVf" firstAttribute="bottom" secondItem="RMf-3z-0MZ" secondAttribute="bottom" constant="25" id="m9D-tD-ihX"/>
                             <constraint firstItem="esh-v8-Pwl" firstAttribute="trailing" secondItem="fQZ-KI-GVf" secondAttribute="trailing" id="pXW-WL-oi3"/>
                             <constraint firstItem="esh-v8-Pwl" firstAttribute="leading" secondItem="fQZ-KI-GVf" secondAttribute="leading" id="qfq-4c-TpL"/>
