@@ -68,7 +68,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         task.resume()
         print("complete")
         cacheButton.isHidden = true
-        insertCacheButton.isHidden = false
+        cacheMessage.isHidden = false
+        cacheMessage.text = "Tap on screen where you want to place cache. It's best for it to be in a well-lit environment, on top of a unique object."
         touchesBeginning = true
     }
     @IBAction func insertCacheButton(_ sender: Any) {
@@ -127,7 +128,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             createCache(position: hitVector)
             touchesBeginning = false
             insertCacheButton.isHidden = true
-            openCacheButton.isHidden = false
+            cacheMessage.text = "Good! You can now download the ArScanner on the App Store, scan the object you've placed the cache on, and send the scanned object to jaeson.booker@students.makeschool.com"
+            //openCacheButton.isHidden = false
             var lat: Double = 0.0
             var longi: Double = 0.0
             if locationManager.location?.coordinate != nil {
