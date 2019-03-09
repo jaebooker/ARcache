@@ -77,12 +77,54 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         touchesBeginning = true
     }
     @IBAction func insertCacheButton(_ sender: Any) {
+        var lat: Double = 0.0
+        var longi: Double = 0.0
+        var messageSubmission: String = ""
+        var emailSubmission: String = ""
+        if messageField.text != nil {
+            messageSubmission = messageField.text!
+        }
+        if emailField.text != nil {
+            emailSubmission = emailField.text!
+        }
+        if locationManager.location?.coordinate != nil {
+            lat = (locationManager.location?.coordinate.latitude)!
+            longi = (locationManager.location?.coordinate.longitude)!
+        }
+        let newCache = Cache(notes: [emailSubmission, messageSubmission], xcoordinate: lat, ycoordinate: longi)
+        guard let url = URL(string: "https://arcache.vapor.cloud/caches") else { return }
+        var request = URLRequest(url: url)
+        request.httpMethod = "POST"
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        do {
+            let jsonBody = try JSONEncoder().encode(newCache)
+            request.httpBody = jsonBody
+        } catch {}
+        let session = URLSession.shared
+        let task = session.dataTask(with: request) { (data, _, _) in
+            guard let data = data else { return }
+            do {
+                let sentPost = try JSONDecoder().decode(Cache.self, from: data)
+                print(sentPost)
+                print("i am here in the sent Post")
+            } catch {}
+        }
+        task.resume()
+        self.cacheMessage.text = "Congrats! You've just made your first cache! It will be added to our app within the week! In the mean time, why don't you try searching for other caches?"
+        self.inputStackView.isHidden = true
+        self.insertCacheButton.isHidden = true
     }
     @IBOutlet weak var cacheButton: UIButton!
     @IBOutlet weak var openCacheButton: UIButton!
     @IBOutlet weak var insertCacheButton: UIButton!
+    @objc func dismissKeyboard (_ sender: UITapGestureRecognizer) {
+        messageField.resignFirstResponder()
+        emailField.resignFirstResponder()
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard (_:)))
+        self.view.addGestureRecognizer(tapGesture)
         //        // Create a new scene
         //let scene = SCNScene(named: "art.scnassets/ship.scn")!
         //
@@ -135,32 +177,6 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             cacheMessage.text = "Great! Now add the first message you want to place in the cache! Examples: Simple greeting, game code, short poem, anything! And we need your email for details on registering the cache!"
             inputStackView.isHidden = false
             //openCacheButton.isHidden = false
-            var lat: Double = 0.0
-            var longi: Double = 0.0
-            if locationManager.location?.coordinate != nil {
-                print("hear I am")
-                lat = (locationManager.location?.coordinate.latitude)!
-                longi = (locationManager.location?.coordinate.longitude)!
-            }
-            let newCache = Cache(notes: ["Congrats! You found a new cache!"], xcoordinate: lat, ycoordinate: longi)
-            guard let url = URL(string: "https://arcache.vapor.cloud/cachess") else { return }
-            var request = URLRequest(url: url)
-            request.httpMethod = "POST"
-            request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-            do {
-                let jsonBody = try JSONEncoder().encode(newCache)
-                request.httpBody = jsonBody
-            } catch {}
-            let session = URLSession.shared
-            let task = session.dataTask(with: request) { (data, _, _) in
-                guard let data = data else { return }
-                do {
-                    let sentPost = try JSONDecoder().decode(Cache.self, from: data)
-                    print(sentPost)
-                    print("i am here in the sent Post")
-                } catch {}
-            }
-            task.resume()
         }
     }
     func renderer(_ renderer: SCNSceneRenderer, nodeFor anchor: ARAnchor) -> SCNNode? {
