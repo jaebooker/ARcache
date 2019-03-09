@@ -12,6 +12,10 @@ import ARKit
 import CoreLocation
 class ViewController: UIViewController, ARSCNViewDelegate {
     //var currentNode: SCNNode!
+    @IBOutlet weak var emailField: UITextField!
+    @IBOutlet weak var messageField: UITextField!
+    @IBOutlet weak var firstMessage: UILabel!
+    @IBOutlet weak var inputStackView: UIStackView!
     @IBOutlet weak var cacheMessage: UILabel!
     var locationManager = CLLocationManager()
     var cacheArray: [Cache] = []
@@ -127,8 +131,9 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             hitVectorStorage = hitVector
             createCache(position: hitVector)
             touchesBeginning = false
-            insertCacheButton.isHidden = true
-            cacheMessage.text = "Good! If you are a developer, you can now download the ArScanner on the App Store, scan the object you've placed the cache on, and send the scanned object to jaeson.booker@students.makeschool.com"
+            insertCacheButton.isHidden = false
+            cacheMessage.text = "Great! Now add the first message you want to place in the cache! Examples: Simple greeting, game code, short poem, anything! And we need your email for details on registering the cache!"
+            inputStackView.isHidden = false
             //openCacheButton.isHidden = false
             var lat: Double = 0.0
             var longi: Double = 0.0
@@ -138,7 +143,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
                 longi = (locationManager.location?.coordinate.longitude)!
             }
             let newCache = Cache(notes: ["Congrats! You found a new cache!"], xcoordinate: lat, ycoordinate: longi)
-            guard let url = URL(string: "https://arcache.vapor.cloud/caches") else { return }
+            guard let url = URL(string: "https://arcache.vapor.cloud/cachess") else { return }
             var request = URLRequest(url: url)
             request.httpMethod = "POST"
             request.addValue("application/json", forHTTPHeaderField: "Content-Type")
