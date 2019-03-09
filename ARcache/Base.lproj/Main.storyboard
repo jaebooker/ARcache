@@ -24,6 +24,28 @@
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="RMf-3z-0MZ">
                                 <rect key="frame" x="163.5" y="793" width="87" height="44"/>
                                 <subviews>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="95b-yh-NeP" userLabel="Take Button">
+                                        <rect key="frame" x="0.0" y="0.0" width="87" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="8f2-I0-TOG"/>
+                                            <constraint firstAttribute="width" constant="87" id="Naa-Db-Dzd"/>
+                                        </constraints>
+                                        <state key="normal" title="Take"/>
+                                        <connections>
+                                            <action selector="takeCacheItem:" destination="BV1-FR-VrT" eventType="touchUpInside" id="PGt-fC-D30"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nqx-Dz-8AE" userLabel="Add Button">
+                                        <rect key="frame" x="0.0" y="0.0" width="87" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="87" id="hD0-Gb-3Ge"/>
+                                            <constraint firstAttribute="height" constant="44" id="nnV-Hk-xc3"/>
+                                        </constraints>
+                                        <state key="normal" title="Add"/>
+                                        <connections>
+                                            <action selector="addCacheItem:" destination="BV1-FR-VrT" eventType="touchUpInside" id="8rs-7W-gx4"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bNi-9d-0hY">
                                         <rect key="frame" x="0.0" y="0.0" width="87" height="44"/>
                                         <constraints>
@@ -126,6 +148,7 @@
                         <viewLayoutGuide key="safeArea" id="fQZ-KI-GVf"/>
                     </view>
                     <connections>
+                        <outlet property="addButton" destination="Nqx-Dz-8AE" id="ypI-di-XOl"/>
                         <outlet property="cacheButton" destination="bNi-9d-0hY" id="Qc0-3O-AJm"/>
                         <outlet property="cacheMessage" destination="esh-v8-Pwl" id="KZT-XG-0du"/>
                         <outlet property="emailField" destination="qmF-Ss-UG1" id="J4d-ZQ-GKd"/>
@@ -135,6 +158,7 @@
                         <outlet property="messageField" destination="J07-8O-hkh" id="w7y-uw-w7j"/>
                         <outlet property="openCacheButton" destination="N2d-Eu-vPe" id="Yo5-Vx-mZO"/>
                         <outlet property="sceneView" destination="BrB-h1-WRS" id="5nT-qQ-ynl"/>
+                        <outlet property="takeButton" destination="95b-yh-NeP" id="3sE-mG-CZK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>

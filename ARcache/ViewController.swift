@@ -12,6 +12,8 @@ import ARKit
 import CoreLocation
 class ViewController: UIViewController, ARSCNViewDelegate {
     //var currentNode: SCNNode!
+    @IBOutlet weak var addButton: UIButton!
+    @IBOutlet weak var takeButton: UIButton!
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var messageField: UITextField!
     @IBOutlet weak var firstMessage: UILabel!
@@ -50,21 +52,49 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         if isOpen{
             isOpen = false
             cacheMessage.isHidden = true
-            cacheMessage.text = cacheArray[0].notes[0]
             cacheButton.isHidden = false
             openCacheButton.isHidden = true
+            addButton.isHidden = true
+            takeButton.isHidden = true
         } else {
             isOpen = true
             insertCacheButton.isHidden = true
             cacheMessage.isHidden = false
-            cacheMessage.text = cacheArray[0].notes[0]
+            addButton.isHidden = false
+            takeButton.isHidden = false
+            cacheMessage.text = cacheArray[1].notes[0]
             openCacheButton.setTitle("Close", for: .normal)
         }
+    }
+    @IBAction func takeCacheItem(_ sender: Any) {
+        cacheMessage.text = "You have successfully taken the note: \(cacheArray[1].notes[0]) WRITE IT SOMEWHERE BEFORE PRESSING CLOSE!"
+        cacheArray[1].notes[0] = "Note taken! Should have been quicker!"
+        let editedCache = Cache(notes: cacheArray[1].notes, xcoordinate: cacheArray[1].xcoordinate, ycoordinate: cacheArray[1].ycoordinate)
+        guard let url = URL(string: "https://arcache.vapor.cloud/caches/2") else { return }
+        var request = URLRequest(url: url)
+        request.httpMethod = "PATCH"
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        do {
+            let jsonBody = try JSONEncoder().encode(editedCache)
+            request.httpBody = jsonBody
+        } catch {}
+        let session = URLSession.shared
+        let task = session.dataTask(with: request) { (data, _, _) in
+            guard let data = data else { return }
+            do {
+                let sentPatch = try JSONDecoder().decode(Cache.self, from: data)
+                print(sentPatch)
+                print("I am here in the sent Update")
+            } catch {}
+        }
+        task.resume()
+    }
+    @IBAction func addCacheItem(_ sender: Any) {
     }
     @IBAction func startCache(_ sender: Any) {
         cacheButton.isHidden = true
         cacheMessage.isHidden = false
-        cacheMessage.text = "Tap on screen where you want to place cache. It's best for it to be in a well-lit environment, on top of a unique object."
+        cacheMessage.text = "Tap on screen where you want to place cache. It's best for it to be in a well-lit environment. On top of a unique object OR on a smooth, vertical surface."
         touchesBeginning = true
     }
     @IBAction func insertCacheButton(_ sender: Any) {
