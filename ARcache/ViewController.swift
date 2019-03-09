@@ -180,24 +180,32 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         }
     }
     func renderer(_ renderer: SCNSceneRenderer, nodeFor anchor: ARAnchor) -> SCNNode? {
-        print("anchor made")
         let node = SCNNode()
-        if let objectAnchor = anchor as? ARObjectAnchor {
-            let plane = SCNPlane(width: CGFloat(objectAnchor.referenceObject.extent.x * 0.8), height: CGFloat(objectAnchor.referenceObject.extent.y * 0.5))
-            let box = SCNBox(width: CGFloat(objectAnchor.referenceObject.extent.x * 0.8), height: CGFloat(objectAnchor.referenceObject.extent.y * 0.5), length: CGFloat(objectAnchor.referenceObject.extent.x), chamferRadius: 0.0001)
-            plane.cornerRadius = plane.width * 0.125
-            let displayScene = SKScene(fileNamed: "cacheScene")
-            let cacheScene = SKScene(fileNamed: "cacheScene")
-            plane.firstMaterial?.diffuse.contents = displayScene
-            plane.firstMaterial!.isDoubleSided = true
-            plane.firstMaterial?.diffuse.contentsTransform = SCNMatrix4Translate(SCNMatrix4MakeScale(1, -1, 1), 0, 1, 0)
-            box.firstMaterial?.diffuse.contents = cacheScene
-            let planeNode = SCNNode(geometry: plane)
-            let cacheNode = SCNNode(geometry: box)
-            planeNode.position = SCNVector3Make(objectAnchor.referenceObject.center.x, objectAnchor.referenceObject.center.y + 0.35, objectAnchor.referenceObject.center.z)
-            cacheNode.position = SCNVector3Make(objectAnchor.referenceObject.center.x, objectAnchor.referenceObject.center.y + 0.35, objectAnchor.referenceObject.center.z)
-            node.addChildNode(cacheNode)
+        if locationManager.location?.coordinate != nil {
+            var userX = (locationManager.location?.coordinate.latitude)!
+            var userY = (locationManager.location?.coordinate.longitude)!
+            for i in cacheArray {
+                if (i.xcoordinate >= (userX-0.01)) && (i.xcoordinate <= (userX+0.01)) && (i.ycoordinate >= (userY-0.01)) && (i.ycoordinate <= (userY+0.01)) {
+                    if let objectAnchor = anchor as? ARObjectAnchor {
+                        let plane = SCNPlane(width: CGFloat(objectAnchor.referenceObject.extent.x * 0.8), height: CGFloat(objectAnchor.referenceObject.extent.y * 0.5))
+                        let box = SCNBox(width: CGFloat(objectAnchor.referenceObject.extent.x * 0.8), height: CGFloat(objectAnchor.referenceObject.extent.y * 0.5), length: CGFloat(objectAnchor.referenceObject.extent.x), chamferRadius: 0.0001)
+                        plane.cornerRadius = plane.width * 0.125
+                        let displayScene = SKScene(fileNamed: "cacheScene")
+                        let cacheScene = SKScene(fileNamed: "cacheScene")
+                        plane.firstMaterial?.diffuse.contents = displayScene
+                        plane.firstMaterial!.isDoubleSided = true
+                        plane.firstMaterial?.diffuse.contentsTransform = SCNMatrix4Translate(SCNMatrix4MakeScale(1, -1, 1), 0, 1, 0)
+                        box.firstMaterial?.diffuse.contents = cacheScene
+                        let planeNode = SCNNode(geometry: plane)
+                        let cacheNode = SCNNode(geometry: box)
+                        planeNode.position = SCNVector3Make(objectAnchor.referenceObject.center.x, objectAnchor.referenceObject.center.y + 0.35, objectAnchor.referenceObject.center.z)
+                        cacheNode.position = SCNVector3Make(objectAnchor.referenceObject.center.x, objectAnchor.referenceObject.center.y + 0.35, objectAnchor.referenceObject.center.z)
+                        node.addChildNode(cacheNode)
+                    }
+                }
+            }
         }
+        print("anchor made")
         return node
     }
     func renderer(_ renderer: SCNSceneRenderer, didAdd node: SCNNode, for anchor: ARAnchor) {
