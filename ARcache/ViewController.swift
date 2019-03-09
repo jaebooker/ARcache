@@ -47,30 +47,21 @@ class ViewController: UIViewController, ARSCNViewDelegate {
 //            treasureNode.position = SCNVector3(x: hitVectorStorage!.x+0.1, y: hitVectorStorage!.y, z: hitVectorStorage!.z-0.1)
 //        }
 //        sceneView.scene.rootNode.addChildNode(treasureNode)
-        isOpen = true
-        insertCacheButton.isHidden = true
-        cacheMessage.isHidden = false
-        cacheMessage.text = cacheArray[0].notes[0]
-        openCacheButton.setTitle("Close", for: .normal)
+        if isOpen{
+            isOpen = false
+            cacheMessage.isHidden = true
+            cacheMessage.text = cacheArray[0].notes[0]
+            cacheButton.isHidden = false
+            openCacheButton.isHidden = true
+        } else {
+            isOpen = true
+            insertCacheButton.isHidden = true
+            cacheMessage.isHidden = false
+            cacheMessage.text = cacheArray[0].notes[0]
+            openCacheButton.setTitle("Close", for: .normal)
+        }
     }
     @IBAction func startCache(_ sender: Any) {
-        //getting API
-        guard let url = URL(string: "https://arcache.vapor.cloud/caches") else { return }
-        let session = URLSession.shared
-        let task = session.dataTask(with: url) { (data, _, _) in
-            guard let data = data else { return }
-            do {
-                let apiEvents = try JSONDecoder().decode([Cache].self, from: data)
-                //looping through decoded caches
-                for apiEvent in apiEvents {
-                // appending caches to array
-                self.cacheArray.append(apiEvent)
-                print(apiEvent)
-               }
-            } catch { }
-        }
-        task.resume()
-        print("complete")
         cacheButton.isHidden = true
         cacheMessage.isHidden = false
         cacheMessage.text = "Tap on screen where you want to place cache. It's best for it to be in a well-lit environment, on top of a unique object."
@@ -123,6 +114,23 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        //getting API
+        guard let url = URL(string: "https://arcache.vapor.cloud/caches") else { return }
+        let session = URLSession.shared
+        let task = session.dataTask(with: url) { (data, _, _) in
+            guard let data = data else { return }
+            do {
+                let apiEvents = try JSONDecoder().decode([Cache].self, from: data)
+                //looping through decoded caches
+                for apiEvent in apiEvents {
+                    // appending caches to array
+                    self.cacheArray.append(apiEvent)
+                    print(apiEvent)
+                }
+            } catch { }
+        }
+        task.resume()
+        print("complete")
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard (_:)))
         self.view.addGestureRecognizer(tapGesture)
         //        // Create a new scene
@@ -203,6 +211,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
                         cacheNode.position = SCNVector3Make(objectAnchor.referenceObject.center.x, objectAnchor.referenceObject.center.y + 0.35, objectAnchor.referenceObject.center.z)
                         node.addChildNode(cacheNode)
                     }
+                    openCacheButton.isHidden = false
+                    cacheButton.isHidden = true
                     break
                 }
             }
