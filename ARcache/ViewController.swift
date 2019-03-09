@@ -182,8 +182,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     func renderer(_ renderer: SCNSceneRenderer, nodeFor anchor: ARAnchor) -> SCNNode? {
         let node = SCNNode()
         if locationManager.location?.coordinate != nil {
-            var userX = (locationManager.location?.coordinate.latitude)!
-            var userY = (locationManager.location?.coordinate.longitude)!
+            let userX = (locationManager.location?.coordinate.latitude)!
+            let userY = (locationManager.location?.coordinate.longitude)!
             for i in cacheArray {
                 if (i.xcoordinate >= (userX-0.01)) && (i.xcoordinate <= (userX+0.01)) && (i.ycoordinate >= (userY-0.01)) && (i.ycoordinate <= (userY+0.01)) {
                     if let objectAnchor = anchor as? ARObjectAnchor {
@@ -203,6 +203,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
                         node.addChildNode(cacheNode)
                     }
                 }
+                break
             }
         }
         print("anchor made")
