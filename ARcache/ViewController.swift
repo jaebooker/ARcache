@@ -69,7 +69,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     @IBOutlet weak var emailLabel: UILabel!
     @IBAction func takeCacheItem(_ sender: Any) {
         cacheMessage.text = "You have successfully taken the note: \(cacheArray[1].notes[0]) WRITE IT SOMEWHERE BEFORE PRESSING CLOSE!"
-        cacheArray[1].notes[0] = "Note taken! Should have been quicker!"
+        cacheArray[1].notes[0] = "Note already taken! Should have been quicker!"
         let editedCache = Cache(notes: cacheArray[1].notes, xcoordinate: cacheArray[1].xcoordinate, ycoordinate: cacheArray[1].ycoordinate)
         guard let url = URL(string: "https://arcache.vapor.cloud/caches/2") else { return }
         var request = URLRequest(url: url)
@@ -104,7 +104,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     @IBAction func startCache(_ sender: Any) {
         cacheButton.isHidden = true
         cacheMessage.isHidden = false
-        cacheMessage.text = "Tap on screen where you want to place cache. It's best for it to be in a well-lit environment. On top of a unique object OR on a smooth, vertical surface."
+        cacheMessage.text = "Tap on screen where you want to place cache. It's best for it to be in a well-lit environment. On a smooth, vertical surface that can be written on."
         touchesBeginning = true
     }
     @IBAction func insertCacheButton(_ sender: Any) {
@@ -176,7 +176,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
                 } catch {}
             }
             task.resume()
-            self.cacheMessage.text = "Congrats! You've just made your first cache! It will be added to our app within the week! In the mean time, why don't you try searching for other caches?"
+            self.cacheMessage.text = "Congrats! You've just made your first cache! Happy hunting!"
             self.inputStackView.isHidden = true
             self.insertCacheButton.isHidden = true
         }
@@ -258,7 +258,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             createCache(position: hitVector)
             touchesBeginning = false
             insertCacheButton.isHidden = false
-            cacheMessage.text = "Great! Now add the first message you want to place in the cache! Examples: Simple greeting, game code, short poem, anything! And we need your email for details on registering the cache!"
+            cacheMessage.text = "Great! Now add the first message you want to place in the cache! Examples: Simple greeting, game code, short poem, anything! And give your new cache a name."
             inputStackView.isHidden = false
             //openCacheButton.isHidden = false
         }
@@ -323,7 +323,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             }
             openCacheButton.isHidden = false
             cacheButton.isHidden = true
-        }
+    }
 //        if let objectAnchor = anchor as? ARObjectAnchor {
 //            let plane = SCNPlane(width: CGFloat(objectAnchor.referenceObject.extent.x *0.8), height: CGFloat(objectAnchor.referenceObject.extent.y *0.5))
 //            plane.cornerRadius = plane.width

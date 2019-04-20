@@ -132,6 +132,12 @@
 /* Begin PBXFileReference section */
 		0D00940E223329C700417E2B /* Scan_14-45-25.arobject */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Scan_14-45-25.arobject"; sourceTree = "<group>"; };
 		0D00940F2233320700417E2B /* Scan_13-24-41.arobject */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Scan_13-24-41.arobject"; sourceTree = "<group>"; };
+		0D03EE88226BB78600C8DA27 /* Scan_14-29-26 (1).arobject */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Scan_14-29-26 (1).arobject"; sourceTree = "<group>"; };
+		0D03EE89226BB83900C8DA27 /* Scan_14-29-26 (1).arobject */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Scan_14-29-26 (1).arobject"; path = "../../../Downloads/Scan_14-29-26 (1).arobject"; sourceTree = "<group>"; };
+		0D3A803A226BB4FA00364663 /* Scan_10-40-05.arobject */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Scan_10-40-05.arobject"; sourceTree = "<group>"; };
+		0D3A803B226BB50200364663 /* Scan_11-41-22.arobject */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Scan_11-41-22.arobject"; sourceTree = "<group>"; };
+		0D3A803C226BB50E00364663 /* Scan_12-37-05.arobject */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Scan_12-37-05.arobject"; sourceTree = "<group>"; };
+		0D3A803D226BB51800364663 /* Scan_14-29-26 (1).arobject */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Scan_14-29-26 (1).arobject"; sourceTree = "<group>"; };
 		0DA4D72522152A2000D36D81 /* ARcache.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ARcache.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DA4D72822152A2000D36D81 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0DA4D72A22152A2000D36D81 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
@@ -294,6 +300,12 @@
 		0DA4D72722152A2000D36D81 /* ARcache */ = {
 			isa = PBXGroup;
 			children = (
+				0D3A803D226BB51800364663 /* Scan_14-29-26 (1).arobject */,
+				0D03EE89226BB83900C8DA27 /* Scan_14-29-26 (1).arobject */,
+				0D3A803C226BB50E00364663 /* Scan_12-37-05.arobject */,
+				0D03EE88226BB78600C8DA27 /* Scan_14-29-26 (1).arobject */,
+				0D3A803B226BB50200364663 /* Scan_11-41-22.arobject */,
+				0D3A803A226BB4FA00364663 /* Scan_10-40-05.arobject */,
 				0DD212EF222A929D007B9B88 /* magic-treasure-chest */,
 				0DD212E1222A9239007B9B88 /* burial-chest */,
 				0DD2106D222A8E27007B9B88 /* treasure_chest_pack */,
