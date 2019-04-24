@@ -374,23 +374,15 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     //let cacheNode: SCNNode?
     func createCache(position: SCNVector3) {
         let cacheShape = SCNBox(width: 0.1, height: 0.1, length: 0.2, chamferRadius: 0.00001)
-        //move ----->>>
-        let scene = SCNScene()
-        
-        let textGeometry = SCNText(string: "Hello World", extrusionDepth: 1.0)
-        textGeometry.firstMaterial?.diffuse.contents = UIColor.black
-        let planeText = SCNText(string: "...this is a string!", extrusionDepth: 4.0)
+        //move to rendering/open----->>>
+        let planeText = SCNText(string: "...this is a bloody string!", extrusionDepth: 2.0)
         planeText.firstMaterial?.diffuse.contents = UIColor.white
+        let planeTextNode = SCNNode(geometry: planeText)
+        planeTextNode.position = position
+        planeTextNode.scale = SCNVector3(0.001,0.001,0.001)
+        sceneView.scene.rootNode.addChildNode(planeTextNode)
         
-        let textNode = SCNNode(geometry: textGeometry)
-        textNode.position = SCNVector3(0,0.1,-1)
-        textNode.scale = SCNVector3(0.5,0.5,0.5)
-        let cacheNode = SCNNode(geometry: planeText)
-        cacheNode.position = position
-        cacheNode.scale = SCNVector3(0.01,0.01,0.01)
-        sceneView.scene.rootNode.addChildNode(cacheNode)
-        
-//        scene.rootNode.addChildNode(textNode)
+        //plane for text
         let plane = SCNPlane(width: CGFloat(0.8), height: CGFloat(0.5))
         //planeText.font = UIFont(name: "Arial", size: 1)
         let material2 = SCNMaterial()
