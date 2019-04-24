@@ -290,6 +290,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             createCache(position: hitVector)
             touchesBeginning = false
             insertCacheButton.isHidden = false
+            //NOTE: Not everyone knows what a cache is
             cacheMessage.text = "Great! Now add the first message you want to place in the cache! Examples: Simple greeting, game code, short poem, anything! And give your new cache a name."
             inputStackView.isHidden = false
             //openCacheButton.isHidden = false
@@ -373,6 +374,12 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     //let cacheNode: SCNNode?
     func createCache(position: SCNVector3) {
         let cacheShape = SCNBox(width: 0.1, height: 0.1, length: 0.2, chamferRadius: 0.00001)
+        //move ----->>>
+        let plane = SCNPlane(width: CGFloat(0.8), height: CGFloat(0.5))
+        let material2 = SCNMaterial()
+        material2.diffuse.contents = UIImage(named: "dragon")
+        plane.materials = [material2]
+        //<-------
         let material = SCNMaterial()
         material.diffuse.contents = UIImage(named: "dragon2")
         //diffuse (how light renders), contents (appearance of material)
@@ -385,7 +392,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
 //        cacheSceneNode.physicsBody = physicsBody
 //        cacheSceneNode.position = position
 //        sceneView.scene.rootNode.addChildNode(cacheSceneNode)
-        let cacheNode = SCNNode(geometry: cacheShape)
+        let cacheNode = SCNNode(geometry: plane)
         cacheNode.position = position
         sceneView.scene.rootNode.addChildNode(cacheNode)
     }
