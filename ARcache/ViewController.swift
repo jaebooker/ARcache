@@ -375,7 +375,24 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     func createCache(position: SCNVector3) {
         let cacheShape = SCNBox(width: 0.1, height: 0.1, length: 0.2, chamferRadius: 0.00001)
         //move ----->>>
+        let scene = SCNScene()
+        
+        let textGeometry = SCNText(string: "Hello World", extrusionDepth: 1.0)
+        textGeometry.firstMaterial?.diffuse.contents = UIColor.black
+        let planeText = SCNText(string: "...this is a string!", extrusionDepth: 4.0)
+        planeText.firstMaterial?.diffuse.contents = UIColor.white
+        
+        let textNode = SCNNode(geometry: textGeometry)
+        textNode.position = SCNVector3(0,0.1,-1)
+        textNode.scale = SCNVector3(0.5,0.5,0.5)
+        let cacheNode = SCNNode(geometry: planeText)
+        cacheNode.position = position
+        cacheNode.scale = SCNVector3(0.01,0.01,0.01)
+        sceneView.scene.rootNode.addChildNode(cacheNode)
+        
+//        scene.rootNode.addChildNode(textNode)
         let plane = SCNPlane(width: CGFloat(0.8), height: CGFloat(0.5))
+        //planeText.font = UIFont(name: "Arial", size: 1)
         let material2 = SCNMaterial()
         material2.diffuse.contents = UIImage(named: "dragon")
         plane.materials = [material2]
@@ -392,9 +409,9 @@ class ViewController: UIViewController, ARSCNViewDelegate {
 //        cacheSceneNode.physicsBody = physicsBody
 //        cacheSceneNode.position = position
 //        sceneView.scene.rootNode.addChildNode(cacheSceneNode)
-        let cacheNode = SCNNode(geometry: plane)
-        cacheNode.position = position
-        sceneView.scene.rootNode.addChildNode(cacheNode)
+//        let cacheNode = SCNNode(geometry: planeText)
+//        cacheNode.position = position
+//        sceneView.scene.rootNode.addChildNode(cacheNode)
     }
 //    func registerGestureRecognizer(){
 //        let tap = UITapGestureRecognizer(target: self, action: #selector(handleTap))
