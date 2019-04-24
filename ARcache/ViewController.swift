@@ -64,6 +64,28 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             addButton.isHidden = false
             takeButton.isHidden = false
             cacheMessage.text = cacheArray[1].notes[1]
+            
+            if let objectAnchor = arAnchor as? ARObjectAnchor {
+                
+                //create text for plane
+                let planeText = SCNText(string: cacheArray[1].notes[1], extrusionDepth: 2.0)
+                planeText.firstMaterial?.diffuse.contents = UIColor.white
+                //planeText.font = UIFont(name: "Arial", size: 1)
+                let planeTextNode = SCNNode(geometry: planeText)
+                planeTextNode.position = SCNVector3Make(objectAnchor.referenceObject.center.x, objectAnchor.referenceObject.center.y + 0.35, objectAnchor.referenceObject.center.z)
+                planeTextNode.scale = SCNVector3(0.001,0.001,0.001)
+                sceneView.scene.rootNode.addChildNode(planeTextNode)
+            
+                //create plane for text
+                let plane = SCNPlane(width: CGFloat(0.4), height: CGFloat(0.2))
+                let material2 = SCNMaterial()
+                material2.diffuse.contents = UIImage(named: "dragon")
+                plane.materials = [material2]
+                let planeNode = SCNNode(geometry: plane)
+                planeNode.position = SCNVector3Make(objectAnchor.referenceObject.center.x, objectAnchor.referenceObject.center.y + 0.35, objectAnchor.referenceObject.center.z)
+                sceneView.scene.rootNode.addChildNode(planeNode)
+                
+            }
             openCacheButton.setTitle("Close", for: .normal)
             let node = SCNNode()
             if let objectAnchor = arAnchor as? ARObjectAnchor {
@@ -374,24 +396,6 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     //let cacheNode: SCNNode?
     func createCache(position: SCNVector3) {
         let cacheShape = SCNBox(width: 0.1, height: 0.1, length: 0.2, chamferRadius: 0.00001)
-        //move to rendering/open----->>>
-        let planeText = SCNText(string: "...this is a bloody string!", extrusionDepth: 2.0)
-        planeText.firstMaterial?.diffuse.contents = UIColor.white
-        //planeText.font = UIFont(name: "Arial", size: 1)
-        let planeTextNode = SCNNode(geometry: planeText)
-        planeTextNode.position = position
-        planeTextNode.scale = SCNVector3(0.001,0.001,0.001)
-        sceneView.scene.rootNode.addChildNode(planeTextNode)
-        
-        //plane for text
-        let plane = SCNPlane(width: CGFloat(0.4), height: CGFloat(0.2))
-        let material2 = SCNMaterial()
-        material2.diffuse.contents = UIImage(named: "dragon")
-        plane.materials = [material2]
-        let planeNode = SCNNode(geometry: plane)
-        planeNode.position = position
-        sceneView.scene.rootNode.addChildNode(planeNode)
-        //<-------
         let material = SCNMaterial()
         material.diffuse.contents = UIImage(named: "dragon2")
         //diffuse (how light renders), contents (appearance of material)
@@ -404,9 +408,9 @@ class ViewController: UIViewController, ARSCNViewDelegate {
 //        cacheSceneNode.physicsBody = physicsBody
 //        cacheSceneNode.position = position
 //        sceneView.scene.rootNode.addChildNode(cacheSceneNode)
-//        let cacheNode = SCNNode(geometry: planeText)
-//        cacheNode.position = position
-//        sceneView.scene.rootNode.addChildNode(cacheNode)
+        let cacheNode = SCNNode(geometry: cacheShape)
+        cacheNode.position = position
+        sceneView.scene.rootNode.addChildNode(cacheNode)
     }
 //    func registerGestureRecognizer(){
 //        let tap = UITapGestureRecognizer(target: self, action: #selector(handleTap))
