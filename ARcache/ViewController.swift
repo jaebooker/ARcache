@@ -67,12 +67,13 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             openCacheButton.setTitle("Close", for: .normal)
             let node = SCNNode()
             if let objectAnchor = arAnchor as? ARObjectAnchor {
+                cacheMessage.text = "The object anchor hath cometh!"
                 let plane = SCNPlane(width: CGFloat(objectAnchor.referenceObject.extent.x * 0.8), height: CGFloat(objectAnchor.referenceObject.extent.y * 0.5))
                 let box = SCNBox(width: 4, height: 2, length: 3, chamferRadius: 0.3)
                 plane.cornerRadius = plane.width * 0.125
                 let displayScene = SKScene(fileNamed: "cacheScene")
                 let material = SCNMaterial()
-                material.diffuse.contents = UIImage(named: "wood")
+                material.diffuse.contents = UIImage(named: "starman")
                 plane.firstMaterial?.diffuse.contents = displayScene
                 plane.firstMaterial!.isDoubleSided = true
                 plane.firstMaterial?.diffuse.contentsTransform = SCNMatrix4Translate(SCNMatrix4MakeScale(1, -1, 1), 0, 1, 0)
@@ -134,24 +135,24 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             }
             cacheArray[1].notes.append(messageSubmission)
             let editedCache = Cache(notes: cacheArray[1].notes, xcoordinate: cacheArray[1].xcoordinate, ycoordinate: cacheArray[1].ycoordinate)
-//            guard let url = URL(string: "https://arcache.vapor.cloud/caches/2") else { return }
-//            var request = URLRequest(url: url)
-//            request.httpMethod = "PATCH"
-//            request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-//            do {
-//                let jsonBody = try JSONEncoder().encode(editedCache)
-//                request.httpBody = jsonBody
-//            } catch {}
-//            let session = URLSession.shared
-//            let task = session.dataTask(with: request) { (data, _, _) in
-//                guard let data = data else { return }
-//                do {
-//                    let sentPatch = try JSONDecoder().decode(Cache.self, from: data)
-//                    print(sentPatch)
-//                    print("I am here in the sent Update")
-//                } catch {}
-//            }
-//            task.resume()
+            guard let url = URL(string: "https://arcache.vapor.cloud/caches/2") else { return }
+            var request = URLRequest(url: url)
+            request.httpMethod = "PATCH"
+            request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+            do {
+                let jsonBody = try JSONEncoder().encode(editedCache)
+                request.httpBody = jsonBody
+            } catch {}
+            let session = URLSession.shared
+            let task = session.dataTask(with: request) { (data, _, _) in
+                guard let data = data else { return }
+                do {
+                    let sentPatch = try JSONDecoder().decode(Cache.self, from: data)
+                    print(sentPatch)
+                    print("I am here in the sent Update")
+                } catch {}
+            }
+            task.resume()
             self.cacheMessage.text = "Congrats! You've just added to an Arcache! Happy hunting!"
             self.firstMessage.text = "First Message!"
             self.inputStackView.isHidden = true
@@ -177,25 +178,25 @@ class ViewController: UIViewController, ARSCNViewDelegate {
                 longi = (locationManager.location?.coordinate.longitude)!
             }
             let newCache = Cache(notes: [emailSubmission, messageSubmission], xcoordinate: lat, ycoordinate: longi)
-//            guard let url = URL(string: "https://arcache.vapor.cloud/caches") else { return }
-//            var request = URLRequest(url: url)
-//            request.httpMethod = "POST"
-//            request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-//            do {
-//                let jsonBody = try JSONEncoder().encode(newCache)
-//                request.httpBody = jsonBody
-//            } catch {}
-//            let session = URLSession.shared
-//            let task = session.dataTask(with: request) { (data, _, _) in
-//                guard let data = data else { return }
-//                do {
-//                    let sentPost = try JSONDecoder().decode(Cache.self, from: data)
-//                    print(sentPost)
-//                    print("i am here in the sent Post")
-//                } catch {}
-//            }
-//            task.resume()
-            self.cacheMessage.text = "Congrats! You've just made your first cache! Happy hunting!"
+            guard let url = URL(string: "https://arcache.vapor.cloud/caches") else { return }
+            var request = URLRequest(url: url)
+            request.httpMethod = "POST"
+            request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+            do {
+                let jsonBody = try JSONEncoder().encode(newCache)
+                request.httpBody = jsonBody
+            } catch {}
+            let session = URLSession.shared
+            let task = session.dataTask(with: request) { (data, _, _) in
+                guard let data = data else { return }
+                do {
+                    let sentPost = try JSONDecoder().decode(Cache.self, from: data)
+                    print(sentPost)
+                    print("i am here in the sent Post")
+                } catch {}
+            }
+            task.resume()
+            self.cacheMessage.text = "Congrats! You've just made your first cache! Draw a black 'X' over a white background, and place it where you want the cache to be. Happy Hunting!"
             self.inputStackView.isHidden = true
             self.insertCacheButton.isHidden = true
         }
@@ -225,10 +226,10 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             } catch { }
         }
         task.resume()
-        var newCache = Cache(notes: ["note!!", "notey"], xcoordinate: 0.1, ycoordinate: 0.2)
-        var newCache2 = Cache(notes: ["note!!", "notey"], xcoordinate: 37.779890, ycoordinate: -122.421910)
-        self.cacheArray.append(newCache)
-        self.cacheArray.append(newCache2)
+//        var newCache = Cache(notes: ["note!!", "notey"], xcoordinate: 0.1, ycoordinate: 0.2)
+//        var newCache2 = Cache(notes: ["note!!", "notey"], xcoordinate: 37.779890, ycoordinate: -122.421910)
+//        self.cacheArray.append(newCache)
+//        self.cacheArray.append(newCache2)
         print("complete")
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard (_:)))
         self.view.addGestureRecognizer(tapGesture)
@@ -293,7 +294,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             let userX = (locationManager.location?.coordinate.latitude)!
             let userY = (locationManager.location?.coordinate.longitude)!
             for i in cacheArray {
-                if (i.xcoordinate >= (userX-0.01)) && (i.xcoordinate <= (userX+0.01)) && (i.ycoordinate >= (userY-0.01)) && (i.ycoordinate <= (userY+0.01)) {
+                if (i.xcoordinate >= (userX-0.1)) && (i.xcoordinate <= (userX+0.1)) && (i.ycoordinate >= (userY-0.1)) && (i.ycoordinate <= (userY+0.1)) {
                     if let objectAnchor = anchor as? ARObjectAnchor {
                         let plane = SCNPlane(width: CGFloat(objectAnchor.referenceObject.extent.x * 0.8), height: CGFloat(objectAnchor.referenceObject.extent.y * 0.5))
                         let box = SCNBox(width: 0.1, height: 0.1, length: 0.2, chamferRadius: 0.00001)
