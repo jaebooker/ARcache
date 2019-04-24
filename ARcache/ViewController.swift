@@ -301,7 +301,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
                         plane.cornerRadius = plane.width * 0.125
                         let displayScene = SKScene(fileNamed: "cacheScene")
                         let material = SCNMaterial()
-                        material.diffuse.contents = UIImage(named: "wood")
+                        material.diffuse.contents = UIImage(named: "dragon2")
                         plane.firstMaterial?.diffuse.contents = displayScene
                         plane.firstMaterial!.isDoubleSided = true
                         plane.firstMaterial?.diffuse.contentsTransform = SCNMatrix4Translate(SCNMatrix4MakeScale(1, -1, 1), 0, 1, 0)
@@ -366,15 +366,16 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     func createCache(position: SCNVector3) {
         let cacheShape = SCNBox(width: 0.1, height: 0.1, length: 0.2, chamferRadius: 0.00001)
         let material = SCNMaterial()
-        material.diffuse.contents = UIImage(named: "wood")
+        material.diffuse.contents = UIImage(named: "dragon2")
         //diffuse (how light renders), contents (appearance of material)
         cacheShape.materials = [material]
         //cacheNode.geometry = cacheShape
 //        guard let cacheScene = SCNScene(named: "art.scnassets/ship.scn") else { return }
-//        guard let cacheSceneNode = cacheScene.rootNode.childNode(withName: "container", recursively: false) else { return }
+//        guard let cacheSceneNode = cacheScene.rootNode.childNode(withName: "empty", recursively: false) else { return }
 //        let physicsShape = SCNPhysicsShape(node: cacheSceneNode, options: [SCNPhysicsShape.Option.type: SCNPhysicsShape.ShapeType.concavePolyhedron])
 //        let physicsBody = SCNPhysicsBody(type: .static, shape: physicsShape)
 //        cacheSceneNode.physicsBody = physicsBody
+//        cacheSceneNode.position = position
 //        sceneView.scene.rootNode.addChildNode(cacheSceneNode)
         let cacheNode = SCNNode(geometry: cacheShape)
         cacheNode.position = position
