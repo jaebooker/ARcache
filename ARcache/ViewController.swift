@@ -377,17 +377,20 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         //move to rendering/open----->>>
         let planeText = SCNText(string: "...this is a bloody string!", extrusionDepth: 2.0)
         planeText.firstMaterial?.diffuse.contents = UIColor.white
+        //planeText.font = UIFont(name: "Arial", size: 1)
         let planeTextNode = SCNNode(geometry: planeText)
         planeTextNode.position = position
         planeTextNode.scale = SCNVector3(0.001,0.001,0.001)
         sceneView.scene.rootNode.addChildNode(planeTextNode)
         
         //plane for text
-        let plane = SCNPlane(width: CGFloat(0.8), height: CGFloat(0.5))
-        //planeText.font = UIFont(name: "Arial", size: 1)
+        let plane = SCNPlane(width: CGFloat(0.4), height: CGFloat(0.2))
         let material2 = SCNMaterial()
         material2.diffuse.contents = UIImage(named: "dragon")
         plane.materials = [material2]
+        let planeNode = SCNNode(geometry: plane)
+        planeNode.position = position
+        sceneView.scene.rootNode.addChildNode(planeNode)
         //<-------
         let material = SCNMaterial()
         material.diffuse.contents = UIImage(named: "dragon2")
