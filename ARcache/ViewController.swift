@@ -196,7 +196,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
                 } catch {}
             }
             task.resume()
-            self.cacheMessage.text = "Congrats! You've just made your first cache! Draw a black 'X' over a white background, and place it where you want the cache to be. Happy Hunting!"
+            self.cacheMessage.text = "X marks the spot. Draw an X in the real world where the ArCache is, preferably over a white background. That way, other people will be able to find it!"
             self.inputStackView.isHidden = true
             self.insertCacheButton.isHidden = true
         }
@@ -209,6 +209,14 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         emailField.resignFirstResponder()
     }
     override func viewDidLoad() {
+//        //FOR TESTING
+//        self.sceneView.session.currentFrame?.rawFeaturePoints?.points
+//        sceneView.debugOptions =
+//            [ARSCNDebugOptions.showFeaturePoints]
+//        sceneView.debugOptions =
+//            [ARSCNDebugOptions.showFeaturePoints,
+//             ARSCNDebugOptions.showWorldOrigin]
+//        sceneView.showsStatistics = true
         super.viewDidLoad()
         //getting API
         guard let url = URL(string: "https://arcache.vapor.cloud/caches") else { return }
