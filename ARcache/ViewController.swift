@@ -72,7 +72,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
                 planeText.firstMaterial?.diffuse.contents = UIColor.white
                 //planeText.font = UIFont(name: "Arial", size: 1)
                 let planeTextNode = SCNNode(geometry: planeText)
-                planeTextNode.position = SCNVector3Make(objectAnchor.referenceObject.center.x, objectAnchor.referenceObject.center.y + 0.35, objectAnchor.referenceObject.center.z)
+                planeTextNode.position = SCNVector3Make(objectAnchor.referenceObject.center.x-0.5, objectAnchor.referenceObject.center.y, objectAnchor.referenceObject.center.z-1.7)
                 planeTextNode.scale = SCNVector3(0.001,0.001,0.001)
                 sceneView.scene.rootNode.addChildNode(planeTextNode)
             
@@ -82,7 +82,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
                 material2.diffuse.contents = UIImage(named: "dragon")
                 plane.materials = [material2]
                 let planeNode = SCNNode(geometry: plane)
-                planeNode.position = SCNVector3Make(objectAnchor.referenceObject.center.x, objectAnchor.referenceObject.center.y + 0.35, objectAnchor.referenceObject.center.z)
+                planeNode.position = SCNVector3Make(objectAnchor.referenceObject.center.x-0.5, objectAnchor.referenceObject.center.y, objectAnchor.referenceObject.center.z-1.7)
                 sceneView.scene.rootNode.addChildNode(planeNode)
                 
             }
