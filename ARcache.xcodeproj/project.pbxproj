@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D29EDB2227524E200B53AC1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D29EDB1227524E200B53AC1 /* AVFoundation.framework */; };
+		0D29EDB42275254B00B53AC1 /* cacheOpen.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0D29EDB32275254B00B53AC1 /* cacheOpen.mp3 */; };
+		0D29EDB62275256000B53AC1 /* cacheFound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0D29EDB52275255F00B53AC1 /* cacheFound.mp3 */; };
 		0DA4D72922152A2000D36D81 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA4D72822152A2000D36D81 /* AppDelegate.swift */; };
 		0DA4D72B22152A2000D36D81 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DA4D72A22152A2000D36D81 /* art.scnassets */; };
 		0DA4D72D22152A2000D36D81 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA4D72C22152A2000D36D81 /* ViewController.swift */; };
@@ -134,6 +137,9 @@
 		0D00940F2233320700417E2B /* Scan_13-24-41.arobject */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Scan_13-24-41.arobject"; sourceTree = "<group>"; };
 		0D03EE88226BB78600C8DA27 /* Scan_14-29-26 (1).arobject */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Scan_14-29-26 (1).arobject"; sourceTree = "<group>"; };
 		0D03EE89226BB83900C8DA27 /* Scan_14-29-26 (1).arobject */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Scan_14-29-26 (1).arobject"; path = "../../../Downloads/Scan_14-29-26 (1).arobject"; sourceTree = "<group>"; };
+		0D29EDB1227524E200B53AC1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		0D29EDB32275254B00B53AC1 /* cacheOpen.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cacheOpen.mp3; sourceTree = "<group>"; };
+		0D29EDB52275255F00B53AC1 /* cacheFound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cacheFound.mp3; sourceTree = "<group>"; };
 		0D3A803A226BB4FA00364663 /* Scan_10-40-05.arobject */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Scan_10-40-05.arobject"; sourceTree = "<group>"; };
 		0D3A803B226BB50200364663 /* Scan_11-41-22.arobject */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Scan_11-41-22.arobject"; sourceTree = "<group>"; };
 		0D3A803C226BB50E00364663 /* Scan_12-37-05.arobject */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Scan_12-37-05.arobject"; sourceTree = "<group>"; };
@@ -257,6 +263,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D29EDB2227524E200B53AC1 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +284,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D29EDB0227524E200B53AC1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D29EDB1227524E200B53AC1 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		0DA4D71C22152A2000D36D81 = {
 			isa = PBXGroup;
 			children = (
@@ -284,6 +299,7 @@
 				0DA4D73E22152A2400D36D81 /* ARcacheTests */,
 				0DA4D74922152A2400D36D81 /* ARcacheUITests */,
 				0DA4D72622152A2000D36D81 /* Products */,
+				0D29EDB0227524E200B53AC1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -300,6 +316,8 @@
 		0DA4D72722152A2000D36D81 /* ARcache */ = {
 			isa = PBXGroup;
 			children = (
+				0D29EDB52275255F00B53AC1 /* cacheFound.mp3 */,
+				0D29EDB32275254B00B53AC1 /* cacheOpen.mp3 */,
 				0D3A803D226BB51800364663 /* Scan_14-29-26 (1).arobject */,
 				0D03EE89226BB83900C8DA27 /* Scan_14-29-26 (1).arobject */,
 				0D3A803C226BB50E00364663 /* Scan_12-37-05.arobject */,
@@ -645,6 +663,7 @@
 				0DD210CA222A8E27007B9B88 /* LockMetal2_metallicRoughness.png in Resources */,
 				0DD20E6A222A4F16007B9B88 /* IMG_0006.png in Resources */,
 				0DD21300222A929D007B9B88 /* Treasure_chest_top_Emission.png in Resources */,
+				0D29EDB42275254B00B53AC1 /* cacheOpen.mp3 in Resources */,
 				0DD210DE222A8E27007B9B88 /* LockMetal2_normal.png in Resources */,
 				0DD210FB222A8E27007B9B88 /* chestStoneOpen_2_normal.png in Resources */,
 				0DD210F8222A8E27007B9B88 /* chestStoneOpen_1_baseColor.jpeg in Resources */,
@@ -703,6 +722,7 @@
 				0DD210E6222A8E27007B9B88 /* chestMetalOpen_3_normal.png in Resources */,
 				0DD210E2222A8E27007B9B88 /* chestMetalOpen_3_baseColor.jpeg in Resources */,
 				0DD210FD222A8E27007B9B88 /* chestMetalClosed_2_normal.png in Resources */,
+				0D29EDB62275256000B53AC1 /* cacheFound.mp3 in Resources */,
 				0DD210CE222A8E27007B9B88 /* Ryb2_metallicRoughness.png in Resources */,
 				0DD210ED222A8E27007B9B88 /* material_metallicRoughness.png in Resources */,
 				0DA4D73522152A2300D36D81 /* LaunchScreen.storyboard in Resources */,

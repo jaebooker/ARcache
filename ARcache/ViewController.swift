@@ -10,8 +10,12 @@ import UIKit
 import SceneKit
 import ARKit
 import CoreLocation
+import AVFoundation
+
 class ViewController: UIViewController, ARSCNViewDelegate {
     var arAnchor: ARAnchor?
+    var cacheFoundAudioPlayer = AVAudioPlayer()
+    var cacheOpenAudioPlayer = AVAudioPlayer()
     //var currentNode: SCNNode!
     @IBOutlet weak var addButton: UIButton!
     @IBOutlet weak var takeButton: UIButton!
@@ -83,6 +87,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
                 plane.materials = [material2]
                 let planeNode = SCNNode(geometry: plane)
                 planeNode.position = SCNVector3Make(objectAnchor.referenceObject.center.x-0.5, objectAnchor.referenceObject.center.y, objectAnchor.referenceObject.center.z-1.7)
+                
+                cacheOpenAudioPlayer.play()
                 sceneView.scene.rootNode.addChildNode(planeNode)
                 
             }
@@ -221,6 +227,16 @@ class ViewController: UIViewController, ARSCNViewDelegate {
 //             ARSCNDebugOptions.showWorldOrigin]
 //        sceneView.showsStatistics = true
         super.viewDidLoad()
+        //get the sound
+        let cacheFoundSound = Bundle.main.path(forResource: "cacheFound", ofType: "mp3")
+        let cacheOpenSound = Bundle.main.path(forResource: "cacheOpen", ofType: "mp3")
+        do {
+            cacheFoundAudioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: cacheFoundSound!))
+            cacheOpenAudioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: cacheOpenSound!))
+        }
+        catch {
+            print(error)
+        }
         //getting API
         guard let url = URL(string: "https://arcache.vapor.cloud/caches") else { return }
         let session = URLSession.shared
@@ -270,6 +286,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         imageConfiguration.trackingImages = arImages
         // Run the view's session
         //sceneView.session.run(imageConfiguration)
+        
         sceneView.session.run(configuration)
     }
     
@@ -323,6 +340,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
                         planeNode.position = SCNVector3Make(objectAnchor.referenceObject.center.x, objectAnchor.referenceObject.center.y + 0.35, objectAnchor.referenceObject.center.z)
                         cacheNode.position = SCNVector3Make(objectAnchor.referenceObject.center.x, objectAnchor.referenceObject.center.y + 0.35, objectAnchor.referenceObject.center.z)
                         node.addChildNode(cacheNode)
+                        
+                        cacheFoundAudioPlayer.play()
                     }
                     openCacheButton.isHidden = false
                     cacheButton.isHidden = true
