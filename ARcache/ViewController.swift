@@ -87,11 +87,11 @@ class ViewController: UIViewController, ARSCNViewDelegate {
                 plane.materials = [material2]
                 let planeNode = SCNNode(geometry: plane)
                 planeNode.position = SCNVector3Make(objectAnchor.referenceObject.center.x-0.5, objectAnchor.referenceObject.center.y, objectAnchor.referenceObject.center.z-1.7)
-                
                 cacheOpenAudioPlayer.play()
                 sceneView.scene.rootNode.addChildNode(planeNode)
                 
             }
+            removeRenderedCache()
             openCacheButton.setTitle("Close", for: .normal)
         }
     }
@@ -339,12 +339,13 @@ class ViewController: UIViewController, ARSCNViewDelegate {
                         let cacheNode = SCNNode(geometry: box)
                         planeNode.position = SCNVector3Make(objectAnchor.referenceObject.center.x, objectAnchor.referenceObject.center.y + 0.35, objectAnchor.referenceObject.center.z)
                         cacheNode.position = SCNVector3Make(objectAnchor.referenceObject.center.x, objectAnchor.referenceObject.center.y + 0.35, objectAnchor.referenceObject.center.z)
+                        cacheNode.name = "renderedCacheNode"
                         node.addChildNode(cacheNode)
                         
                         cacheFoundAudioPlayer.play()
                     }
-                    openCacheButton.isHidden = false
-                    cacheButton.isHidden = true
+                    self.openCacheButton.isHidden = false
+                    self.cacheButton.isHidden = true
                     break
                 }
             }
@@ -410,7 +411,22 @@ class ViewController: UIViewController, ARSCNViewDelegate {
 //        sceneView.scene.rootNode.addChildNode(cacheSceneNode)
         let cacheNode = SCNNode(geometry: cacheShape)
         cacheNode.position = position
+        cacheNode.name = "cacheNode"
         sceneView.scene.rootNode.addChildNode(cacheNode)
+    }
+    func removeCache(){
+        sceneView.scene.rootNode.enumerateChildNodes { (node, _) in
+            if node.name == "cacheNode" {
+                node.removeFromParentNode()
+            }
+        }
+    }
+    func removeRenderedCache(){
+        sceneView.scene.rootNode.enumerateChildNodes { (node, _) in
+            if node.name == "renderedCacheNode" {
+                node.removeFromParentNode()
+            }
+        }
     }
 //    func registerGestureRecognizer(){
 //        let tap = UITapGestureRecognizer(target: self, action: #selector(handleTap))
