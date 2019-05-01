@@ -54,6 +54,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
 //            treasureNode.position = SCNVector3(x: hitVectorStorage!.x+0.1, y: hitVectorStorage!.y, z: hitVectorStorage!.z-0.1)
 //        }
 //        sceneView.scene.rootNode.addChildNode(treasureNode)
+        
+        //check if already open, if so, close
         if isOpen{
             isOpen = false
             cacheMessage.isHidden = true
@@ -62,6 +64,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             addButton.isHidden = true
             takeButton.isHidden = true
         } else {
+            //if not open, open
             isOpen = true
             insertCacheButton.isHidden = true
             cacheMessage.isHidden = false
@@ -69,6 +72,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             takeButton.isHidden = false
             cacheMessage.text = cacheArray[1].notes[1]
             
+            //getting object anchor
             if let objectAnchor = arAnchor as? ARObjectAnchor {
                 
                 //create text for plane
