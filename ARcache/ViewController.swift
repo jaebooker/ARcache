@@ -74,22 +74,19 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             cacheMessage.isHidden = false
             addButton.isHidden = false
             takeButton.isHidden = false
-            cacheMessage.text = cacheArray[1].notes[1]
+            cacheMessage.text = cacheArray[0].notes[0]
             
             //getting object anchor
             if let objectAnchor = arAnchor as? ARObjectAnchor {
-                print("I'm Mr Meeseeks!")
-                print(arAnchor)
-                print("Look at me!")
                 //create text for plane
-                let planeText = SCNText(string: cacheArray[1].notes[1], extrusionDepth: 2.0)
+                let planeText = SCNText(string: cacheArray[0].notes[0], extrusionDepth: 2.0)
                 planeText.firstMaterial?.diffuse.contents = UIColor.white
                 //planeText.font = UIFont(name: "Arial", size: 1)
                 let planeTextNode = SCNNode(geometry: planeText)
                 planeTextNode.position = SCNVector3Make(objectAnchor.referenceObject.center.x-0.5, objectAnchor.referenceObject.center.y, objectAnchor.referenceObject.center.z-1.7)
                 planeTextNode.scale = SCNVector3(0.001,0.001,0.001)
                 sceneView.scene.rootNode.addChildNode(planeTextNode)
-            
+                
                 //create plane for text
                 let plane = SCNPlane(width: CGFloat(0.4), height: CGFloat(0.2))
                 let material2 = SCNMaterial()
@@ -101,7 +98,11 @@ class ViewController: UIViewController, ARSCNViewDelegate {
                 sceneView.scene.rootNode.addChildNode(planeNode)
                 
             }
-            removeRenderedCache()
+            sceneView.scene.rootNode.enumerateChildNodes { (node, _) in
+                if node.name == "renderedCacheNode" {
+                    node.removeFromParentNode()
+                }
+            }
             openCacheButton.setTitle("Close", for: .normal)
         }
     }
@@ -433,13 +434,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             }
         }
     }
-    func removeRenderedCache(){
-        sceneView.scene.rootNode.enumerateChildNodes { (node, _) in
-            if node.name == "renderedCacheNode" {
-                node.removeFromParentNode()
-            }
-        }
-    }
+//    func removeRenderedCache(){
+//    }
 //    func registerGestureRecognizer(){
 //        let tap = UITapGestureRecognizer(target: self, action: #selector(handleTap))
 //        sceneView.addGestureRecognizer(tap)
