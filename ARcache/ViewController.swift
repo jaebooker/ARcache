@@ -16,6 +16,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     var arAnchor: ARAnchor?
     var cacheFoundAudioPlayer = AVAudioPlayer()
     var cacheOpenAudioPlayer = AVAudioPlayer()
+    var cacheCloseAudioPlayer = AVAudioPlayer()
     //var currentNode: SCNNode!
     @IBAction func removeActionTest(_ sender: Any) {
         removeCache()
@@ -216,9 +217,11 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         //get the sound
         let cacheFoundSound = Bundle.main.path(forResource: "cacheFound", ofType: "mp3")
         let cacheOpenSound = Bundle.main.path(forResource: "cacheOpen", ofType: "mp3")
+        let cacheCloseSound = Bundle.main.path(forResource: "cacheClose", ofType: "mp3")
         do {
             cacheFoundAudioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: cacheFoundSound!))
             cacheOpenAudioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: cacheOpenSound!))
+            cacheCloseAudioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: cacheCloseSound!))
         }
         catch {
             print(error)
@@ -481,6 +484,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             if node.name == "planeNode" {
                 node.isHidden = true
             }
+            cacheCloseAudioPlayer.play()
         }
     }
     func getRenderedCacheAnchor() {
