@@ -329,15 +329,19 @@ class ViewController: UIViewController, ARSCNViewDelegate {
                         cacheNode2.position = SCNVector3Make(objectAnchor.referenceObject.center.x, objectAnchor.referenceObject.center.y + 0.55, objectAnchor.referenceObject.center.z)
                         cacheNode.name = "renderedCacheNode"
                         node.addChildNode(cacheNode)
-                        node.addChildNode(cacheNode2)
+                        //node.addChildNode(cacheNode2)
                         //create text for plane
                         let planeText = SCNText(string: cacheArray[0].notes[0], extrusionDepth: 2.0)
                         planeText.firstMaterial?.diffuse.contents = UIColor.white
                         let planeTextNode = SCNNode(geometry: planeText)
                         planeTextNode.position = SCNVector3Make(objectAnchor.referenceObject.center.x, objectAnchor.referenceObject.center.y+0.15, objectAnchor.referenceObject.center.z)
                         planeTextNode.scale = SCNVector3(0.001,0.001,0.001)
-                        //sceneView.scene.rootNode.addChildNode(planeTextNode)
-                        //sceneView.scene.rootNode.addChildNode(planeNode)
+                        planeNode.isHidden = true
+                        planeTextNode.isHidden = true
+                        planeNode.name = "planeNode"
+                        planeTextNode.name = "planeTextNode"
+                        node.addChildNode(planeTextNode)
+                        node.addChildNode(planeNode)
                         cacheFoundAudioPlayer.play()
                     }
                     self.openCacheButton.isHidden = false
@@ -421,6 +425,12 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         sceneView.scene.rootNode.enumerateChildNodes { (node, _) in
             if node.name == "renderedCacheNode" {
                 node.isHidden = true
+            }
+            if node.name == "planeTextNode" {
+                node.isHidden = false
+            }
+            if node.name == "planeNode" {
+                node.isHidden = false
             }
         }
     }
