@@ -312,8 +312,13 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             for i in cacheArray {
                 if (i.xcoordinate >= (userX-0.1)) && (i.xcoordinate <= (userX+0.1)) && (i.ycoordinate >= (userY-0.1)) && (i.ycoordinate <= (userY+0.1)) {
                     if let objectAnchor = anchor as? ARObjectAnchor {
-                        let plane = SCNPlane(width: 0.2, height: 0.3)
-                        let box = SCNBox(width: 0.1, height: 0.1, length: 0.2, chamferRadius: 0.00001)
+                        let plane = SCNPlane(width: 0.3, height: 0.2)
+                        let box = SCNBox(width: 0.2, height: 0.1, length: 0.00001, chamferRadius: 0.00001)
+                        let box2 = SCNBox(width: 0.2, height: 0.1, length: 0.00001, chamferRadius: 0.00001)
+                        let box3 = SCNBox(width: 0.00001, height: 0.1, length: 0.1, chamferRadius: 0.00001)
+                        let box32 = SCNBox(width: 0.00001, height: 0.1, length: 0.1, chamferRadius: 0.00001)
+                        let box4 = SCNBox(width: 0.2, height: 0.00001, length: 0.1, chamferRadius: 0.00001)
+                        let box42 = SCNBox(width: 0.2, height: 0.00001, length: 0.1, chamferRadius: 0.00001)
                         plane.cornerRadius = plane.width * 0.125
                         let material = SCNMaterial()
                         material.diffuse.contents = UIImage(named: "dragon2")
@@ -321,20 +326,47 @@ class ViewController: UIViewController, ARSCNViewDelegate {
                         material2.diffuse.contents = UIImage(named: "dragon")
                         plane.materials = [material2]
                         box.materials = [material]
+                        box3.materials = [material]
+                        box2.materials = [material2]
+                        box32.materials = [material2]
+                        box4.materials = [material]
+                        box42.materials = [material2]
                         let planeNode = SCNNode(geometry: plane)
                         let cacheNode = SCNNode(geometry: box)
-                        let cacheNode2 = SCNNode(geometry: box)
-                        planeNode.position = SCNVector3Make(objectAnchor.referenceObject.center.x, objectAnchor.referenceObject.center.y+0.15, objectAnchor.referenceObject.center.z)
+                        let cacheNode2 = SCNNode(geometry: box2)
+                        let cacheNode3 = SCNNode(geometry: box3)
+                        let cacheNode4 = SCNNode(geometry: box32)
+                        let cacheNode5 = SCNNode(geometry: box4)
+                        let cacheNode6 = SCNNode(geometry: box42)
+                        let cacheNode7 = SCNNode(geometry: box2)
+                        planeNode.position = SCNVector3Make(objectAnchor.referenceObject.center.x, objectAnchor.referenceObject.center.y + 0.55, objectAnchor.referenceObject.center.z)
                         cacheNode.position = SCNVector3Make(objectAnchor.referenceObject.center.x, objectAnchor.referenceObject.center.y + 0.35, objectAnchor.referenceObject.center.z)
-                        cacheNode2.position = SCNVector3Make(objectAnchor.referenceObject.center.x, objectAnchor.referenceObject.center.y + 0.55, objectAnchor.referenceObject.center.z)
+                        cacheNode2.position = SCNVector3Make(objectAnchor.referenceObject.center.x, objectAnchor.referenceObject.center.y + 0.35, objectAnchor.referenceObject.center.z - 0.1)
+                        cacheNode3.position = SCNVector3Make(objectAnchor.referenceObject.center.x - 0.1, objectAnchor.referenceObject.center.y + 0.35, objectAnchor.referenceObject.center.z - 0.05)
+                        cacheNode4.position = SCNVector3Make(objectAnchor.referenceObject.center.x + 0.1, objectAnchor.referenceObject.center.y + 0.35, objectAnchor.referenceObject.center.z-0.05)
+                        cacheNode5.position = SCNVector3Make(objectAnchor.referenceObject.center.x, objectAnchor.referenceObject.center.y + 0.40, objectAnchor.referenceObject.center.z-0.05)
+                        cacheNode6.position = SCNVector3Make(objectAnchor.referenceObject.center.x, objectAnchor.referenceObject.center.y + 0.30, objectAnchor.referenceObject.center.z-0.05)
+                        cacheNode7.position = SCNVector3Make(objectAnchor.referenceObject.center.x, objectAnchor.referenceObject.center.y + 0.45, objectAnchor.referenceObject.center.z - 0.1)
                         cacheNode.name = "renderedCacheNode"
+                        cacheNode2.name = "renderedCacheNode2"
+                        cacheNode3.name = "renderedCacheNode3"
+                        cacheNode4.name = "renderedCacheNode4"
+                        cacheNode5.name = "renderedCacheNode5"
+                        cacheNode6.name = "renderedCacheNode6"
+                        cacheNode7.name = "renderedCacheNode7"
                         node.addChildNode(cacheNode)
+                        node.addChildNode(cacheNode2)
+                        node.addChildNode(cacheNode3)
+                        node.addChildNode(cacheNode4)
+                        node.addChildNode(cacheNode5)
+                        node.addChildNode(cacheNode6)
+                        node.addChildNode(cacheNode7)
                         //node.addChildNode(cacheNode2)
                         //create text for plane
                         let planeText = SCNText(string: cacheArray[0].notes[0], extrusionDepth: 2.0)
                         planeText.firstMaterial?.diffuse.contents = UIColor.white
                         let planeTextNode = SCNNode(geometry: planeText)
-                        planeTextNode.position = SCNVector3Make(objectAnchor.referenceObject.center.x, objectAnchor.referenceObject.center.y+0.15, objectAnchor.referenceObject.center.z)
+                        planeTextNode.position = SCNVector3Make(objectAnchor.referenceObject.center.x, objectAnchor.referenceObject.center.y + 0.55, objectAnchor.referenceObject.center.z)
                         planeTextNode.scale = SCNVector3(0.001,0.001,0.001)
                         planeNode.isHidden = true
                         planeTextNode.isHidden = true
@@ -423,9 +455,12 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     }
     func removeRenderedCache(){
         sceneView.scene.rootNode.enumerateChildNodes { (node, _) in
-            if node.name == "renderedCacheNode" {
+            if node.name == "renderedCacheNode5" {
                 node.isHidden = true
             }
+//            if node.name == "renderedCacheNode6" {
+//                node.isHidden = false
+//            }
             if node.name == "planeTextNode" {
                 node.isHidden = false
             }
