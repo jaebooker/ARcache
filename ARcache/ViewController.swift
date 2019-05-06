@@ -74,7 +74,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             cacheMessage.isHidden = false
             addButton.isHidden = false
             takeButton.isHidden = false
-            cacheMessage.text = cacheArray[0].notes[0]
+            cacheMessage.text = "nutty!"
             cacheOpenAudioPlayer.play()
             removeRenderedCache()
             openCacheButton.setTitle("Close", for: .normal)
@@ -420,7 +420,28 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     func removeRenderedCache(){
         sceneView.scene.rootNode.enumerateChildNodes { (node, _) in
             if node.name == "renderedCacheNode" {
-                node.removeFromParentNode()
+                node.isHidden = true
+            }
+        }
+    }
+    func getRenderedCacheAnchor() {
+        sceneView.scene.rootNode.enumerateChildNodes { (node, _) in
+            if node.name == "renderedCacheNode" {
+                let plane = SCNPlane(width: 0.2, height: 0.3)
+                let box = SCNBox(width: 0.1, height: 0.1, length: 0.2, chamferRadius: 0.00001)
+                plane.cornerRadius = plane.width * 0.125
+                let material = SCNMaterial()
+                material.diffuse.contents = UIImage(named: "dragon2")
+                let material2 = SCNMaterial()
+                material2.diffuse.contents = UIImage(named: "dragon")
+                plane.materials = [material2]
+                box.materials = [material]
+                let planeNode = SCNNode(geometry: plane)
+                let cacheNode2 = SCNNode(geometry: box)
+                planeNode.position = node.position
+                cacheNode2.position = node.position
+                cacheNode2.name = "cacheNode2"
+                sceneView.scene.rootNode.addChildNode(cacheNode2)
             }
         }
     }
