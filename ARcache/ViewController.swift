@@ -67,6 +67,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             openCacheButton.isHidden = true
             addButton.isHidden = true
             takeButton.isHidden = true
+            closeRenderedCache()
         } else {
             //if not open, open
             isOpen = true
@@ -314,7 +315,6 @@ class ViewController: UIViewController, ARSCNViewDelegate {
                     if let objectAnchor = anchor as? ARObjectAnchor {
                         let plane = SCNPlane(width: 0.3, height: 0.2)
                         let box = SCNBox(width: 0.2, height: 0.1, length: 0.00001, chamferRadius: 0.00001)
-                        let boxDarkSide = SCNBox(width: 0.2, height: 0.1, length: 0.00001, chamferRadius: 0.00001)
                         let box2 = SCNBox(width: 0.00001, height: 0.1, length: 0.1, chamferRadius: 0.00001)
                         let box3 = SCNBox(width: 0.2, height: 0.00001, length: 0.1, chamferRadius: 0.00001)
                         let openBox = SCNBox(width: 0.2, height: 0.08, length: 0.00001, chamferRadius: 0.00001)
@@ -327,7 +327,6 @@ class ViewController: UIViewController, ARSCNViewDelegate {
                         box.materials = [material]
                         box2.materials = [material]
                         box3.materials = [material]
-                        boxDarkSide.materials = [material2]
                         openBox.materials = [material]
                         let planeNode = SCNNode(geometry: plane)
                         let cacheNodeSide1 = SCNNode(geometry: box)
@@ -337,7 +336,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
                         let cacheNodeSide5 = SCNNode(geometry: box3)
                         let cacheNodeSide6 = SCNNode(geometry: box3)
                         let openCacheNodeSide = SCNNode(geometry: openBox)
-                        planeNode.position = SCNVector3Make(objectAnchor.referenceObject.center.x, objectAnchor.referenceObject.center.y + 0.65, objectAnchor.referenceObject.center.z-0.05)
+                        planeNode.position = SCNVector3Make(objectAnchor.referenceObject.center.x, objectAnchor.referenceObject.center.y + 0.61, objectAnchor.referenceObject.center.z-0.05)
                         cacheNodeSide1.position = SCNVector3Make(objectAnchor.referenceObject.center.x, objectAnchor.referenceObject.center.y + 0.35, objectAnchor.referenceObject.center.z)
                         cacheNodeSide2.position = SCNVector3Make(objectAnchor.referenceObject.center.x, objectAnchor.referenceObject.center.y + 0.35, objectAnchor.referenceObject.center.z - 0.1)
                         cacheNodeSide3.position = SCNVector3Make(objectAnchor.referenceObject.center.x - 0.1, objectAnchor.referenceObject.center.y + 0.35, objectAnchor.referenceObject.center.z - 0.05)
@@ -365,7 +364,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
                         let planeText = SCNText(string: cacheArray[0].notes[0], extrusionDepth: 2.0)
                         planeText.firstMaterial?.diffuse.contents = UIColor.white
                         let planeTextNode = SCNNode(geometry: planeText)
-                        planeTextNode.position = SCNVector3Make(objectAnchor.referenceObject.center.x, objectAnchor.referenceObject.center.y + 0.70, objectAnchor.referenceObject.center.z-0.05)
+                        planeTextNode.position = SCNVector3Make(objectAnchor.referenceObject.center.x, objectAnchor.referenceObject.center.y + 0.61, objectAnchor.referenceObject.center.z-0.05)
                         planeTextNode.scale = SCNVector3(0.001,0.001,0.001)
                         planeNode.isHidden = true
                         planeTextNode.isHidden = true
@@ -465,6 +464,22 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             }
             if node.name == "planeNode" {
                 node.isHidden = false
+            }
+        }
+    }
+    func closeRenderedCache(){
+        sceneView.scene.rootNode.enumerateChildNodes { (node, _) in
+            if node.name == "cacheNodeSide5" {
+                node.isHidden = false
+            }
+            if node.name == "openCacheNodeSide" {
+                node.isHidden = true
+            }
+            if node.name == "planeTextNode" {
+                node.isHidden = true
+            }
+            if node.name == "planeNode" {
+                node.isHidden = true
             }
         }
     }
