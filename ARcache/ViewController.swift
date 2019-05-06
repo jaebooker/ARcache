@@ -75,34 +75,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             addButton.isHidden = false
             takeButton.isHidden = false
             cacheMessage.text = cacheArray[0].notes[0]
-            
-            //getting object anchor
-            if let objectAnchor = arAnchor as? ARObjectAnchor {
-                //create text for plane
-                let planeText = SCNText(string: cacheArray[0].notes[0], extrusionDepth: 2.0)
-                planeText.firstMaterial?.diffuse.contents = UIColor.white
-                //planeText.font = UIFont(name: "Arial", size: 1)
-                let planeTextNode = SCNNode(geometry: planeText)
-                planeTextNode.position = SCNVector3Make(objectAnchor.referenceObject.center.x-0.5, objectAnchor.referenceObject.center.y, objectAnchor.referenceObject.center.z-1.7)
-                planeTextNode.scale = SCNVector3(0.001,0.001,0.001)
-                sceneView.scene.rootNode.addChildNode(planeTextNode)
-                
-                //create plane for text
-                let plane = SCNPlane(width: CGFloat(0.4), height: CGFloat(0.2))
-                let material2 = SCNMaterial()
-                material2.diffuse.contents = UIImage(named: "dragon")
-                plane.materials = [material2]
-                let planeNode = SCNNode(geometry: plane)
-                planeNode.position = SCNVector3Make(objectAnchor.referenceObject.center.x-0.5, objectAnchor.referenceObject.center.y, objectAnchor.referenceObject.center.z-1.7)
-                cacheOpenAudioPlayer.play()
-                sceneView.scene.rootNode.addChildNode(planeNode)
-                
-            }
-            sceneView.scene.rootNode.enumerateChildNodes { (node, _) in
-                if node.name == "renderedCacheNode" {
-                    node.removeFromParentNode()
-                }
-            }
+            cacheOpenAudioPlayer.play()
+            removeRenderedCache()
             openCacheButton.setTitle("Close", for: .normal)
         }
     }
@@ -338,23 +312,32 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             for i in cacheArray {
                 if (i.xcoordinate >= (userX-0.1)) && (i.xcoordinate <= (userX+0.1)) && (i.ycoordinate >= (userY-0.1)) && (i.ycoordinate <= (userY+0.1)) {
                     if let objectAnchor = anchor as? ARObjectAnchor {
-                        let plane = SCNPlane(width: CGFloat(objectAnchor.referenceObject.extent.x * 0.8), height: CGFloat(objectAnchor.referenceObject.extent.y * 0.5))
+                        let plane = SCNPlane(width: 0.2, height: 0.3)
                         let box = SCNBox(width: 0.1, height: 0.1, length: 0.2, chamferRadius: 0.00001)
                         plane.cornerRadius = plane.width * 0.125
-                        let displayScene = SKScene(fileNamed: "cacheScene")
                         let material = SCNMaterial()
                         material.diffuse.contents = UIImage(named: "dragon2")
-                        plane.firstMaterial?.diffuse.contents = displayScene
-                        plane.firstMaterial!.isDoubleSided = true
-                        plane.firstMaterial?.diffuse.contentsTransform = SCNMatrix4Translate(SCNMatrix4MakeScale(1, -1, 1), 0, 1, 0)
+                        let material2 = SCNMaterial()
+                        material2.diffuse.contents = UIImage(named: "dragon")
+                        plane.materials = [material2]
                         box.materials = [material]
                         let planeNode = SCNNode(geometry: plane)
                         let cacheNode = SCNNode(geometry: box)
-                        planeNode.position = SCNVector3Make(objectAnchor.referenceObject.center.x, objectAnchor.referenceObject.center.y + 0.35, objectAnchor.referenceObject.center.z)
+                        let cacheNode2 = SCNNode(geometry: box)
+                        planeNode.position = SCNVector3Make(objectAnchor.referenceObject.center.x, objectAnchor.referenceObject.center.y+0.15, objectAnchor.referenceObject.center.z)
                         cacheNode.position = SCNVector3Make(objectAnchor.referenceObject.center.x, objectAnchor.referenceObject.center.y + 0.35, objectAnchor.referenceObject.center.z)
+                        cacheNode2.position = SCNVector3Make(objectAnchor.referenceObject.center.x, objectAnchor.referenceObject.center.y + 0.55, objectAnchor.referenceObject.center.z)
                         cacheNode.name = "renderedCacheNode"
                         node.addChildNode(cacheNode)
-                        
+                        node.addChildNode(cacheNode2)
+                        //create text for plane
+                        let planeText = SCNText(string: cacheArray[0].notes[0], extrusionDepth: 2.0)
+                        planeText.firstMaterial?.diffuse.contents = UIColor.white
+                        let planeTextNode = SCNNode(geometry: planeText)
+                        planeTextNode.position = SCNVector3Make(objectAnchor.referenceObject.center.x, objectAnchor.referenceObject.center.y+0.15, objectAnchor.referenceObject.center.z)
+                        planeTextNode.scale = SCNVector3(0.001,0.001,0.001)
+                        //sceneView.scene.rootNode.addChildNode(planeTextNode)
+                        //sceneView.scene.rootNode.addChildNode(planeNode)
                         cacheFoundAudioPlayer.play()
                     }
                     self.openCacheButton.isHidden = false
@@ -430,6 +413,13 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     func removeCache(){
         sceneView.scene.rootNode.enumerateChildNodes { (node, _) in
             if node.name == "cacheNode" {
+                node.removeFromParentNode()
+            }
+        }
+    }
+    func removeRenderedCache(){
+        sceneView.scene.rootNode.enumerateChildNodes { (node, _) in
+            if node.name == "renderedCacheNode" {
                 node.removeFromParentNode()
             }
         }
