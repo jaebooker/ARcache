@@ -24,6 +24,17 @@
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="RMf-3z-0MZ">
                                 <rect key="frame" x="163.5" y="793" width="87" height="44"/>
                                 <subviews>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ajl-Jt-lLF">
+                                        <rect key="frame" x="0.0" y="0.0" width="87" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="8Dk-cY-5Xz"/>
+                                            <constraint firstAttribute="width" constant="87" id="TWg-qn-C29"/>
+                                        </constraints>
+                                        <state key="normal" title="Remove"/>
+                                        <connections>
+                                            <action selector="removeActionTest:" destination="BV1-FR-VrT" eventType="touchUpInside" id="JMe-ba-UTC"/>
+                                        </connections>
+                                    </button>
                                     <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="95b-yh-NeP" userLabel="Take Button">
                                         <rect key="frame" x="0.0" y="0.0" width="87" height="44"/>
                                         <constraints>
@@ -158,6 +169,7 @@
                         <outlet property="insertCacheButton" destination="oZn-yd-Nl1" id="vvc-uC-vUO"/>
                         <outlet property="messageField" destination="J07-8O-hkh" id="w7y-uw-w7j"/>
                         <outlet property="openCacheButton" destination="N2d-Eu-vPe" id="Yo5-Vx-mZO"/>
+                        <outlet property="removeLabelTest" destination="Ajl-Jt-lLF" id="71r-2F-yN3"/>
                         <outlet property="sceneView" destination="BrB-h1-WRS" id="5nT-qQ-ynl"/>
                         <outlet property="takeButton" destination="95b-yh-NeP" id="3sE-mG-CZK"/>
                     </connections>

@@ -17,6 +17,10 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     var cacheFoundAudioPlayer = AVAudioPlayer()
     var cacheOpenAudioPlayer = AVAudioPlayer()
     //var currentNode: SCNNode!
+    @IBAction func removeActionTest(_ sender: Any) {
+        removeCache()
+    }
+    @IBOutlet weak var removeLabelTest: UIButton!
     @IBOutlet weak var addButton: UIButton!
     @IBOutlet weak var takeButton: UIButton!
     @IBOutlet weak var emailField: UITextField!
@@ -74,7 +78,9 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             
             //getting object anchor
             if let objectAnchor = arAnchor as? ARObjectAnchor {
-                
+                print("I'm Mr Meeseeks!")
+                print(arAnchor)
+                print("Look at me!")
                 //create text for plane
                 let planeText = SCNText(string: cacheArray[1].notes[1], extrusionDepth: 2.0)
                 planeText.firstMaterial?.diffuse.contents = UIColor.white
@@ -316,12 +322,14 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             insertCacheButton.isHidden = false
             //NOTE: Not everyone knows what a cache is
             cacheMessage.text = "Great! Now add the first message you want to place in the cache! Examples: Simple greeting, game code, short poem, anything! And give your new cache a name."
-            inputStackView.isHidden = false
+//            inputStackView.isHidden = false
+            removeLabelTest.isHidden = false
             //openCacheButton.isHidden = false
         }
     }
     func renderer(_ renderer: SCNSceneRenderer, nodeFor anchor: ARAnchor) -> SCNNode? {
         arAnchor = anchor
+        print(arAnchor)
         let node = SCNNode()
         if locationManager.location?.coordinate != nil {
             let userX = (locationManager.location?.coordinate.latitude)!
