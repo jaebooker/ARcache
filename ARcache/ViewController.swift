@@ -19,7 +19,10 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     var cacheCloseAudioPlayer = AVAudioPlayer()
     //var currentNode: SCNNode!
     @IBAction func removeActionTest(_ sender: Any) {
-        removeCache()
+        let imageConfiguration = ARImageTrackingConfiguration()
+        guard let arImages = ARReferenceImage.referenceImages(inGroupNamed: "PhotoAnchors", bundle: nil) else { return }
+        imageConfiguration.trackingImages = arImages
+        sceneView.session.run(imageConfiguration) // Run the view's session
     }
     @IBOutlet weak var removeLabelTest: UIButton!
     @IBOutlet weak var addButton: UIButton!
@@ -270,12 +273,6 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         // Create a session configuration
         let configuration = ARWorldTrackingConfiguration()
         configuration.detectionObjects = ARReferenceObject.referenceObjects(inGroupNamed: "CacheAnchors", bundle: Bundle.main)!
-        let imageConfiguration = ARImageTrackingConfiguration()
-        guard let arImages = ARReferenceImage.referenceImages(inGroupNamed: "PhotoAnchors", bundle: nil) else { return }
-        imageConfiguration.trackingImages = arImages
-        // Run the view's session
-        //sceneView.session.run(imageConfiguration)
-        
         sceneView.session.run(configuration)
     }
     
