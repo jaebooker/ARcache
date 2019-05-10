@@ -203,17 +203,21 @@
                     </view>
                     <connections>
                         <outlet property="addButton" destination="Nqx-Dz-8AE" id="ypI-di-XOl"/>
+                        <outlet property="addressStack" destination="MrQ-tu-eSP" id="F2X-Pr-mkF"/>
                         <outlet property="cacheButton" destination="bNi-9d-0hY" id="Qc0-3O-AJm"/>
                         <outlet property="cacheMessage" destination="esh-v8-Pwl" id="KZT-XG-0du"/>
+                        <outlet property="countryInput" destination="WTz-KL-CC5" id="jIV-sp-GJe"/>
                         <outlet property="emailField" destination="qmF-Ss-UG1" id="J4d-ZQ-GKd"/>
                         <outlet property="emailLabel" destination="sWu-yV-iZg" id="KfH-rC-vC6"/>
                         <outlet property="firstMessage" destination="c0h-YK-wXz" id="aNc-jf-mfS"/>
                         <outlet property="inputStackView" destination="Tck-U2-u0N" id="qo1-6V-iW9"/>
                         <outlet property="insertCacheButton" destination="oZn-yd-Nl1" id="vvc-uC-vUO"/>
                         <outlet property="messageField" destination="J07-8O-hkh" id="w7y-uw-w7j"/>
+                        <outlet property="nameInput" destination="Zan-9S-aIG" id="XMJ-PM-2mY"/>
                         <outlet property="openCacheButton" destination="N2d-Eu-vPe" id="Yo5-Vx-mZO"/>
                         <outlet property="removeLabelTest" destination="Ajl-Jt-lLF" id="71r-2F-yN3"/>
                         <outlet property="sceneView" destination="BrB-h1-WRS" id="5nT-qQ-ynl"/>
+                        <outlet property="streetInput" destination="jGE-Kv-VdI" id="srR-kf-Yxp"/>
                         <outlet property="takeButton" destination="95b-yh-NeP" id="3sE-mG-CZK"/>
                     </connections>
                 </viewController>
