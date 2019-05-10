@@ -105,7 +105,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     @IBAction func startCache(_ sender: Any) {
         cacheButton.isHidden = true
         cacheMessage.isHidden = false
-        cacheMessage.text = "Tap on screen where you want to place cache. It's best for it to be in a well-lit environment. On a smooth, vertical surface that can be written on."
+        cacheMessage.text = "Tap on screen where you want to place cache. It's best for it to be in a well-lit environment, on a smooth, vertical surface where you can place a sticker."
         touchesBeginning = true
     }
     @IBAction func insertCacheButton(_ sender: Any) {
@@ -177,9 +177,10 @@ class ViewController: UIViewController, ARSCNViewDelegate {
                 } catch {}
             }
             task.resume()
-            self.cacheMessage.text = "X marks the spot. Draw an X in the real world where the ArCache is, preferably over a white background. That way, other people will be able to find it!"
+            self.cacheMessage.text = "Great! Now you're going to need to add a sticker so the camera knows where the cache is! Add your address, so we can send you a free sticker."
             self.inputStackView.isHidden = true
             self.insertCacheButton.isHidden = true
+            self.addressStack.isHidden = false
         }
     }
     @IBOutlet weak var cacheButton: UIButton!
